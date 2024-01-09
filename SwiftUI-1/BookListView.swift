@@ -37,8 +37,13 @@ struct BookRowView: View {
                     .font(.headline)
                 Text(book.author)
                     .font(.subheadline)
-                Text(book.isbn)
-                    .font(.subheadline)
+                HStack {
+                    Text("\(book.pages) pages")
+                        .font(.subheadline)
+                    Spacer()
+                    Text(book.isbn)
+                        .font(.subheadline)
+                }
             }
             Spacer()
         }
