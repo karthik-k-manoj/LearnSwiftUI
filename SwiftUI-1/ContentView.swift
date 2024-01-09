@@ -9,10 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Hello, world!")
-        }
-        .padding()
+        Text("Asynchronous Programming With SwiftUI and Combine")
+        .font(.headline)
     }
 }
 
