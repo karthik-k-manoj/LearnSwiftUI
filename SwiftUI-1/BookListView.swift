@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  BookListView.swift
 //  SwiftUI-1
 //
 //  Created by Karthik K Manoj on 09/01/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct BookListView: View {
     var books: [Book]
     
     var body: some View {
@@ -17,9 +17,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct BookListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(books: Book.sampleBooks)
+        BookListView(books: Book.sampleBooks)
     }
 }
 
