@@ -7,18 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA8B79892B4D602500239AE2 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B79882B4D602500239AE2 /* Book.swift */; };
-		DADFCCAA2B4D48EE00AF4547 /* SwiftUI_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADFCCA92B4D48EE00AF4547 /* SwiftUI_1App.swift */; };
-		DADFCCAC2B4D48EE00AF4547 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADFCCAB2B4D48EE00AF4547 /* BookListView.swift */; };
 		DADFCCAE2B4D48F100AF4547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADFCCAD2B4D48F100AF4547 /* Assets.xcassets */; };
 		DADFCCB12B4D48F100AF4547 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADFCCB02B4D48F100AF4547 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DA8B79882B4D602500239AE2 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		DADFCCA62B4D48EE00AF4547 /* SwiftUI-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DADFCCA92B4D48EE00AF4547 /* SwiftUI_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_1App.swift; sourceTree = "<group>"; };
-		DADFCCAB2B4D48EE00AF4547 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
 		DADFCCAD2B4D48F100AF4547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DADFCCB02B4D48F100AF4547 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,9 +47,6 @@
 		DADFCCA82B4D48EE00AF4547 /* SwiftUI-1 */ = {
 			isa = PBXGroup;
 			children = (
-				DA8B79882B4D602500239AE2 /* Book.swift */,
-				DADFCCA92B4D48EE00AF4547 /* SwiftUI_1App.swift */,
-				DADFCCAB2B4D48EE00AF4547 /* BookListView.swift */,
 				DADFCCAD2B4D48F100AF4547 /* Assets.xcassets */,
 				DADFCCAF2B4D48F100AF4547 /* Preview Content */,
 			);
@@ -140,9 +131,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DADFCCAC2B4D48EE00AF4547 /* BookListView.swift in Sources */,
-				DADFCCAA2B4D48EE00AF4547 /* SwiftUI_1App.swift in Sources */,
-				DA8B79892B4D602500239AE2 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
