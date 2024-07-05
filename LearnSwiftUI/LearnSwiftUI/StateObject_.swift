@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  StateObject_.swift
 //  LearnSwiftUI
 //
 //  Created by Karthik K Manoj on 02/05/24.
@@ -54,10 +54,15 @@ struct CounterView: View {
 }
 
 // Parent View
-struct ContentView: View {
-    @State private var parentViewState = 0
+struct StateObject_: View {
+    @State private var parentViewState: Int
+    
+    init(parentViewState: Int) {
+        self.parentViewState = parentViewState
+    }
     
     var body: some View {
+        
         Button("Tap to change parent view state: \(parentViewState)") {
             parentViewState += 1
         }
@@ -68,6 +73,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        StateObject_(parentViewState: 0)
     }
 }
