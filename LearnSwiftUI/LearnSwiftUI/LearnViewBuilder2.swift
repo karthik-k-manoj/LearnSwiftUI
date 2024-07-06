@@ -16,6 +16,13 @@ struct LearnViewBuilder2: View {
                 bye
             }
             
+            // HStack subviews are `TupleView<(TupleView<(Image, Text)>, TupleView<(Image, Text)>)>
+            // This works because `Hello` and `Bye` have `body` property which itself is a view list
+            HStack(spacing: 20) {
+                Hello()
+                Bye()
+            }
+            
             // HStack subviews are TupleView<(Image, Text, Image, Text)>
             HStack(spacing: 20) {
                 Image(systemName: "hand.wave")
@@ -30,7 +37,20 @@ struct LearnViewBuilder2: View {
              nested lists are recursively unfolded so that a tree of tuple views turns into a flat list of views.
              */
         }
-       
+    }
+    
+    struct Hello: View {
+        var body: some View {
+            Image(systemName: "hand.wave")
+            Text("Hello World")
+        }
+    }
+    
+    struct Bye: View {
+        var body: some View {
+            Image(systemName: "hand.wave")
+            Text("Good Bye")
+        }
     }
     
     @ViewBuilder var hello: some View {
