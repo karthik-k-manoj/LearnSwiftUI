@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+/*
+ In a view builder we can maximum of 10 views. There are `buildBlock` methods defined for only 10 views.
+ */
 struct LearnViewBuilder: View {
     var body: some View {
        hello
@@ -18,7 +21,13 @@ struct LearnViewBuilder: View {
         bye
             .type()
             .frame(width: 100)
-        
+        hello
+        hello
+        hello
+        hello
+        hello
+        hello
+        hello
     }
     
     @ViewBuilder var hello: some View {
