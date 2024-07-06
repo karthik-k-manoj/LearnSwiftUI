@@ -11,11 +11,13 @@ struct LearnViewBuilder: View {
     var body: some View {
        hello
             .type()
+            .frame(width: 100)
         Button("Get body type view") {
             print("Type: \(Swift.type(of: self.body))")
         }
         bye
             .type()
+            .frame(width: 100)
         
     }
     
