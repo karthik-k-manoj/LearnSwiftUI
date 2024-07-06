@@ -31,11 +31,24 @@ struct LearnViewBuilder2: View {
                 Text("Good Bye")
             }
             
-            // UI are the same. How?
-            /*
-             This is a special property of view lists: when a container view like the HStack iterates over the view list,
-             nested lists are recursively unfolded so that a tree of tuple views turns into a flat list of views.
-             */
+            HStack(spacing: 20) {
+                // Type is ModifiedContent<Hello, _OverlayModifier>
+                // This applies border modifier to each views in the list view
+                Hello()
+                    .border(.blue)
+                    .type()
+            }
+            
+            HStack(spacing: 20) {
+                // Type is ModifiedContent<Image, _OverlayModifier>
+                Image(systemName: "hand.wave")
+                    .border(.blue)
+                    .type()
+                // Type is ModifiedContent<Text, _OverlayModifier>
+                Text("Hello World")
+                    .border(.blue)
+                    .type()
+            }
         }
     }
     

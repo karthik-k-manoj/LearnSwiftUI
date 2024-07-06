@@ -42,8 +42,8 @@ struct LearnViewBuilder: View {
 }
 
 extension View {
-    func type() -> Self {
-       print("Type: \(Swift.type(of: self))")
+    func type(_ context: String = "") -> Self {
+       print("Type \(context): \(Swift.type(of: self))")
        return self
     }
 }
