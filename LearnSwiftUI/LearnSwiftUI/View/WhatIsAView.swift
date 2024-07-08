@@ -45,15 +45,25 @@ Because a view tree shows the current state of the view and it has to be reflect
 that user can see the view on screen
  */
 
+/*
+Let's talk about identity. Since views are struct it needs to be identified somehow so that SwiftUI can identify them
+If it was a class then they have an intrinsic identity (reference). View can have two type of identity:
+1) Implicity identity:  position of the view in the view tree.
+2) Explicity Identity:  we give an explicit identity using `ForEach` construct or `id` modifier.
+*/
 
 struct WhatIsAView: View {
+    var greeting: String?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct WhatIsAView_Previews: PreviewProvider {
-    static var previews: some View {
-        WhatIsAView()
+        // 0
+        Text("Hello World")
+        if let g = greeting {
+            // 1.ifBranch
+            Text(g)
+        } else {
+            // 1.elseBranch
+            Text("Hello")
+        }
     }
 }
