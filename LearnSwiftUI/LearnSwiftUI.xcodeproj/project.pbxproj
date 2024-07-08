@@ -44,6 +44,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA63A5812C3C1583003EBB4B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DA9D4E812BE3878A0058E063 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +70,7 @@
 		DA9D4E8C2BE3878A0058E063 /* LearnSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DA63A5812C3C1583003EBB4B /* View */,
 				DA9D4E8D2BE3878A0058E063 /* LearnSwiftUIApp.swift */,
 				DA63A5752C38F9CC003EBB4B /* LearnViewBuilder.swift */,
 				DA63A5772C390D7D003EBB4B /* LearnViewBuilder2.swift */,
