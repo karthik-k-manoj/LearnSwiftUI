@@ -30,7 +30,11 @@ import SwiftUI
  Once a view tree is created it is backed up by a render tree (the persistent object) which is rendered on screen.
  Apple calls it attributed graph. Let's call them nodes in the render tree. They have a specific lifetime from the time
  when they are first rendered to when they are no longer needed for display. The mapping of view tree to render tree is all
- managed by SwiftUI internally. 
+ managed by SwiftUI internally.
+ 
+ Keep in mind lifetime of a node in a render tree is not the same as visibility. We can have n nodes in the render tree
+ but only (n - 5) views displayed on screen. For example, VStack has 10 views and is placed in a scroll view
+ but scroll view shows only 5 items. Bottom line is nodes in the render tree have a lifetime but it's not in our control
  */
 
 struct WhatIsAView: View {
