@@ -37,6 +37,15 @@ import SwiftUI
  but scroll view shows only 5 items. Bottom line is nodes in the render tree have a lifetime but it's not in our control
  */
 
+/*
+ We need to understand when by any means a new view tree is created it has to be reflected into the render tree.
+ View tree will always be in sync with the render tree. We do not need to worry about this. It is taken care by SwiftUI
+ 
+Because a view tree shows the current state of the view and it has to be reflected into the render tree so
+that user can see the view on screen
+ */
+
+
 struct WhatIsAView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
