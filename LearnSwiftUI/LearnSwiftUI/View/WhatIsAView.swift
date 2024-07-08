@@ -24,6 +24,15 @@ import SwiftUI
  
  */
 
+/*
+ A swiftUI view is made of view trees. The views what we see are created and destoryed many times during the
+ application run. So it is imperative to understand the view code we write has limited lifetime.
+ Once a view tree is created it is backed up by a render tree (the persistent object) which is rendered on screen.
+ Apple calls it attributed graph. Let's call them nodes in the render tree. They have a specific lifetime from the time
+ when they are first rendered to when they are no longer needed for display. The mapping of view tree to render tree is all
+ managed by SwiftUI internally. 
+ */
+
 struct WhatIsAView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
