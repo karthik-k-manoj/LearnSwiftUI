@@ -65,5 +65,13 @@ struct WhatIsAView: View {
             // 1.elseBranch
             Text("Hello")
         }
+        
+        List {
+            ForEach([1,2,3,4], id: \.self) { item in
+                // `\.self` is a key path and refers to each element in the collection. Element needs to be hashable for this work
+                // There will be 4 text views on screen
+                Text("Item is \(item)")
+            }
+        }
     }
 }
