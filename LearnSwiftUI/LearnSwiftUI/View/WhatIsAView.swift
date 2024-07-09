@@ -79,7 +79,7 @@ struct WhatIsAView: View {
             .id("1")
         
         // Here the id parameter can be `true` or `false. When this changes SwiftUI considers the view to be changed.
-        // Depening on the condition we get two different views even though their cotent are the same.
+        // Depening on the condition we get two different views even though their cotent are the same. The parameter should be hashable
         Text("Explicit Identifer using id modifier")
             .id(greeting == nil)
     }
