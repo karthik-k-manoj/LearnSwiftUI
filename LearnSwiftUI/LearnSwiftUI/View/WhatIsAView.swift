@@ -54,6 +54,7 @@ If it was a class then they have an intrinsic identity (reference). View can hav
 
 struct WhatIsAView: View {
     var greeting: String?
+    var isHighlighted: Bool = true
     
     var body: some View {
         // 0
@@ -98,6 +99,27 @@ struct WhatIsAView: View {
             let v = Text("Hello")
             v
             v
+        }
+        
+        // Another example related to view identity.
+        HStack {
+            Image(systemName: "hand.wave")
+            Text("Hello")
+                ._applyIf(isHighlighted) {
+                    $0.background(.yellow)
+                }
+        }
+    }
+}
+
+// This is an anti-pattern
+extension View {
+    @ViewBuilder
+    func _applyIf<V: View>(_ condition: Bool, _ transform: (Self) -> V) -> some View {
+        if condition {
+            transform(self)
+        } else {
+            self
         }
     }
 }
