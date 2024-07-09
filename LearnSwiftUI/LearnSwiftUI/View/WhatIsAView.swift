@@ -101,7 +101,16 @@ struct WhatIsAView: View {
             v
         }
         
-        // Another example related to view identity.
+        // Another example related to view identity. `applyIf` modifier conditionally applies
+        // logic if to add a background to text view or not. This internally creates a different
+        // view tree. Actually it creates two different text views because of `if-else` condition
+        // inside `_applyIf`. Actually looking at the code below it does not tell us the exact
+        // view tree. Looking at the code we can see there is only one `Text` but there are two text
+        // views due to the condition.
+        
+        
+        //Most modfiers take optioanls so we can either set a value or pass nil. Some modifiers take
+        // boolean like `bold` or `disabled`
         HStack {
             Image(systemName: "hand.wave")
             Text("Hello")
