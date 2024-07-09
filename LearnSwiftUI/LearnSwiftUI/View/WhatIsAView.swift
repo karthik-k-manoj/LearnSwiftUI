@@ -86,12 +86,10 @@ struct WhatIsAView: View {
         // Explicit identity does not override implicit identity. It is applied on top of it.
         // This means SwiftUI won't be confused with two views having the same explicit identifier.
         HStack {
-            // implicit identity 0
+            // IDView gets implicit identity as 0
             Text("Implicit identifier and explicit identifier")
-                .type()
-                // explicit identity `true`
+                // Text gets explicit identity as true
                 .id(greeting == nil)
-                .type()
         }
     }
 }
