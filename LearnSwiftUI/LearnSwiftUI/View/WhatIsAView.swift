@@ -88,8 +88,16 @@ struct WhatIsAView: View {
         HStack {
             // IDView gets implicit identity as 0
             Text("Implicit identifier and explicit identifier")
-                // Text gets explicit identity as true and an implict identity as 0.true
+            // Text gets explicit identity as true and an implict identity as 0.true
                 .id(greeting == nil)
+        }
+        
+        // Another example of identity. Even though v is defined as `Text` once but it is used
+        // in two places giving it implicity identity of 0 and 1
+        HStack {
+            let v = Text("Hello")
+            v
+            v
         }
     }
 }
