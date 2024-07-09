@@ -88,7 +88,7 @@ struct WhatIsAView: View {
         HStack {
             // IDView gets implicit identity as 0
             Text("Implicit identifier and explicit identifier")
-                // Text gets explicit identity as true
+                // Text gets explicit identity as true and an implict identity as 0.true
                 .id(greeting == nil)
         }
     }
