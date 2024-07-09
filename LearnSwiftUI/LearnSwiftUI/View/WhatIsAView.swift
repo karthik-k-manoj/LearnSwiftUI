@@ -68,10 +68,19 @@ struct WhatIsAView: View {
         
         List {
             ForEach([1,2,3,4], id: \.self) { item in
-                // `\.self` is a key path and refers to each element in the collection. Element needs to be hashable for this work
-                // There will be 4 text views on screen
+                // `\.self` is a key path and refers to each element in the collection. Element needs to be hashable for this to work
+                // There will be 4 text views on screen each identified by elements of the array.
                 Text("Item is \(item)")
             }
         }
+        
+        // Another way to provide explicit identifier.
+        Text("Explicit Identifer using id modifier")
+            .id("1")
+        
+        // Here the id parameter can be `true` or `false. When this changes SwiftUI considers the view to be changed.
+        // Depening on the condition we get two different views even though their cotent are the same.
+        Text("Explicit Identifer using id modifier")
+            .id(greeting == nil)
     }
 }
