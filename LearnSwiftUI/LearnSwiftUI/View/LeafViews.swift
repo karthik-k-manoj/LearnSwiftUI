@@ -49,6 +49,54 @@ struct LeafViews: View {
             .border(.red)
             .frame(width: 100, height: 50)
             .border(.black)
+        
+        /*
+         `.lintLimit(_ number) lets us specify the maximum number of lines that should be rendered
+         regardless of whether or not there's more vertical space proposed. Specifiying nil means
+         there's no limit
+         */
+        VStack(spacing: 10) {
+            // Consider this as clamping to line height of 2. Maximum it can go to 2 line height.
+            Text("Lorem ipsum")
+                .lineLimit(2)
+                .border(.pink)
+            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                .lineLimit(2)
+                .border(.pink)
+            
+            // This is similar to above but with the partial range operator.
+            Text("Lorem ipsum")
+                .lineLimit(...2)
+                .border(.pink)
+            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                .lineLimit(...2)
+                .border(.pink)
+            
+            // This is setting the minimum number of lines using partial range operator
+            Text("Lorem ipsum")
+                .lineLimit(2...)
+                .border(.pink)
+            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                .lineLimit(2...)
+                .border(.pink)
+            
+            // This is setting the minimum to maximum line height using close range operator
+            Text("Lorem ipsum")
+                .lineLimit(1...2)
+                .border(.pink)
+            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                .lineLimit(1...2)
+                .border(.pink)
+            
+            // Specifies maximum number of lines that should be rendered while giving us the option
+            // to include space for these lines in the reported size by setting `reservesSpace` to true.
+            Text("Lorem ipsum")
+                .lineLimit(4, reservesSpace: true)
+                .border(.pink)
+            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                .lineLimit(4, reservesSpace: true)
+                .border(.pink)
+        }
     }
 }
 
