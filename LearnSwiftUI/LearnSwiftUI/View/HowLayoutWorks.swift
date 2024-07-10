@@ -83,6 +83,12 @@ struct HowLayoutWorks: View {
             to the parent window.
          6) Parent places the subviews according it's own alignment and the alignment guide of the subview
          */
+        
+        /*
+         In general when trying to understand how views are lait out, it is best to put a
+         border on the view. In addition we could add an overlay with a geomtry reader to
+         also render the size of the view but border already helps debug almost every layout problem
+         */
         VStack {
             Image(systemName: "globe")
             Text("Hello World")
