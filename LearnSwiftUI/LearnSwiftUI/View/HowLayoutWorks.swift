@@ -59,6 +59,15 @@ struct HowLayoutWorks: View {
              subviews: Subviews,
              cache: inout ()
          ) { }
+         
+         
+         struct ProposedViewSize { var width, height: CGFloat? }
+         
+         Difference between CGSize and ProposedSize is that both components are optional in
+         `ProposedSize`
+         
+         Proposing nil for a component means that the view can become it's ideal size in that
+         dimension. The ideal size is different for each view.
          */
         VStack {
             Image(systemName: "globe")
