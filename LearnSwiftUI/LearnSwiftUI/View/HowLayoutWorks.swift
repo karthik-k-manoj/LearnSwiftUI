@@ -69,9 +69,24 @@ struct HowLayoutWorks: View {
          Proposing nil for a component means that the view can become it's ideal size in that
          dimension. The ideal size is different for each view.
          */
+        
+        /*
+         Let try to understand how sizes are proposed and reported here.
+         
+         1) VStack is proposed a safe area size (X, Y) by the window
+         2) VStack needs to calculate it's size by considering the proposed size
+         3) It divides the proposed size by number of subviews and proposes (Y / 3) to it's subview
+         4) Some views might even disregard the proposed size such as `Image` does so by default.
+            while other views return the proposed size as their actual size. We say that it accepts
+            the proposed size
+         5) Here each subview returns a size (reported) and VStack unions them to report it's size
+            to the parent window.
+         6) Parent places the subviews according it's own alignment and the alignment guide of the subview
+         */
         VStack {
             Image(systemName: "globe")
             Text("Hello World")
+            Rectangle()
         }
     }
 }
