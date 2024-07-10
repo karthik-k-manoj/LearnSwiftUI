@@ -86,8 +86,10 @@ struct HowLayoutWorks: View {
         
         /*
          In general when trying to understand how views are lait out, it is best to put a
-         border on the view. In addition we could add an overlay with a geomtry reader to
+         border on the view. In addition we could add an overlay with a geometry reader to
          also render the size of the view but border already helps debug almost every layout problem
+         
+         Basically `border` internally is a call to `overlay` with shape (shape always accepts proposed size)
          */
         VStack {
             Image(systemName: "globe")
