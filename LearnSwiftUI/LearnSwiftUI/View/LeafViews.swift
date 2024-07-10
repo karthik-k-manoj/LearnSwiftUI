@@ -24,7 +24,7 @@ struct LeafViews: View {
          */
         
         /*
-         Here frame is applied with constants so as to propose size is 25 X 50
+         Here frame is applied with constants so as to propose a size of 25 X 50
          and text reports a size which is less than 25 x 50
          */
         Text("Hello, World!")
@@ -33,7 +33,7 @@ struct LeafViews: View {
             .border(.black)
         
         /*
-         Here frame is applied with constants so as to propose size is 50 X 50
+         Here frame is applied with constants so as to propose a size of 50 X 50
          and text reports a size which is less than 50 x 50
          */
         Text("Hello, World!")
@@ -42,7 +42,7 @@ struct LeafViews: View {
             .border(.black)
         
         /*
-         Here frame is applied with constants so as to propose size is 100 X 50
+         Here frame is applied with constants so as to propose a size of 100 X 50
          and text reports a size which is less than 100 x 50
          */
         Text("Hello, World!")
