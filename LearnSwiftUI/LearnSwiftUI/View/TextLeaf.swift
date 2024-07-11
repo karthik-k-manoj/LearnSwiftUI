@@ -11,7 +11,7 @@ import SwiftUI
  Leaf views are views that have no subviews.
  */
 
-struct LeafViews: View {
+struct TextLeaf: View {
     var body: some View {
         /*
          Let's take a look at `Text`. By default Text views fit themseleves into any proposed size
@@ -102,6 +102,6 @@ struct LeafViews: View {
 
 struct LeafViews_Previews: PreviewProvider {
     static var previews: some View {
-        LeafViews()
+        TextLeaf()
     }
 }
