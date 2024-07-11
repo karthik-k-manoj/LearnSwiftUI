@@ -55,6 +55,7 @@ struct TextLeaf: View {
          regardless of whether or not there's more vertical space proposed. Specifiying nil means
          there's no limit
          */
+        
         VStack(spacing: 10) {
             // Consider this as clamping to line height of 2. Maximum it can go to 2 line height.
             Text("Lorem ipsum")
@@ -97,6 +98,23 @@ struct TextLeaf: View {
                 .lineLimit(4, reservesSpace: true)
                 .border(.pink)
         }
+        
+        VStack(spacing: 10) {
+            // Specifies where truncation should be applied
+            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                .lineLimit(2)
+                .truncationMode(.head)
+            
+            HStack {
+                Text("This is a long label that will be scaled to fit:")
+                    .lineLimit(3)
+                    // This will make sure the text is not wrapped or truncated but font size is reduce
+                    // to fix into the proposed size.
+                    .minimumScaleFactor(0.5)
+                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua")
+            }
+        }
+        .padding(10)
     }
 }
 
