@@ -20,6 +20,7 @@
 		DA9D4E902BE3878A0058E063 /* StateObject_.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D4E8F2BE3878A0058E063 /* StateObject_.swift */; };
 		DA9D4E922BE3878B0058E063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9D4E912BE3878B0058E063 /* Assets.xcassets */; };
 		DA9D4E952BE3878B0058E063 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9D4E942BE3878B0058E063 /* Preview Assets.xcassets */; };
+		DAB46FB32C40058300024348 /* TextLeaf+fixedSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		DA9D4E8F2BE3878A0058E063 /* StateObject_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObject_.swift; sourceTree = "<group>"; };
 		DA9D4E912BE3878B0058E063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA9D4E942BE3878B0058E063 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextLeaf+fixedSize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				DA63A5822C3C15C0003EBB4B /* WhatIsAView.swift */,
 				DA9B2ECC2C3EA2B8003BDF58 /* HowLayoutWorks.swift */,
 				DA9B2ECE2C3EBC2D003BDF58 /* TextLeaf.swift */,
+				DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				DA63A5762C38F9CC003EBB4B /* LearnViewBuilder.swift in Sources */,
 				DA63A5832C3C15C0003EBB4B /* WhatIsAView.swift in Sources */,
 				DA63A57C2C3967FC003EBB4B /* DynamicContent.swift in Sources */,
+				DAB46FB32C40058300024348 /* TextLeaf+fixedSize.swift in Sources */,
 				DA9B2ECF2C3EBC2D003BDF58 /* TextLeaf.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
