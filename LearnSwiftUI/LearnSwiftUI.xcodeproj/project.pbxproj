@@ -23,6 +23,7 @@
 		DAB46FB32C40058300024348 /* TextLeaf+fixedSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */; };
 		DAB46FB52C400A5C00024348 /* ShapeLeaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */; };
 		DAB46FB82C4019B500024348 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB72C4019B500024348 /* HexagonParameters.swift */; };
+		DAB46FBA2C401BB200024348 /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB92C401BB200024348 /* BadgeBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextLeaf+fixedSize.swift"; sourceTree = "<group>"; };
 		DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeLeaf.swift; sourceTree = "<group>"; };
 		DAB46FB72C4019B500024348 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
+		DAB46FB92C401BB200024348 /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				DAB46FB72C4019B500024348 /* HexagonParameters.swift */,
+				DAB46FB92C401BB200024348 /* BadgeBackground.swift */,
 			);
 			path = BadgeShape;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				DA63A5832C3C15C0003EBB4B /* WhatIsAView.swift in Sources */,
 				DA63A57C2C3967FC003EBB4B /* DynamicContent.swift in Sources */,
 				DAB46FB32C40058300024348 /* TextLeaf+fixedSize.swift in Sources */,
+				DAB46FBA2C401BB200024348 /* BadgeBackground.swift in Sources */,
 				DA9B2ECF2C3EBC2D003BDF58 /* TextLeaf.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
