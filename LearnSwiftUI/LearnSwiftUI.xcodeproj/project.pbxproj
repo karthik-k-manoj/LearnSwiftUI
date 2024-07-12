@@ -14,6 +14,8 @@
 		DA63A57E2C39726A003EBB4B /* OnAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A57D2C39726A003EBB4B /* OnAppear.swift */; };
 		DA63A5802C399A67003EBB4B /* UnderstandViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A57F2C399A67003EBB4B /* UnderstandViewBuilder.swift */; };
 		DA63A5832C3C15C0003EBB4B /* WhatIsAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A5822C3C15C0003EBB4B /* WhatIsAView.swift */; };
+		DA8536ED2C40F7080043DDD4 /* DebugLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8536EC2C40F7080043DDD4 /* DebugLayout.swift */; };
+		DA8536EF2C414B020043DDD4 /* TrapeziumShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8536EE2C414B020043DDD4 /* TrapeziumShape.swift */; };
 		DA9B2ECD2C3EA2B8003BDF58 /* HowLayoutWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B2ECC2C3EA2B8003BDF58 /* HowLayoutWorks.swift */; };
 		DA9B2ECF2C3EBC2D003BDF58 /* TextLeaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B2ECE2C3EBC2D003BDF58 /* TextLeaf.swift */; };
 		DA9D4E8E2BE3878A0058E063 /* LearnSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D4E8D2BE3878A0058E063 /* LearnSwiftUIApp.swift */; };
@@ -22,8 +24,6 @@
 		DA9D4E952BE3878B0058E063 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9D4E942BE3878B0058E063 /* Preview Assets.xcassets */; };
 		DAB46FB32C40058300024348 /* TextLeaf+fixedSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */; };
 		DAB46FB52C400A5C00024348 /* ShapeLeaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */; };
-		DAB46FB82C4019B500024348 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB72C4019B500024348 /* HexagonParameters.swift */; };
-		DAB46FBA2C401BB200024348 /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB92C401BB200024348 /* BadgeBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +34,8 @@
 		DA63A57D2C39726A003EBB4B /* OnAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnAppear.swift; sourceTree = "<group>"; };
 		DA63A57F2C399A67003EBB4B /* UnderstandViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderstandViewBuilder.swift; sourceTree = "<group>"; };
 		DA63A5822C3C15C0003EBB4B /* WhatIsAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsAView.swift; sourceTree = "<group>"; };
+		DA8536EC2C40F7080043DDD4 /* DebugLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLayout.swift; sourceTree = "<group>"; };
+		DA8536EE2C414B020043DDD4 /* TrapeziumShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrapeziumShape.swift; sourceTree = "<group>"; };
 		DA9B2ECC2C3EA2B8003BDF58 /* HowLayoutWorks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowLayoutWorks.swift; sourceTree = "<group>"; };
 		DA9B2ECE2C3EBC2D003BDF58 /* TextLeaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLeaf.swift; sourceTree = "<group>"; };
 		DA9D4E8A2BE3878A0058E063 /* LearnSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,8 +45,6 @@
 		DA9D4E942BE3878B0058E063 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextLeaf+fixedSize.swift"; sourceTree = "<group>"; };
 		DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeLeaf.swift; sourceTree = "<group>"; };
-		DAB46FB72C4019B500024348 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
-		DAB46FB92C401BB200024348 /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 		DA63A5812C3C1583003EBB4B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DAB46FB62C40197400024348 /* BadgeShape */,
+				DAB46FB62C40197400024348 /* Shape */,
 				DA63A5822C3C15C0003EBB4B /* WhatIsAView.swift */,
 				DA9B2ECC2C3EA2B8003BDF58 /* HowLayoutWorks.swift */,
 				DA9B2ECE2C3EBC2D003BDF58 /* TextLeaf.swift */,
@@ -69,6 +69,14 @@
 				DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DA8536EB2C40F6F20043DDD4 /* Debugging */ = {
+			isa = PBXGroup;
+			children = (
+				DA8536EC2C40F7080043DDD4 /* DebugLayout.swift */,
+			);
+			path = Debugging;
 			sourceTree = "<group>";
 		};
 		DA9D4E812BE3878A0058E063 = {
@@ -90,6 +98,7 @@
 		DA9D4E8C2BE3878A0058E063 /* LearnSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DA8536EB2C40F6F20043DDD4 /* Debugging */,
 				DA63A5812C3C1583003EBB4B /* View */,
 				DA9D4E8D2BE3878A0058E063 /* LearnSwiftUIApp.swift */,
 				DA63A5752C38F9CC003EBB4B /* LearnViewBuilder.swift */,
@@ -113,13 +122,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DAB46FB62C40197400024348 /* BadgeShape */ = {
+		DAB46FB62C40197400024348 /* Shape */ = {
 			isa = PBXGroup;
 			children = (
-				DAB46FB72C4019B500024348 /* HexagonParameters.swift */,
-				DAB46FB92C401BB200024348 /* BadgeBackground.swift */,
+				DA8536EE2C414B020043DDD4 /* TrapeziumShape.swift */,
 			);
-			path = BadgeShape;
+			path = Shape;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB46FB82C4019B500024348 /* HexagonParameters.swift in Sources */,
+				DA8536EF2C414B020043DDD4 /* TrapeziumShape.swift in Sources */,
+				DA8536ED2C40F7080043DDD4 /* DebugLayout.swift in Sources */,
 				DAB46FB52C400A5C00024348 /* ShapeLeaf.swift in Sources */,
 				DA63A5802C399A67003EBB4B /* UnderstandViewBuilder.swift in Sources */,
 				DA63A57E2C39726A003EBB4B /* OnAppear.swift in Sources */,
@@ -205,7 +214,6 @@
 				DA63A5832C3C15C0003EBB4B /* WhatIsAView.swift in Sources */,
 				DA63A57C2C3967FC003EBB4B /* DynamicContent.swift in Sources */,
 				DAB46FB32C40058300024348 /* TextLeaf+fixedSize.swift in Sources */,
-				DAB46FBA2C401BB200024348 /* BadgeBackground.swift in Sources */,
 				DA9B2ECF2C3EBC2D003BDF58 /* TextLeaf.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
