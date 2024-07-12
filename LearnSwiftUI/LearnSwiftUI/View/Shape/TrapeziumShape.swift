@@ -7,9 +7,17 @@
 
 import SwiftUI
 
-struct TrapeziumShape: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct TrapeziumShape: Shape {
+    // rect is reported size for a shape view in which the path will be drawn
+    // This is only required method for a shape
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+        
+        path.move(to: .zero)
+        path.addLine(to: CGPoint(x: rect.maxX, y: 0))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
+        
+        return path
     }
 }
 
