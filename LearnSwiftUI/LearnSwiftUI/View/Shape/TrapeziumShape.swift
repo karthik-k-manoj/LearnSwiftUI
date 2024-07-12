@@ -16,6 +16,8 @@ struct TrapeziumShape: Shape {
         path.move(to: .zero)
         path.addLine(to: CGPoint(x: rect.maxX, y: 0))
         path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
+        path.addLine(to: CGPoint(x: 0, y: 0.5 * rect.height))
+        path.closeSubpath()
         
         return path
     }
@@ -24,5 +26,7 @@ struct TrapeziumShape: Shape {
 struct TrapeziumShape_Previews: PreviewProvider {
     static var previews: some View {
         TrapeziumShape()
+            .fill(Color.red)
+            .border(.black)
     }
 }
