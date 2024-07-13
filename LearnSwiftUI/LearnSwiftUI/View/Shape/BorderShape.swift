@@ -21,6 +21,8 @@ struct BorderShape: Shape {
     }
     
     func sizeThatFits(_ proposal: ProposedViewSize) -> CGSize {
+        // This gives a default value of 10 on nil dimensions.
+        // It gives back a CGSize.
         var result = proposal.replacingUnspecifiedDimensions()
         
         let ratio: CGFloat = 2/3
@@ -48,6 +50,5 @@ struct BorderShape_Previews: PreviewProvider {
 extension CGRect {
     subscript(_ point: UnitPoint) -> CGPoint {
         CGPoint(x: minX + width * point.x, y: minY + height * point.y)
-        
     }
 }
