@@ -40,8 +40,6 @@ struct BorderShape_Previews: PreviewProvider {
     static var previews: some View {
       BorderShape()
             .stroke(Color.black)
-            .debugLog("Stroke")
-            .debugLog("Aspect Ratio")
             .frame(width: 80, height: 200)
             .border(Color.red)
     }
