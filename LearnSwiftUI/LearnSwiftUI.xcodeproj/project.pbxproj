@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA31C4E82C425792009EBB36 /* BorderShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4E72C425792009EBB36 /* BorderShape.swift */; };
 		DA63A5762C38F9CC003EBB4B /* LearnViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A5752C38F9CC003EBB4B /* LearnViewBuilder.swift */; };
 		DA63A5782C390D7D003EBB4B /* LearnViewBuilder2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A5772C390D7D003EBB4B /* LearnViewBuilder2.swift */; };
 		DA63A57A2C393EDA003EBB4B /* LearnGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A5792C393EDA003EBB4B /* LearnGroup.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA31C4E72C425792009EBB36 /* BorderShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderShape.swift; sourceTree = "<group>"; };
 		DA63A5752C38F9CC003EBB4B /* LearnViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewBuilder.swift; sourceTree = "<group>"; };
 		DA63A5772C390D7D003EBB4B /* LearnViewBuilder2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewBuilder2.swift; sourceTree = "<group>"; };
 		DA63A5792C393EDA003EBB4B /* LearnGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnGroup.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				DA8536EE2C414B020043DDD4 /* TrapeziumShape.swift */,
+				DA31C4E72C425792009EBB36 /* BorderShape.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				DA9B2ECD2C3EA2B8003BDF58 /* HowLayoutWorks.swift in Sources */,
 				DA63A57A2C393EDA003EBB4B /* LearnGroup.swift in Sources */,
 				DA63A5762C38F9CC003EBB4B /* LearnViewBuilder.swift in Sources */,
+				DA31C4E82C425792009EBB36 /* BorderShape.swift in Sources */,
 				DA63A5832C3C15C0003EBB4B /* WhatIsAView.swift in Sources */,
 				DA63A57C2C3967FC003EBB4B /* DynamicContent.swift in Sources */,
 				DAB46FB32C40058300024348 /* TextLeaf+fixedSize.swift in Sources */,
