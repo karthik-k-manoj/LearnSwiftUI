@@ -18,7 +18,21 @@ struct BorderShape: Shape {
             path.addLine(to: rect[.topLeading])
             path.closeSubpath()
         }
+    }
+    
+    func sizeThatFits(_ proposal: ProposedViewSize) -> CGSize {
+        var result = proposal.replacingUnspecifiedDimensions()
+        
+        let ratio: CGFloat = 2/3
+        let newWidth = ratio * result.height
 
+        if newWidth <= result.width {
+            result.width = newWidth
+        } else {
+            result.height = result.width / ratio
+        }
+        
+        return result
     }
 }
 
@@ -26,7 +40,8 @@ struct BorderShape_Previews: PreviewProvider {
     static var previews: some View {
       BorderShape()
             .stroke(Color.black)
-            .aspectRatio(2/3, contentMode: .fit)
+            .debugLog("Stroke")
+            .debugLog("Aspect Ratio")
             .frame(width: 80, height: 200)
             .border(Color.red)
     }
