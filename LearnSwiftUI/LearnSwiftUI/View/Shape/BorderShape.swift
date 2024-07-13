@@ -26,7 +26,9 @@ struct BorderShape_Previews: PreviewProvider {
     static var previews: some View {
       BorderShape()
             .stroke(Color.black)
+            .aspectRatio(2/3, contentMode: .fit)
             .frame(width: 80, height: 200)
+            .border(Color.red)
     }
 }
 
