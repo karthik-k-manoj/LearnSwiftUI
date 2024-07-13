@@ -33,8 +33,9 @@ struct TrapeziumShape_Previews: PreviewProvider {
     static var previews: some View {
         TrapeziumShape()
             .fill(Color.red)
-            // `Color` implements `ShapeStyle`. It accepts proposed size and draws path
-            .border(Color.black, width: 5)
+            // `Color` implements `ShapeStyle`. It accepts proposed size and draws path in that size.
+            .border(Color.black)
+            .frame(width: 200, height: 100)
     }
 }
 
