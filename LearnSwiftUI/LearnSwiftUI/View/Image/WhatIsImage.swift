@@ -19,6 +19,7 @@ import SwiftUI
 
 struct WhatIsImage: View {
     var body: some View {
+        // leaf view which doesn't have a subview
        Image("myImage")
             .resizable()
             // A parent (modifier) can ask it's child multiple times before it returns from here.
@@ -27,7 +28,7 @@ struct WhatIsImage: View {
             // Aspect Ratio will return the modifed size
             // The parent is asking aspect ratio what is your size? Aspect ratio has a child. It consults with the child to get the it's size
             // and that is the size of the aspect ratio.
-            .aspectRatio( contentMode: .fit)
+            .aspectRatio(contentMode: .fit)
     }
 }
 
