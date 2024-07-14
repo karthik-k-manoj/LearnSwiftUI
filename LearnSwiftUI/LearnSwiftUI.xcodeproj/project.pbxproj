@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DA31C4E82C425792009EBB36 /* BorderShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4E72C425792009EBB36 /* BorderShape.swift */; };
 		DA31C4EB2C4294FC009EBB36 /* WhatIsColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4EA2C4294FC009EBB36 /* WhatIsColor.swift */; };
+		DA31C4EE2C429A90009EBB36 /* WhatIsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4ED2C429A90009EBB36 /* WhatIsImage.swift */; };
 		DA63A5762C38F9CC003EBB4B /* LearnViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A5752C38F9CC003EBB4B /* LearnViewBuilder.swift */; };
 		DA63A5782C390D7D003EBB4B /* LearnViewBuilder2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A5772C390D7D003EBB4B /* LearnViewBuilder2.swift */; };
 		DA63A57A2C393EDA003EBB4B /* LearnGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A5792C393EDA003EBB4B /* LearnGroup.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		DA31C4E72C425792009EBB36 /* BorderShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderShape.swift; sourceTree = "<group>"; };
 		DA31C4EA2C4294FC009EBB36 /* WhatIsColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsColor.swift; sourceTree = "<group>"; };
+		DA31C4ED2C429A90009EBB36 /* WhatIsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsImage.swift; sourceTree = "<group>"; };
 		DA63A5752C38F9CC003EBB4B /* LearnViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewBuilder.swift; sourceTree = "<group>"; };
 		DA63A5772C390D7D003EBB4B /* LearnViewBuilder2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewBuilder2.swift; sourceTree = "<group>"; };
 		DA63A5792C393EDA003EBB4B /* LearnGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnGroup.swift; sourceTree = "<group>"; };
@@ -70,9 +72,18 @@
 			path = Color;
 			sourceTree = "<group>";
 		};
+		DA31C4EC2C429A82009EBB36 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				DA31C4ED2C429A90009EBB36 /* WhatIsImage.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		DA63A5812C3C1583003EBB4B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA31C4EC2C429A82009EBB36 /* Image */,
 				DA31C4E92C4294E0009EBB36 /* Color */,
 				DAB46FB62C40197400024348 /* Shape */,
 				DA63A5822C3C15C0003EBB4B /* WhatIsAView.swift */,
@@ -215,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA8536EF2C414B020043DDD4 /* TrapeziumShape.swift in Sources */,
+				DA31C4EE2C429A90009EBB36 /* WhatIsImage.swift in Sources */,
 				DA8536ED2C40F7080043DDD4 /* DebugLayout.swift in Sources */,
 				DAB46FB52C400A5C00024348 /* ShapeLeaf.swift in Sources */,
 				DA63A5802C399A67003EBB4B /* UnderstandViewBuilder.swift in Sources */,
