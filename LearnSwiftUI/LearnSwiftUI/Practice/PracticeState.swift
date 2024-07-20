@@ -7,21 +7,16 @@
 
 import SwiftUI
 
-struct PracticeView: View {
+struct LearnViewModifier1: View {
     var body: some View {
-        VStack {
-            Text("Hello World How are you?")
-                .borderedCaption()
-            
-            // ask this always. you are proposed X size what is your size
-                                   // I need to ask my child by proposing the size
-        }
+        Text("Hello World")
+            .modifier(BorderCaption())
     }
 }
 
-struct PracticeView_Previews: PreviewProvider {
+struct LearnViewModifier1_Previews: PreviewProvider {
     static var previews: some View {
-        PracticeView()
+        LearnViewModifier1()
     }
 }
 
