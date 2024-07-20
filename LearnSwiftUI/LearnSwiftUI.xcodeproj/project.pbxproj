@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA0035CD2C4AA8A500928C84 /* AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0035CC2C4AA8A500928C84 /* AspectRatio.swift */; };
+		DA0035CF2C4BF4B900928C84 /* LearnViewModifier2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0035CE2C4BF4B900928C84 /* LearnViewModifier2.swift */; };
 		DA31C4E82C425792009EBB36 /* BorderShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4E72C425792009EBB36 /* BorderShape.swift */; };
 		DA31C4EB2C4294FC009EBB36 /* WhatIsColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4EA2C4294FC009EBB36 /* WhatIsColor.swift */; };
 		DA31C4EE2C429A90009EBB36 /* WhatIsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4ED2C429A90009EBB36 /* WhatIsImage.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		DA0035CC2C4AA8A500928C84 /* AspectRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectRatio.swift; sourceTree = "<group>"; };
+		DA0035CE2C4BF4B900928C84 /* LearnViewModifier2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewModifier2.swift; sourceTree = "<group>"; };
 		DA31C4E72C425792009EBB36 /* BorderShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderShape.swift; sourceTree = "<group>"; };
 		DA31C4EA2C4294FC009EBB36 /* WhatIsColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsColor.swift; sourceTree = "<group>"; };
 		DA31C4ED2C429A90009EBB36 /* WhatIsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsImage.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				DA31C4F02C44F673009EBB36 /* LearnViewModifier1.swift */,
+				DA0035CE2C4BF4B900928C84 /* LearnViewModifier2.swift */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				DA63A5762C38F9CC003EBB4B /* LearnViewBuilder.swift in Sources */,
 				DA31C4E82C425792009EBB36 /* BorderShape.swift in Sources */,
 				DA63A5832C3C15C0003EBB4B /* WhatIsAView.swift in Sources */,
+				DA0035CF2C4BF4B900928C84 /* LearnViewModifier2.swift in Sources */,
 				DA63A57C2C3967FC003EBB4B /* DynamicContent.swift in Sources */,
 				DA31C4F12C44F673009EBB36 /* LearnViewModifier1.swift in Sources */,
 				DA31C4EB2C4294FC009EBB36 /* WhatIsColor.swift in Sources */,
