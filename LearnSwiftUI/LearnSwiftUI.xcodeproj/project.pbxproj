@@ -11,7 +11,7 @@
 		DA31C4E82C425792009EBB36 /* BorderShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4E72C425792009EBB36 /* BorderShape.swift */; };
 		DA31C4EB2C4294FC009EBB36 /* WhatIsColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4EA2C4294FC009EBB36 /* WhatIsColor.swift */; };
 		DA31C4EE2C429A90009EBB36 /* WhatIsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4ED2C429A90009EBB36 /* WhatIsImage.swift */; };
-		DA31C4F12C44F673009EBB36 /* PracticeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4F02C44F673009EBB36 /* PracticeState.swift */; };
+		DA31C4F12C44F673009EBB36 /* LearnViewModifier1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4F02C44F673009EBB36 /* LearnViewModifier1.swift */; };
 		DA63A5762C38F9CC003EBB4B /* LearnViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A5752C38F9CC003EBB4B /* LearnViewBuilder.swift */; };
 		DA63A5782C390D7D003EBB4B /* LearnViewBuilder2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A5772C390D7D003EBB4B /* LearnViewBuilder2.swift */; };
 		DA63A57A2C393EDA003EBB4B /* LearnGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A5792C393EDA003EBB4B /* LearnGroup.swift */; };
@@ -36,7 +36,7 @@
 		DA31C4E72C425792009EBB36 /* BorderShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderShape.swift; sourceTree = "<group>"; };
 		DA31C4EA2C4294FC009EBB36 /* WhatIsColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsColor.swift; sourceTree = "<group>"; };
 		DA31C4ED2C429A90009EBB36 /* WhatIsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsImage.swift; sourceTree = "<group>"; };
-		DA31C4F02C44F673009EBB36 /* PracticeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeState.swift; sourceTree = "<group>"; };
+		DA31C4F02C44F673009EBB36 /* LearnViewModifier1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewModifier1.swift; sourceTree = "<group>"; };
 		DA63A5752C38F9CC003EBB4B /* LearnViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewBuilder.swift; sourceTree = "<group>"; };
 		DA63A5772C390D7D003EBB4B /* LearnViewBuilder2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewBuilder2.swift; sourceTree = "<group>"; };
 		DA63A5792C393EDA003EBB4B /* LearnGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnGroup.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		DA31C4EF2C44F66A009EBB36 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
-				DA31C4F02C44F673009EBB36 /* PracticeState.swift */,
+				DA31C4F02C44F673009EBB36 /* LearnViewModifier1.swift */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 				DA31C4E82C425792009EBB36 /* BorderShape.swift in Sources */,
 				DA63A5832C3C15C0003EBB4B /* WhatIsAView.swift in Sources */,
 				DA63A57C2C3967FC003EBB4B /* DynamicContent.swift in Sources */,
-				DA31C4F12C44F673009EBB36 /* PracticeState.swift in Sources */,
+				DA31C4F12C44F673009EBB36 /* LearnViewModifier1.swift in Sources */,
 				DA31C4EB2C4294FC009EBB36 /* WhatIsColor.swift in Sources */,
 				DAB46FB32C40058300024348 /* TextLeaf+fixedSize.swift in Sources */,
 				DA9B2ECF2C3EBC2D003BDF58 /* TextLeaf.swift in Sources */,
