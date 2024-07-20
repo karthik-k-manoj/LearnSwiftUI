@@ -13,6 +13,7 @@ struct AspectRatio: View {
         Circle()
             .fill(Color.black)
             .aspectRatio(16/9, contentMode: .fit)
+            .frame(width: 500, height: 500)
     }
 }
 
