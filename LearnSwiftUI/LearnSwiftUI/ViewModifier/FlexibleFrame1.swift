@@ -1,5 +1,5 @@
 //
-//  FlexibleFrame.swift
+//  FlexibleFrame1.swift
 //  LearnSwiftUI
 //
 //  Created by Karthik K Manoj on 21/07/24.
@@ -13,7 +13,7 @@ import SwiftUI
  */
 
 
-struct FlexibleFrame: View {
+struct FlexibleFrame1: View {
     var body: some View {
         Text("Hello World")
 
@@ -42,6 +42,6 @@ struct FlexibleFrame: View {
 
 struct FlexibleFrame_Previews: PreviewProvider {
     static var previews: some View {
-        FlexibleFrame()
+        FlexibleFrame1()
     }
 }
