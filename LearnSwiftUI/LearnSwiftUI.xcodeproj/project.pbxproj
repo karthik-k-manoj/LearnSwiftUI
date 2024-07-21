@@ -16,6 +16,7 @@
 		DA0035DA2C4CBAB400928C84 /* FlexibleFrame2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0035D92C4CBAB400928C84 /* FlexibleFrame2.swift */; };
 		DA0035DC2C4CCFC900928C84 /* FlexibleFrameWithIdealSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0035DB2C4CCFC900928C84 /* FlexibleFrameWithIdealSize.swift */; };
 		DA0035DE2C4CD23B00928C84 /* FlexibleFrameMaxWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0035DD2C4CD23B00928C84 /* FlexibleFrameMaxWidth.swift */; };
+		DA0035E02C4CD37C00928C84 /* FrameWithMinWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0035DF2C4CD37C00928C84 /* FrameWithMinWidth.swift */; };
 		DA31C4E82C425792009EBB36 /* BorderShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4E72C425792009EBB36 /* BorderShape.swift */; };
 		DA31C4EB2C4294FC009EBB36 /* WhatIsColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4EA2C4294FC009EBB36 /* WhatIsColor.swift */; };
 		DA31C4EE2C429A90009EBB36 /* WhatIsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4ED2C429A90009EBB36 /* WhatIsImage.swift */; };
@@ -49,6 +50,7 @@
 		DA0035D92C4CBAB400928C84 /* FlexibleFrame2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleFrame2.swift; sourceTree = "<group>"; };
 		DA0035DB2C4CCFC900928C84 /* FlexibleFrameWithIdealSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleFrameWithIdealSize.swift; sourceTree = "<group>"; };
 		DA0035DD2C4CD23B00928C84 /* FlexibleFrameMaxWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleFrameMaxWidth.swift; sourceTree = "<group>"; };
+		DA0035DF2C4CD37C00928C84 /* FrameWithMinWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWithMinWidth.swift; sourceTree = "<group>"; };
 		DA31C4E72C425792009EBB36 /* BorderShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderShape.swift; sourceTree = "<group>"; };
 		DA31C4EA2C4294FC009EBB36 /* WhatIsColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsColor.swift; sourceTree = "<group>"; };
 		DA31C4ED2C429A90009EBB36 /* WhatIsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsImage.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				DA0035D92C4CBAB400928C84 /* FlexibleFrame2.swift */,
 				DA0035DB2C4CCFC900928C84 /* FlexibleFrameWithIdealSize.swift */,
 				DA0035DD2C4CD23B00928C84 /* FlexibleFrameMaxWidth.swift */,
+				DA0035DF2C4CD37C00928C84 /* FrameWithMinWidth.swift */,
 				DA0035D12C4BFA0A00928C84 /* Padding1.swift */,
 				DA0035D32C4C099600928C84 /* Padding2.swift */,
 				DA0035D52C4C135400928C84 /* FixedFrame.swift */,
@@ -277,6 +280,7 @@
 				DA8536ED2C40F7080043DDD4 /* DebugLayout.swift in Sources */,
 				DA0035CD2C4AA8A500928C84 /* AspectRatio.swift in Sources */,
 				DAB46FB52C400A5C00024348 /* ShapeLeaf.swift in Sources */,
+				DA0035E02C4CD37C00928C84 /* FrameWithMinWidth.swift in Sources */,
 				DA63A5802C399A67003EBB4B /* UnderstandViewBuilder.swift in Sources */,
 				DA0035D62C4C135400928C84 /* FixedFrame.swift in Sources */,
 				DA0035D82C4CA53E00928C84 /* FlexibleFrame1.swift in Sources */,
