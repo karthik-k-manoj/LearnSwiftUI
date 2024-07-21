@@ -27,10 +27,11 @@ extension View {
         background(alignment: .center) { if enabled {
             Text("h")
                 .font(.caption)
+                .debugLog("Text")
                 .padding(100)
+                .debugLog("Padding")
                 .border(Color.black)
                 .debugLog("Size")
         }}
         .border(Color.blue)
 } }
-
