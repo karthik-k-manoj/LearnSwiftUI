@@ -24,10 +24,10 @@ extension View {
     func highlight(enabled: Bool = true) -> some View {
         // backgroud view size is always equal to reported size of its
         // subview. But secondary view can have a different size.
-        background { if enabled {
-            Color.red
+        background(alignment: .center) { if enabled {
+            Text("h")
                 .font(.caption)
-                .padding(-10)
+                .padding(100)
                 .border(Color.black)
                 .debugLog("Size")
         }}
