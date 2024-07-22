@@ -9,10 +9,7 @@ import SwiftUI
 
 struct FixedSizeWithOverlayBadge: View {
     var body: some View {
-        Text("1")
-            .badge {
-            Text("2023").font(.caption)
-        }
+        Text("Hello World").border(Color.red).offset(x: 40)
     }
 }
 
