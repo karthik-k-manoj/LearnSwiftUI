@@ -39,6 +39,7 @@
 		DA6C35B02C512C1600B20E9F /* ZStackBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C35AF2C512C1600B20E9F /* ZStackBadgeView.swift */; };
 		DA6C35B22C513B7D00B20E9F /* ZStack_.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C35B12C513B7D00B20E9F /* ZStack_.swift */; };
 		DA6C35B42C51400900B20E9F /* HStackWithZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C35B32C51400900B20E9F /* HStackWithZStack.swift */; };
+		DA6C35B62C515E1C00B20E9F /* FlexibleFrame3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C35B52C515E1C00B20E9F /* FlexibleFrame3.swift */; };
 		DA8536ED2C40F7080043DDD4 /* DebugLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8536EC2C40F7080043DDD4 /* DebugLayout.swift */; };
 		DA8536EF2C414B020043DDD4 /* TrapeziumShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8536EE2C414B020043DDD4 /* TrapeziumShape.swift */; };
 		DA9B2ECD2C3EA2B8003BDF58 /* HowLayoutWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B2ECC2C3EA2B8003BDF58 /* HowLayoutWorks.swift */; };
@@ -84,6 +85,7 @@
 		DA6C35AF2C512C1600B20E9F /* ZStackBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackBadgeView.swift; sourceTree = "<group>"; };
 		DA6C35B12C513B7D00B20E9F /* ZStack_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStack_.swift; sourceTree = "<group>"; };
 		DA6C35B32C51400900B20E9F /* HStackWithZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackWithZStack.swift; sourceTree = "<group>"; };
+		DA6C35B52C515E1C00B20E9F /* FlexibleFrame3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleFrame3.swift; sourceTree = "<group>"; };
 		DA8536EC2C40F7080043DDD4 /* DebugLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLayout.swift; sourceTree = "<group>"; };
 		DA8536EE2C414B020043DDD4 /* TrapeziumShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrapeziumShape.swift; sourceTree = "<group>"; };
 		DA9B2ECC2C3EA2B8003BDF58 /* HowLayoutWorks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowLayoutWorks.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				DA0035E52C4D157E00928C84 /* Background.swift */,
 				DA0035E72C4D267500928C84 /* Overlay.swift */,
 				DA0035D72C4CA53E00928C84 /* FlexibleFrame1.swift */,
+				DA6C35B52C515E1C00B20E9F /* FlexibleFrame3.swift */,
 				DA0035D92C4CBAB400928C84 /* FlexibleFrame2.swift */,
 				DA0035DB2C4CCFC900928C84 /* FlexibleFrameWithIdealSize.swift */,
 				DA29FE202C4E1C3400428576 /* FixedSize.swift */,
@@ -318,6 +321,7 @@
 				DA8536EF2C414B020043DDD4 /* TrapeziumShape.swift in Sources */,
 				DA29FE212C4E1C3400428576 /* FixedSize.swift in Sources */,
 				DA0035DC2C4CCFC900928C84 /* FlexibleFrameWithIdealSize.swift in Sources */,
+				DA6C35B62C515E1C00B20E9F /* FlexibleFrame3.swift in Sources */,
 				DA6C35B42C51400900B20E9F /* HStackWithZStack.swift in Sources */,
 				DA31C4EE2C429A90009EBB36 /* WhatIsImage.swift in Sources */,
 				DA8536ED2C40F7080043DDD4 /* DebugLayout.swift in Sources */,
