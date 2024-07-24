@@ -35,6 +35,7 @@
 		DA63A57E2C39726A003EBB4B /* OnAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A57D2C39726A003EBB4B /* OnAppear.swift */; };
 		DA63A5802C399A67003EBB4B /* UnderstandViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A57F2C399A67003EBB4B /* UnderstandViewBuilder.swift */; };
 		DA63A5832C3C15C0003EBB4B /* WhatIsAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A5822C3C15C0003EBB4B /* WhatIsAView.swift */; };
+		DA6C35AE2C5112EA00B20E9F /* HStackWithFlexibleFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C35AD2C5112EA00B20E9F /* HStackWithFlexibleFrame.swift */; };
 		DA8536ED2C40F7080043DDD4 /* DebugLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8536EC2C40F7080043DDD4 /* DebugLayout.swift */; };
 		DA8536EF2C414B020043DDD4 /* TrapeziumShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8536EE2C414B020043DDD4 /* TrapeziumShape.swift */; };
 		DA9B2ECD2C3EA2B8003BDF58 /* HowLayoutWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B2ECC2C3EA2B8003BDF58 /* HowLayoutWorks.swift */; };
@@ -76,6 +77,7 @@
 		DA63A57D2C39726A003EBB4B /* OnAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnAppear.swift; sourceTree = "<group>"; };
 		DA63A57F2C399A67003EBB4B /* UnderstandViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderstandViewBuilder.swift; sourceTree = "<group>"; };
 		DA63A5822C3C15C0003EBB4B /* WhatIsAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsAView.swift; sourceTree = "<group>"; };
+		DA6C35AD2C5112EA00B20E9F /* HStackWithFlexibleFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackWithFlexibleFrame.swift; sourceTree = "<group>"; };
 		DA8536EC2C40F7080043DDD4 /* DebugLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLayout.swift; sourceTree = "<group>"; };
 		DA8536EE2C414B020043DDD4 /* TrapeziumShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrapeziumShape.swift; sourceTree = "<group>"; };
 		DA9B2ECC2C3EA2B8003BDF58 /* HowLayoutWorks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowLayoutWorks.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				DA29FE252C4E519800428576 /* HStack.swift */,
+				DA6C35AD2C5112EA00B20E9F /* HStackWithFlexibleFrame.swift */,
 			);
 			path = Container;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				DA0035DA2C4CBAB400928C84 /* FlexibleFrame2.swift in Sources */,
 				DA63A5782C390D7D003EBB4B /* LearnViewBuilder2.swift in Sources */,
 				DA9D4E902BE3878A0058E063 /* StateObject_.swift in Sources */,
+				DA6C35AE2C5112EA00B20E9F /* HStackWithFlexibleFrame.swift in Sources */,
 				DA0035D22C4BFA0A00928C84 /* Padding1.swift in Sources */,
 				DA0035DE2C4CD23B00928C84 /* FlexibleFrameMaxWidth.swift in Sources */,
 				DA9D4E8E2BE3878A0058E063 /* LearnSwiftUIApp.swift in Sources */,
