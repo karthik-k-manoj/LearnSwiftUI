@@ -26,7 +26,7 @@ struct ZStackBadgeView: View {
                     .background {
                         RoundedRectangle(cornerRadius: 4)
                             .fill(Color.yellow)
-                            .padding(.all, -4)
+                            .padding(.all, -4)¸
                             .border(Color.black)
                     }
             }
