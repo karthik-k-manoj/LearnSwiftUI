@@ -9,12 +9,25 @@ import SwiftUI
 
 struct DebugLayout: Layout {
     let name: String
+    let showConsoleSwiftView: Bool
+    
     func sizeThatFits(proposal: ProposedViewSize,
                       subviews: Subviews,
                       cache: inout ()) -> CGSize {
-        log("Propose \(name)", value: "\(proposal.pretty)")
+        if showConsoleSwiftView {
+            log("Propose \(name)", value: "\(proposal.pretty)")
+        } else {
+            print("Propose \(name), value: \(proposal.pretty)")
+        }
+        
         let result = subviews[0].sizeThatFits(proposal)
-        log("Report \(name)", value: "\(result.pretty)")
+        
+        if showConsoleSwiftView {
+            log("Report \(name)", value: "\(result.pretty)")
+        } else {
+            print("Report \(name), value: \(result.pretty)")
+        }
+        
         return result
     }
     
@@ -26,7 +39,7 @@ struct DebugLayout: Layout {
     }
 }
 extension View {
-    func debugLog(_ name: String) -> some View {
-        DebugLayout(name: name) { self }
+    func debugLog(_ name: String, showConsoleSwiftView: Bool = false) -> some View {
+        DebugLayout(name: name, showConsoleSwiftView: showConsoleSwiftView) { self }
     }
 }
