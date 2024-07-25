@@ -36,6 +36,7 @@ struct HStack_EqualView: View {
             }
             .fixedSize(horizontal: false, vertical: true)
             .border(.black)
+            .clearConsole()
             
             ConsoleView()
         }
