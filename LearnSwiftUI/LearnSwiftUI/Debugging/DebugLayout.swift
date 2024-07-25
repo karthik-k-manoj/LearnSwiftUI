@@ -12,9 +12,9 @@ struct DebugLayout: Layout {
     func sizeThatFits(proposal: ProposedViewSize,
                       subviews: Subviews,
                       cache: inout ()) -> CGSize {
-        log("Proposed \(name) \(proposal)")
+        log("Propose \(name)", value: "\(proposal)")
         let result = subviews[0].sizeThatFits(proposal)
-        log("Reported \(name) \(result)")
+        log("Report \(name)", value: "\(result)")
         return result
     }
     

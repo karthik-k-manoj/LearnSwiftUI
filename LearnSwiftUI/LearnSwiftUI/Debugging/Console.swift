@@ -12,12 +12,13 @@ final class Console: ObservableObject {
     
     struct Item: Identifiable {
         var id = UUID()
-        var text: String
+        var label: String
+        var value: String
     }
     
     static let shared = Console()
 }
 
-func log(_ text: String) {
-    Console.shared.log.append(Console.Item(text: text))
+func log(_ label: String, value: String) {
+    Console.shared.log.append(Console.Item(label: label, value: value))
 }

@@ -44,6 +44,7 @@
 		DA8536ED2C40F7080043DDD4 /* DebugLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8536EC2C40F7080043DDD4 /* DebugLayout.swift */; };
 		DA8536EF2C414B020043DDD4 /* TrapeziumShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8536EE2C414B020043DDD4 /* TrapeziumShape.swift */; };
 		DA8D42A92C52429000C955B6 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D42A82C52429000C955B6 /* Console.swift */; };
+		DA8D42AB2C5243F700C955B6 /* ConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D42AA2C5243F700C955B6 /* ConsoleView.swift */; };
 		DA9B2ECD2C3EA2B8003BDF58 /* HowLayoutWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B2ECC2C3EA2B8003BDF58 /* HowLayoutWorks.swift */; };
 		DA9B2ECF2C3EBC2D003BDF58 /* TextLeaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B2ECE2C3EBC2D003BDF58 /* TextLeaf.swift */; };
 		DA9D4E8E2BE3878A0058E063 /* LearnSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D4E8D2BE3878A0058E063 /* LearnSwiftUIApp.swift */; };
@@ -92,6 +93,7 @@
 		DA8536EC2C40F7080043DDD4 /* DebugLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLayout.swift; sourceTree = "<group>"; };
 		DA8536EE2C414B020043DDD4 /* TrapeziumShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrapeziumShape.swift; sourceTree = "<group>"; };
 		DA8D42A82C52429000C955B6 /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
+		DA8D42AA2C5243F700C955B6 /* ConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleView.swift; sourceTree = "<group>"; };
 		DA9B2ECC2C3EA2B8003BDF58 /* HowLayoutWorks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowLayoutWorks.swift; sourceTree = "<group>"; };
 		DA9B2ECE2C3EBC2D003BDF58 /* TextLeaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLeaf.swift; sourceTree = "<group>"; };
 		DA9D4E8A2BE3878A0058E063 /* LearnSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +197,7 @@
 			children = (
 				DA8536EC2C40F7080043DDD4 /* DebugLayout.swift */,
 				DA8D42A82C52429000C955B6 /* Console.swift */,
+				DA8D42AA2C5243F700C955B6 /* ConsoleView.swift */,
 			);
 			path = Debugging;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				DA63A57A2C393EDA003EBB4B /* LearnGroup.swift in Sources */,
 				DA63A5762C38F9CC003EBB4B /* LearnViewBuilder.swift in Sources */,
 				DA29FE232C4E214E00428576 /* FixedSizeWithOverlayBadge.swift in Sources */,
+				DA8D42AB2C5243F700C955B6 /* ConsoleView.swift in Sources */,
 				DA31C4E82C425792009EBB36 /* BorderShape.swift in Sources */,
 				DA63A5832C3C15C0003EBB4B /* WhatIsAView.swift in Sources */,
 				DA0035D42C4C099600928C84 /* Padding2.swift in Sources */,
