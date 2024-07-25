@@ -236,6 +236,7 @@
 		DA9D4E8C2BE3878A0058E063 /* LearnSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DA8D42B12C52844200C955B6 /* PracticeView.swift */,
 				DA8D42AE2C524C0900C955B6 /* Helper */,
 				DA29FE242C4E518B00428576 /* Container */,
 				DA0035CB2C4AA89900928C84 /* ViewModifier */,
@@ -252,7 +253,6 @@
 				DA9D4E8F2BE3878A0058E063 /* StateObject_.swift */,
 				DA9D4E912BE3878B0058E063 /* Assets.xcassets */,
 				DA9D4E932BE3878B0058E063 /* Preview Content */,
-				DA8D42B12C52844200C955B6 /* PracticeView.swift */,
 			);
 			path = LearnSwiftUI;
 			sourceTree = "<group>";
