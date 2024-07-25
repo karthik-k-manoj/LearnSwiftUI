@@ -14,13 +14,15 @@ struct ConsoleView: View {
         List(console.log) { item in
             HStack {
                 Text(item.label)
-                    .frame(width: 100)
+                    .font(.subheadline)
+
                 Spacer()
                 Text(item.value)
+                    .font(.subheadline)
             }
         }
         .listStyle(.plain)
-        .frame(maxHeight: 500)
+        .frame(maxHeight: 400)
     }
 }
 
