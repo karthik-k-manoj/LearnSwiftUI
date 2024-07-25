@@ -15,7 +15,7 @@ extension CGFloat {
 
 extension CGSize {
     var pretty: String {
-        "\(width.pretty)x\(height.pretty)"
+        "\(width.pretty) x \(height.pretty)"
     }
 }
 
@@ -27,6 +27,6 @@ extension Optional where Wrapped == CGFloat {
 
 extension ProposedViewSize {
     var pretty: String {
-        "\(width.pretty)x\(height.pretty)"
+        "\(width.pretty) x \(height.pretty)"
     }
 }
