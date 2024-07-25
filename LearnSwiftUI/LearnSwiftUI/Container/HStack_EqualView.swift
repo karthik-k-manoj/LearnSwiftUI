@@ -25,15 +25,16 @@ struct HStack_EqualView: View {
                     .frame(maxHeight: .infinity)
                     .debugLog("Flexi Frame R")
                     .background(Color.red)
-                    .debugLog("Background R")
+                    .debugLog("Background (R)")
                 
                 Text("The rain in Spain falls mainly on the Spainards")
                     .padding()
                     .frame(maxHeight: .infinity)
-                    .debugLog("Flexi Frame Y")
+                    .debugLog("Flexi Frame (Y)")
                     .background(Color.yellow)
                     .debugLog("Background Y")
             }
+            .debugLog("HStack")
             .fixedSize(horizontal: false, vertical: true)
             .border(.black)
             .clearConsole()
