@@ -40,8 +40,10 @@
 		DA6C35B22C513B7D00B20E9F /* ZStack_.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C35B12C513B7D00B20E9F /* ZStack_.swift */; };
 		DA6C35B42C51400900B20E9F /* HStackWithZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C35B32C51400900B20E9F /* HStackWithZStack.swift */; };
 		DA6C35B62C515E1C00B20E9F /* FlexibleFrame3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C35B52C515E1C00B20E9F /* FlexibleFrame3.swift */; };
+		DA6C35B82C5162A600B20E9F /* HStack_EqualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C35B72C5162A600B20E9F /* HStack_EqualView.swift */; };
 		DA8536ED2C40F7080043DDD4 /* DebugLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8536EC2C40F7080043DDD4 /* DebugLayout.swift */; };
 		DA8536EF2C414B020043DDD4 /* TrapeziumShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8536EE2C414B020043DDD4 /* TrapeziumShape.swift */; };
+		DA8D42A92C52429000C955B6 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D42A82C52429000C955B6 /* Console.swift */; };
 		DA9B2ECD2C3EA2B8003BDF58 /* HowLayoutWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B2ECC2C3EA2B8003BDF58 /* HowLayoutWorks.swift */; };
 		DA9B2ECF2C3EBC2D003BDF58 /* TextLeaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B2ECE2C3EBC2D003BDF58 /* TextLeaf.swift */; };
 		DA9D4E8E2BE3878A0058E063 /* LearnSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D4E8D2BE3878A0058E063 /* LearnSwiftUIApp.swift */; };
@@ -86,8 +88,10 @@
 		DA6C35B12C513B7D00B20E9F /* ZStack_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStack_.swift; sourceTree = "<group>"; };
 		DA6C35B32C51400900B20E9F /* HStackWithZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackWithZStack.swift; sourceTree = "<group>"; };
 		DA6C35B52C515E1C00B20E9F /* FlexibleFrame3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleFrame3.swift; sourceTree = "<group>"; };
+		DA6C35B72C5162A600B20E9F /* HStack_EqualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack_EqualView.swift; sourceTree = "<group>"; };
 		DA8536EC2C40F7080043DDD4 /* DebugLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLayout.swift; sourceTree = "<group>"; };
 		DA8536EE2C414B020043DDD4 /* TrapeziumShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrapeziumShape.swift; sourceTree = "<group>"; };
+		DA8D42A82C52429000C955B6 /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
 		DA9B2ECC2C3EA2B8003BDF58 /* HowLayoutWorks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowLayoutWorks.swift; sourceTree = "<group>"; };
 		DA9B2ECE2C3EBC2D003BDF58 /* TextLeaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLeaf.swift; sourceTree = "<group>"; };
 		DA9D4E8A2BE3878A0058E063 /* LearnSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				DA29FE252C4E519800428576 /* HStack.swift */,
+				DA6C35B72C5162A600B20E9F /* HStack_EqualView.swift */,
 				DA6C35AD2C5112EA00B20E9F /* HStackWithFlexibleFrame.swift */,
 				DA6C35B32C51400900B20E9F /* HStackWithZStack.swift */,
 				DA6C35AF2C512C1600B20E9F /* ZStackBadgeView.swift */,
@@ -189,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				DA8536EC2C40F7080043DDD4 /* DebugLayout.swift */,
+				DA8D42A82C52429000C955B6 /* Console.swift */,
 			);
 			path = Debugging;
 			sourceTree = "<group>";
@@ -326,7 +332,9 @@
 				DA31C4EE2C429A90009EBB36 /* WhatIsImage.swift in Sources */,
 				DA8536ED2C40F7080043DDD4 /* DebugLayout.swift in Sources */,
 				DA0035CD2C4AA8A500928C84 /* AspectRatio.swift in Sources */,
+				DA8D42A92C52429000C955B6 /* Console.swift in Sources */,
 				DAB46FB52C400A5C00024348 /* ShapeLeaf.swift in Sources */,
+				DA6C35B82C5162A600B20E9F /* HStack_EqualView.swift in Sources */,
 				DA0035E02C4CD37C00928C84 /* FrameWithMinWidth.swift in Sources */,
 				DA0035E82C4D267500928C84 /* Overlay.swift in Sources */,
 				DA29FE262C4E519800428576 /* HStack.swift in Sources */,
