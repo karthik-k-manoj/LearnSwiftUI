@@ -34,7 +34,8 @@ struct HStack_EqualView: View {
                     .background(Color.yellow)
                     .debugLog("Background Y")
             }
-            .debugLog("HStack")
+            // According to apple documentation fixed size is
+            // "creation of a counter proposal of proposed view size given from the parent"
             .fixedSize(horizontal: false, vertical: true)
             .border(.black)
             .clearConsole()
