@@ -10,8 +10,14 @@ import SwiftUI
 struct PracticeAlignmentGuide3: View {
     var body: some View {
         Text("Hello")
+            .alignmentGuide(HorizontalAlignment.center, computeValue: { dim in
+                dim[.leading]
+            })
             .frame(minWidth: 0, maxWidth: 170, idealHeight: 60)
             .background(Color.orange)
+            .alignmentGuide(HorizontalAlignment.center, computeValue: { dim in
+                dim[.trailing]
+            })
             .overlay(alignment: .topTrailing) {
                 Text("badge")
                     .padding(4)
@@ -39,13 +45,11 @@ struct PracticeAlignmentGuide3: View {
                         dim[.bottom]
                     }
             }
-            .border(.clear)
+            .border(.black) // I am border I have set aligment to be center. first border should be placed in its parent view using
+            // if any custom alignment guide theb it is used to align it to the outer frame
+            // and border shape is aligned to the primary child view and hence you can see black border outside orange box
             .fixedSize(horizontal: false, vertical: true)
-            .alignmentGuide(HorizontalAlignment.center, computeValue: { vim in
-                vim.width
-            })
             .frame(width: 300, height: 500)
-            .border(.clear)
     }
 }
 
