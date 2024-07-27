@@ -29,6 +29,7 @@
 		DA31C4EE2C429A90009EBB36 /* WhatIsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4ED2C429A90009EBB36 /* WhatIsImage.swift */; };
 		DA31C4F12C44F673009EBB36 /* LearnViewModifier1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4F02C44F673009EBB36 /* LearnViewModifier1.swift */; };
 		DA6073172C54BEEE008D718A /* PracticeAlignmentGuide2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6073162C54BEEE008D718A /* PracticeAlignmentGuide2.swift */; };
+		DA6073192C54E837008D718A /* PracticeAlignmentGuide3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6073182C54E837008D718A /* PracticeAlignmentGuide3.swift */; };
 		DA63A5762C38F9CC003EBB4B /* LearnViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A5752C38F9CC003EBB4B /* LearnViewBuilder.swift */; };
 		DA63A5782C390D7D003EBB4B /* LearnViewBuilder2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A5772C390D7D003EBB4B /* LearnViewBuilder2.swift */; };
 		DA63A57A2C393EDA003EBB4B /* LearnGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63A5792C393EDA003EBB4B /* LearnGroup.swift */; };
@@ -83,6 +84,7 @@
 		DA31C4ED2C429A90009EBB36 /* WhatIsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsImage.swift; sourceTree = "<group>"; };
 		DA31C4F02C44F673009EBB36 /* LearnViewModifier1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewModifier1.swift; sourceTree = "<group>"; };
 		DA6073162C54BEEE008D718A /* PracticeAlignmentGuide2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignmentGuide2.swift; sourceTree = "<group>"; };
+		DA6073182C54E837008D718A /* PracticeAlignmentGuide3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignmentGuide3.swift; sourceTree = "<group>"; };
 		DA63A5752C38F9CC003EBB4B /* LearnViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewBuilder.swift; sourceTree = "<group>"; };
 		DA63A5772C390D7D003EBB4B /* LearnViewBuilder2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewBuilder2.swift; sourceTree = "<group>"; };
 		DA63A5792C393EDA003EBB4B /* LearnGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnGroup.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				DAF9060D2C54083900BA8B5A /* PracticeAlignment.swift */,
+				DA6073182C54E837008D718A /* PracticeAlignmentGuide3.swift */,
 				DA6073162C54BEEE008D718A /* PracticeAlignmentGuide2.swift */,
 			);
 			path = Alignment;
@@ -381,6 +384,7 @@
 				DA0035E62C4D157E00928C84 /* Background.swift in Sources */,
 				DA63A57E2C39726A003EBB4B /* OnAppear.swift in Sources */,
 				DA0035DA2C4CBAB400928C84 /* FlexibleFrame2.swift in Sources */,
+				DA6073192C54E837008D718A /* PracticeAlignmentGuide3.swift in Sources */,
 				DA63A5782C390D7D003EBB4B /* LearnViewBuilder2.swift in Sources */,
 				DA9D4E902BE3878A0058E063 /* StateObject_.swift in Sources */,
 				DA6C35AE2C5112EA00B20E9F /* HStackWithFlexibleFrame.swift in Sources */,
