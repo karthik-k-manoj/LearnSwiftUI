@@ -56,6 +56,7 @@
 		DA9D4E952BE3878B0058E063 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9D4E942BE3878B0058E063 /* Preview Assets.xcassets */; };
 		DAB46FB32C40058300024348 /* TextLeaf+fixedSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */; };
 		DAB46FB52C400A5C00024348 /* ShapeLeaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */; };
+		DAF9060E2C54083900BA8B5A /* PracticeAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9060D2C54083900BA8B5A /* PracticeAlignment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +110,7 @@
 		DA9D4E942BE3878B0058E063 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextLeaf+fixedSize.swift"; sourceTree = "<group>"; };
 		DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeLeaf.swift; sourceTree = "<group>"; };
+		DAF9060D2C54083900BA8B5A /* PracticeAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 		DA9D4E8C2BE3878A0058E063 /* LearnSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DAF9060C2C54082500BA8B5A /* Alignment */,
 				DA8D42B12C52844200C955B6 /* PracticeView.swift */,
 				DA8D42AE2C524C0900C955B6 /* Helper */,
 				DA29FE242C4E518B00428576 /* Container */,
@@ -272,6 +275,14 @@
 				DA31C4E72C425792009EBB36 /* BorderShape.swift */,
 			);
 			path = Shape;
+			sourceTree = "<group>";
+		};
+		DAF9060C2C54082500BA8B5A /* Alignment */ = {
+			isa = PBXGroup;
+			children = (
+				DAF9060D2C54083900BA8B5A /* PracticeAlignment.swift */,
+			);
+			path = Alignment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +367,7 @@
 				DA8D42B22C52844200C955B6 /* PracticeView.swift in Sources */,
 				DAB46FB52C400A5C00024348 /* ShapeLeaf.swift in Sources */,
 				DA6C35B82C5162A600B20E9F /* HStack_EqualView.swift in Sources */,
+				DAF9060E2C54083900BA8B5A /* PracticeAlignment.swift in Sources */,
 				DA0035E02C4CD37C00928C84 /* FrameWithMinWidth.swift in Sources */,
 				DA8D42B02C524C1200C955B6 /* CGFloat+extension.swift in Sources */,
 				DA0035E82C4D267500928C84 /* Overlay.swift in Sources */,
