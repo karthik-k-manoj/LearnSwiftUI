@@ -23,8 +23,11 @@ struct PracticeCustomAlignment2: View {
     var days = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"]
     
     var body: some View {
-        HStack {
+        HStack(alignment: .myCenterAlignment) {
             Image(systemName: "checkmark.seal")
+                .alignmentGuide(.myCenterAlignment) { dim in
+                    dim[VerticalAlignment.center]
+                }
             daysVStack
         }
        
