@@ -40,6 +40,9 @@ struct PracticeCustomAlignment2: View {
                     Text("\(days[idx])")
                         .padding()
                         .border(.red)
+                        .alignmentGuide(.myCenterAlignment) { dim in
+                            dim[VerticalAlignment.center]
+                        }
                 } else {
                     Text("\(days[idx])")
                         .padding()
