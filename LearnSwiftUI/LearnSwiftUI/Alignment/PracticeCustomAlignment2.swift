@@ -7,6 +7,16 @@
 
 import SwiftUI
 
+struct MyCenterAlignment: AlignmentID {
+    static func defaultValue(in context: ViewDimensions) -> CGFloat {
+        context.height
+    }
+}
+
+extension VerticalAlignment {
+    static let myCenterAlignment = VerticalAlignment(MyCenterAlignment.self)
+}
+
 struct PracticeCustomAlignment2: View {
     @State private var selectedIdx = 0
     
