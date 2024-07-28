@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MyCenterAlignment: AlignmentID {
     static func defaultValue(in context: ViewDimensions) -> CGFloat {
-        context.height
+       -1
     }
 }
 
@@ -30,22 +30,25 @@ struct PracticeCustomAlignment2: View {
                 }
             daysVStack
         }
+        .border(.black)
        
     }
     
+    // how does image align with selected box (which is at different height)
+    
     var daysVStack: some View {
-        VStack {
+        VStack(alignment: .leading) {
             ForEach(days.indices, id: \.self) { idx in
                 if selectedIdx == idx {
                     Text("\(days[idx])")
-                        .padding()
+                        .padding(32)
                         .border(.red)
                         .alignmentGuide(.myCenterAlignment) { dim in
-                            dim[VerticalAlignment.center]
+                            return dim[VerticalAlignment.center]
                         }
                 } else {
                     Text("\(days[idx])")
-                        .padding()
+                        .padding(32)
                         .border(.red)
                         .onTapGesture {
                             withAnimation {
