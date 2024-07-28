@@ -47,6 +47,11 @@ struct PracticeCustomAlignment2: View {
                     Text("\(days[idx])")
                         .padding()
                         .border(.red)
+                        .onTapGesture {
+                            withAnimation {
+                                self.selectedIdx = idx
+                            }
+                        }
                 }
             }
         }
