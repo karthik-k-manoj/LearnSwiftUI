@@ -35,6 +35,9 @@ struct AlignmentInWindow: View {
                 .frame(width: 50, height: 60)
             
         }
+        .alignmentGuide(HorizontalAlignment.myLeading, computeValue: { dim in
+            dim[.leading]
+        })
         .frame(width: 200, height: 400, alignment: Alignment(horizontal: .myLeading, vertical: .center))
         .border(.black)
     }
