@@ -17,11 +17,12 @@ extension View {
     func badge<Badge: View>(@ViewBuilder contents: () -> Badge) -> some View {
         self.overlay(alignment: .topTrailing) {
             contents()
-                .padding(3)
-                .background {
-                    RoundedRectangle(cornerRadius: 5).fill(Color.teal)
+                .alignmentGuide(.top) { dim in
+                    dim[explicit: .top]!
                 }
-                .fixedSize()
+                .alignmentGuide(.trailing) { dim in
+                    dim.width / 2
+                }
         }
     }
 }

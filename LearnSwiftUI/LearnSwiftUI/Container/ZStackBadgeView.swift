@@ -11,7 +11,6 @@ struct ZStackBadgeView: View {
     var body: some View {
         HStack(alignment: .bottom) {
             overlayBadgeView
-            zstackBadgeView
         }
         .border(Color.black)
         .frame(width: 400, height: 300)
@@ -21,14 +20,8 @@ struct ZStackBadgeView: View {
     var overlayBadgeView: some View {
         Text("Hello World")
             .font(.largeTitle)
-            .overlay(alignment: .topTrailing) {
-                Text("Overlay Badge")
-                    .background {
-                        RoundedRectangle(cornerRadius: 4)
-                            .fill(Color.yellow)
-                            .padding(.all, -4)
-                            .border(Color.black)
-                    }
+            .badge {
+                Text("Hi")
             }
     }
     
