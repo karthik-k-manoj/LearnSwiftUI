@@ -8,19 +8,30 @@
 import SwiftUI
 
 struct PracticeCustomAlignment2: View {
+    @State private var selectedIdx = 0
     
     var days = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"]
     
     var body: some View {
-       daysVStack
+        HStack {
+            Image(systemName: "checkmark.seal")
+            daysVStack
+        }
+       
     }
     
     var daysVStack: some View {
         VStack {
             ForEach(days.indices, id: \.self) { idx in
-                Text("\(days[idx])")
-                    .padding(4)
-                    .border(.red)
+                if selectedIdx == idx {
+                    Text("\(days[idx])")
+                        .padding()
+                        .border(.red)
+                } else {
+                    Text("\(days[idx])")
+                        .padding()
+                        .border(.red)
+                }
             }
         }
     }
