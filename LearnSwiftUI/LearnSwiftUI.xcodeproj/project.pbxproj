@@ -61,6 +61,7 @@
 		DAB46FB52C400A5C00024348 /* ShapeLeaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */; };
 		DAE652772C562DC50056EBD2 /* PracticeAlignment5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE652762C562DC50056EBD2 /* PracticeAlignment5.swift */; };
 		DAE652792C5662E40056EBD2 /* AlignmentInWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE652782C5662E40056EBD2 /* AlignmentInWindow.swift */; };
+		DAE6527B2C567D470056EBD2 /* PracticeCustomAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6527A2C567D470056EBD2 /* PracticeCustomAlignment.swift */; };
 		DAF9060E2C54083900BA8B5A /* PracticeAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9060D2C54083900BA8B5A /* PracticeAlignment.swift */; };
 /* End PBXBuildFile section */
 
@@ -120,6 +121,7 @@
 		DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeLeaf.swift; sourceTree = "<group>"; };
 		DAE652762C562DC50056EBD2 /* PracticeAlignment5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignment5.swift; sourceTree = "<group>"; };
 		DAE652782C5662E40056EBD2 /* AlignmentInWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentInWindow.swift; sourceTree = "<group>"; };
+		DAE6527A2C567D470056EBD2 /* PracticeCustomAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeCustomAlignment.swift; sourceTree = "<group>"; };
 		DAF9060D2C54083900BA8B5A /* PracticeAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -294,6 +296,7 @@
 				DA6073182C54E837008D718A /* PracticeAlignmentGuide3.swift */,
 				DA60731A2C54FA67008D718A /* PracticeAlignment4.swift */,
 				DA6073162C54BEEE008D718A /* PracticeAlignmentGuide2.swift */,
+				DAE6527A2C567D470056EBD2 /* PracticeCustomAlignment.swift */,
 				DAE652762C562DC50056EBD2 /* PracticeAlignment5.swift */,
 				DAE652782C5662E40056EBD2 /* AlignmentInWindow.swift */,
 			);
@@ -388,6 +391,7 @@
 				DA0035E02C4CD37C00928C84 /* FrameWithMinWidth.swift in Sources */,
 				DA8D42B02C524C1200C955B6 /* CGFloat+extension.swift in Sources */,
 				DA0035E82C4D267500928C84 /* Overlay.swift in Sources */,
+				DAE6527B2C567D470056EBD2 /* PracticeCustomAlignment.swift in Sources */,
 				DA29FE262C4E519800428576 /* HStack.swift in Sources */,
 				DA63A5802C399A67003EBB4B /* UnderstandViewBuilder.swift in Sources */,
 				DA0035D62C4C135400928C84 /* FixedFrame.swift in Sources */,
