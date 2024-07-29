@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MyCenterAlignment: AlignmentID {
     static func defaultValue(in context: ViewDimensions) -> CGFloat {
-       -1
+        context.height / 2
     }
 }
 

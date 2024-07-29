@@ -64,6 +64,7 @@
 		DAE6527B2C567D470056EBD2 /* PracticeCustomAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6527A2C567D470056EBD2 /* PracticeCustomAlignment.swift */; };
 		DAE6527D2C5680640056EBD2 /* PracticeCustomAlignment2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6527C2C5680640056EBD2 /* PracticeCustomAlignment2.swift */; };
 		DAF9060E2C54083900BA8B5A /* PracticeAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9060D2C54083900BA8B5A /* PracticeAlignment.swift */; };
+		DAFB7CA12C57D9FD008C311C /* ZStackAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB7CA02C57D9FD008C311C /* ZStackAlignment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +126,7 @@
 		DAE6527A2C567D470056EBD2 /* PracticeCustomAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeCustomAlignment.swift; sourceTree = "<group>"; };
 		DAE6527C2C5680640056EBD2 /* PracticeCustomAlignment2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeCustomAlignment2.swift; sourceTree = "<group>"; };
 		DAF9060D2C54083900BA8B5A /* PracticeAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignment.swift; sourceTree = "<group>"; };
+		DAFB7CA02C57D9FD008C311C /* ZStackAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackAlignment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +254,7 @@
 		DA9D4E8C2BE3878A0058E063 /* LearnSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DAFB7C9F2C57D9E9008C311C /* ZStack */,
 				DAF9060C2C54082500BA8B5A /* Alignment */,
 				DA8D42B12C52844200C955B6 /* PracticeView.swift */,
 				DA8D42AE2C524C0900C955B6 /* Helper */,
@@ -304,6 +307,14 @@
 				DAE652782C5662E40056EBD2 /* AlignmentInWindow.swift */,
 			);
 			path = Alignment;
+			sourceTree = "<group>";
+		};
+		DAFB7C9F2C57D9E9008C311C /* ZStack */ = {
+			isa = PBXGroup;
+			children = (
+				DAFB7CA02C57D9FD008C311C /* ZStackAlignment.swift */,
+			);
+			path = ZStack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,6 +434,7 @@
 				DA6C35B22C513B7D00B20E9F /* ZStack_.swift in Sources */,
 				DA63A57C2C3967FC003EBB4B /* DynamicContent.swift in Sources */,
 				DA31C4F12C44F673009EBB36 /* LearnViewModifier1.swift in Sources */,
+				DAFB7CA12C57D9FD008C311C /* ZStackAlignment.swift in Sources */,
 				DA31C4EB2C4294FC009EBB36 /* WhatIsColor.swift in Sources */,
 				DAB46FB32C40058300024348 /* TextLeaf+fixedSize.swift in Sources */,
 				DA6C35B02C512C1600B20E9F /* ZStackBadgeView.swift in Sources */,
