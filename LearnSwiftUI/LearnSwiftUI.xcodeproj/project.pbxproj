@@ -51,6 +51,7 @@
 		DA8D42AD2C52488B00C955B6 /* ClearConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D42AC2C52488B00C955B6 /* ClearConsole.swift */; };
 		DA8D42B02C524C1200C955B6 /* CGFloat+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D42AF2C524C1200C955B6 /* CGFloat+extension.swift */; };
 		DA8D42B22C52844200C955B6 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D42B12C52844200C955B6 /* PracticeView.swift */; };
+		DA96326F2C58A648006069BB /* ReadFromEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96326E2C58A648006069BB /* ReadFromEnvironment.swift */; };
 		DA9B2ECD2C3EA2B8003BDF58 /* HowLayoutWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B2ECC2C3EA2B8003BDF58 /* HowLayoutWorks.swift */; };
 		DA9B2ECF2C3EBC2D003BDF58 /* TextLeaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B2ECE2C3EBC2D003BDF58 /* TextLeaf.swift */; };
 		DA9D4E8E2BE3878A0058E063 /* LearnSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D4E8D2BE3878A0058E063 /* LearnSwiftUIApp.swift */; };
@@ -112,6 +113,7 @@
 		DA8D42AC2C52488B00C955B6 /* ClearConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearConsole.swift; sourceTree = "<group>"; };
 		DA8D42AF2C524C1200C955B6 /* CGFloat+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+extension.swift"; sourceTree = "<group>"; };
 		DA8D42B12C52844200C955B6 /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
+		DA96326E2C58A648006069BB /* ReadFromEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadFromEnvironment.swift; sourceTree = "<group>"; };
 		DA9B2ECC2C3EA2B8003BDF58 /* HowLayoutWorks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowLayoutWorks.swift; sourceTree = "<group>"; };
 		DA9B2ECE2C3EBC2D003BDF58 /* TextLeaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLeaf.swift; sourceTree = "<group>"; };
 		DA9D4E8A2BE3878A0058E063 /* LearnSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +237,14 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		DA96326D2C58A637006069BB /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				DA96326E2C58A648006069BB /* ReadFromEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
 		DA9D4E812BE3878A0058E063 = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +264,7 @@
 		DA9D4E8C2BE3878A0058E063 /* LearnSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DA96326D2C58A637006069BB /* Environment */,
 				DAFB7C9F2C57D9E9008C311C /* ZStack */,
 				DAF9060C2C54082500BA8B5A /* Alignment */,
 				DA8D42B12C52844200C955B6 /* PracticeView.swift */,
@@ -419,6 +430,7 @@
 				DA9D4E902BE3878A0058E063 /* StateObject_.swift in Sources */,
 				DA6C35AE2C5112EA00B20E9F /* HStackWithFlexibleFrame.swift in Sources */,
 				DA8D42AD2C52488B00C955B6 /* ClearConsole.swift in Sources */,
+				DA96326F2C58A648006069BB /* ReadFromEnvironment.swift in Sources */,
 				DA0035D22C4BFA0A00928C84 /* Padding1.swift in Sources */,
 				DA0035DE2C4CD23B00928C84 /* FlexibleFrameMaxWidth.swift in Sources */,
 				DA9D4E8E2BE3878A0058E063 /* LearnSwiftUIApp.swift in Sources */,
