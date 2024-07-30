@@ -107,9 +107,9 @@ extension EnvironmentValues {
 extension View {
     func badgeModifier<BadgeView: View>(
         alignment: Alignment = .topTrailing,
-        _ content: () -> BadgeView
+        @ViewBuilder _ content: () -> BadgeView
     ) -> some View {
-        modifier(CustomComponentStyle.BadgeModifier(alignment: alignment, label: content()))
+        modifier(CustomComponentStyle.OverlayBadge(alignment: alignment, label: content()))
     }
 }
 
@@ -117,7 +117,7 @@ struct CustomComponentStyle: View {
     // create a view modifier that wraps a view and does some modification with the X view passed to it
     // so Badge is a container view which wraps the child view and performs some modfification with the help of an overlay and the actual overlay view
     
-    struct BadgeModifier<BadgeView: View>: ViewModifier {
+    struct OverlayBadge<BadgeView: View>: ViewModifier {
         var alignment: Alignment = .topTrailing
         var label: BadgeView
         
