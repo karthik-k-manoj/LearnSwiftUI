@@ -138,6 +138,37 @@ struct CustomComponentStyle: View {
                 }
         }
     }
+    
+    struct FancyBadgeStyle: BadgeStyle {
+        var background: some View {
+            ZStack {
+                ContainerRelativeShape()
+                    .fill(Color.red)
+                    .overlay {
+                        ContainerRelativeShape()
+                            .fill(LinearGradient(colors: [.white, .clear], startPoint: .top, endPoint: .center))
+                    }
+                
+                
+                ContainerRelativeShape()
+                    .strokeBorder(Color.white, lineWidth: 2)
+                    .shadow(radius: 2)
+                        
+            }
+        }
+        
+        func makeBody(_ label: AnyView) -> some View {
+            label
+                .foregroundColor(.white)
+                .font(.caption)
+                .padding(.horizontal, 7)
+                .padding(.vertical, 4)
+                .background(content: {
+                    background
+                })
+                .containerShape(Capsule(style: .continuous))
+        }
+    }
 
     
     var body: some View {
@@ -145,7 +176,7 @@ struct CustomComponentStyle: View {
             .badgeModifier {
                 Text("3000")
             }
-           .environment(\.badgeStyle, DefaultBadgeStyle())
+           .environment(\.badgeStyle, FancyBadgeStyle())
     }
 }
 
