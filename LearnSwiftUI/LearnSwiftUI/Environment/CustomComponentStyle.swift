@@ -145,8 +145,7 @@ struct CustomComponentStyle: View {
             .badgeModifier {
                 Text("3000")
             }
-            .border(.red)
-           .frame(width: 30, height: 50)
+           .environment(\.badgeStyle, DefaultBadgeStyle())
     }
 }
 
