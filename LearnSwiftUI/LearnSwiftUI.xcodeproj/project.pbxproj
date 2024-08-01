@@ -24,6 +24,7 @@
 		DA26C5DF2C5B5B960062FAA5 /* FrameWidthAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */; };
 		DA26C5E12C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */; };
 		DA26C5E32C5B63570062FAA5 /* ImplicitAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */; };
+		DA26C5E52C5B8B560062FAA5 /* AnimationWithBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5E42C5B8B560062FAA5 /* AnimationWithBody.swift */; };
 		DA29FE212C4E1C3400428576 /* FixedSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29FE202C4E1C3400428576 /* FixedSize.swift */; };
 		DA29FE232C4E214E00428576 /* FixedSizeWithOverlayBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29FE222C4E214E00428576 /* FixedSizeWithOverlayBadge.swift */; };
 		DA29FE262C4E519800428576 /* HStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29FE252C4E519800428576 /* HStack.swift */; };
@@ -92,6 +93,7 @@
 		DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWidthAnimation.swift; sourceTree = "<group>"; };
 		DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimationWithFrame.swift; sourceTree = "<group>"; };
 		DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitAnimation.swift; sourceTree = "<group>"; };
+		DA26C5E42C5B8B560062FAA5 /* AnimationWithBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationWithBody.swift; sourceTree = "<group>"; };
 		DA29FE202C4E1C3400428576 /* FixedSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedSize.swift; sourceTree = "<group>"; };
 		DA29FE222C4E214E00428576 /* FixedSizeWithOverlayBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedSizeWithOverlayBadge.swift; sourceTree = "<group>"; };
 		DA29FE252C4E519800428576 /* HStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			children = (
 				DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */,
 				DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */,
+				DA26C5E42C5B8B560062FAA5 /* AnimationWithBody.swift */,
 				DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */,
 			);
 			path = Animation;
@@ -484,6 +487,7 @@
 				DA6C35B02C512C1600B20E9F /* ZStackBadgeView.swift in Sources */,
 				DA6073172C54BEEE008D718A /* PracticeAlignmentGuide2.swift in Sources */,
 				DA9B2ECF2C3EBC2D003BDF58 /* TextLeaf.swift in Sources */,
+				DA26C5E52C5B8B560062FAA5 /* AnimationWithBody.swift in Sources */,
 				DA0035E22C4CD44000928C84 /* FlexibleFrameWithMinAndMaxWidth.swift in Sources */,
 				DA0035E42C4CD81100928C84 /* FlexibleFrameExample.swift in Sources */,
 				DAE6527D2C5680640056EBD2 /* PracticeCustomAlignment2.swift in Sources */,
