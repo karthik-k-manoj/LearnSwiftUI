@@ -27,6 +27,20 @@ struct AnimationWithBody_Previews: PreviewProvider {
 }
 
 /*
+ Button("Tap me") {
+     animationAmount += 1
+ }
+ .padding(50)
+ .foregroundColor(.white)
+ .background(.red)
+ .clipShape(Circle())
+ .scaleEffect(animationAmount)
+ .blur(radius: (animationAmount - 1) * 3)
+ .animation(.linear, value: animationAmount)
+
+ */
+
+/*
  1) .animation(_:body:) takes a body closure but
  doesn't take a value parameter to control when
  the animation will take effect (if value was present, on chaneg of value the animation will take effect. This means that the animatable modifiers within the body closure will always animate when their parameters change, regardless where this change originated
