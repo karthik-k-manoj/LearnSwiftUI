@@ -22,6 +22,8 @@
 		DA0035E62C4D157E00928C84 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0035E52C4D157E00928C84 /* Background.swift */; };
 		DA0035E82C4D267500928C84 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0035E72C4D267500928C84 /* Overlay.swift */; };
 		DA26C5DF2C5B5B960062FAA5 /* FrameWidthAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */; };
+		DA26C5E12C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */; };
+		DA26C5E32C5B63570062FAA5 /* ImplicitAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */; };
 		DA29FE212C4E1C3400428576 /* FixedSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29FE202C4E1C3400428576 /* FixedSize.swift */; };
 		DA29FE232C4E214E00428576 /* FixedSizeWithOverlayBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29FE222C4E214E00428576 /* FixedSizeWithOverlayBadge.swift */; };
 		DA29FE262C4E519800428576 /* HStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29FE252C4E519800428576 /* HStack.swift */; };
@@ -88,6 +90,8 @@
 		DA0035E52C4D157E00928C84 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		DA0035E72C4D267500928C84 /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
 		DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWidthAnimation.swift; sourceTree = "<group>"; };
+		DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimationWithFrame.swift; sourceTree = "<group>"; };
+		DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitAnimation.swift; sourceTree = "<group>"; };
 		DA29FE202C4E1C3400428576 /* FixedSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedSize.swift; sourceTree = "<group>"; };
 		DA29FE222C4E214E00428576 /* FixedSizeWithOverlayBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedSizeWithOverlayBadge.swift; sourceTree = "<group>"; };
 		DA29FE252C4E519800428576 /* HStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack.swift; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */,
+				DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */,
+				DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -461,6 +467,7 @@
 				DA63A5762C38F9CC003EBB4B /* LearnViewBuilder.swift in Sources */,
 				DA29FE232C4E214E00428576 /* FixedSizeWithOverlayBadge.swift in Sources */,
 				DA8D42AB2C5243F700C955B6 /* ConsoleView.swift in Sources */,
+				DA26C5E12C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift in Sources */,
 				DA31C4E82C425792009EBB36 /* BorderShape.swift in Sources */,
 				DA63A5832C3C15C0003EBB4B /* WhatIsAView.swift in Sources */,
 				DA9632732C58B7C2006069BB /* CustomComponentStyle.swift in Sources */,
@@ -468,6 +475,7 @@
 				DA0035CF2C4BF4B900928C84 /* LearnViewModifier2.swift in Sources */,
 				DA6C35B22C513B7D00B20E9F /* ZStack_.swift in Sources */,
 				DA63A57C2C3967FC003EBB4B /* DynamicContent.swift in Sources */,
+				DA26C5E32C5B63570062FAA5 /* ImplicitAnimation.swift in Sources */,
 				DA31C4F12C44F673009EBB36 /* LearnViewModifier1.swift in Sources */,
 				DA26C5DF2C5B5B960062FAA5 /* FrameWidthAnimation.swift in Sources */,
 				DAFB7CA12C57D9FD008C311C /* ZStackAlignment.swift in Sources */,
