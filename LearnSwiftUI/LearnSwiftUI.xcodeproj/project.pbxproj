@@ -21,6 +21,7 @@
 		DA0035E42C4CD81100928C84 /* FlexibleFrameExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0035E32C4CD81100928C84 /* FlexibleFrameExample.swift */; };
 		DA0035E62C4D157E00928C84 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0035E52C4D157E00928C84 /* Background.swift */; };
 		DA0035E82C4D267500928C84 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0035E72C4D267500928C84 /* Overlay.swift */; };
+		DA26C5DF2C5B5B960062FAA5 /* FrameWidthAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */; };
 		DA29FE212C4E1C3400428576 /* FixedSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29FE202C4E1C3400428576 /* FixedSize.swift */; };
 		DA29FE232C4E214E00428576 /* FixedSizeWithOverlayBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29FE222C4E214E00428576 /* FixedSizeWithOverlayBadge.swift */; };
 		DA29FE262C4E519800428576 /* HStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29FE252C4E519800428576 /* HStack.swift */; };
@@ -86,6 +87,7 @@
 		DA0035E32C4CD81100928C84 /* FlexibleFrameExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleFrameExample.swift; sourceTree = "<group>"; };
 		DA0035E52C4D157E00928C84 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		DA0035E72C4D267500928C84 /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
+		DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWidthAnimation.swift; sourceTree = "<group>"; };
 		DA29FE202C4E1C3400428576 /* FixedSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedSize.swift; sourceTree = "<group>"; };
 		DA29FE222C4E214E00428576 /* FixedSizeWithOverlayBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedSizeWithOverlayBadge.swift; sourceTree = "<group>"; };
 		DA29FE252C4E519800428576 /* HStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack.swift; sourceTree = "<group>"; };
@@ -169,6 +171,14 @@
 				DA0035D52C4C135400928C84 /* FixedFrame.swift */,
 			);
 			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		DA26C5DD2C5B5B860062FAA5 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		DA29FE242C4E518B00428576 /* Container */ = {
@@ -272,6 +282,7 @@
 		DA9D4E8C2BE3878A0058E063 /* LearnSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DA26C5DD2C5B5B860062FAA5 /* Animation */,
 				DA96326D2C58A637006069BB /* Environment */,
 				DAFB7C9F2C57D9E9008C311C /* ZStack */,
 				DAF9060C2C54082500BA8B5A /* Alignment */,
@@ -458,6 +469,7 @@
 				DA6C35B22C513B7D00B20E9F /* ZStack_.swift in Sources */,
 				DA63A57C2C3967FC003EBB4B /* DynamicContent.swift in Sources */,
 				DA31C4F12C44F673009EBB36 /* LearnViewModifier1.swift in Sources */,
+				DA26C5DF2C5B5B960062FAA5 /* FrameWidthAnimation.swift in Sources */,
 				DAFB7CA12C57D9FD008C311C /* ZStackAlignment.swift in Sources */,
 				DA31C4EB2C4294FC009EBB36 /* WhatIsColor.swift in Sources */,
 				DAB46FB32C40058300024348 /* TextLeaf+fixedSize.swift in Sources */,
