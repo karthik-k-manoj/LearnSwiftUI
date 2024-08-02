@@ -36,6 +36,7 @@
 		DA4B6BCB2C5CD1930060B0AB /* OffsetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */; };
 		DA4B6BCD2C5CD4070060B0AB /* HueAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BCC2C5CD4070060B0AB /* HueAnimation.swift */; };
 		DA4B6BCF2C5CD6C40060B0AB /* OpacityAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BCE2C5CD6C40060B0AB /* OpacityAnimation.swift */; };
+		DA4B6BD12C5CDF9F0060B0AB /* SystemShapeScalingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BD02C5CDF9F0060B0AB /* SystemShapeScalingAnimation.swift */; };
 		DA6073172C54BEEE008D718A /* PracticeAlignmentGuide2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6073162C54BEEE008D718A /* PracticeAlignmentGuide2.swift */; };
 		DA6073192C54E837008D718A /* PracticeAlignmentGuide3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6073182C54E837008D718A /* PracticeAlignmentGuide3.swift */; };
 		DA60731B2C54FA67008D718A /* PracticeAlignment4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60731A2C54FA67008D718A /* PracticeAlignment4.swift */; };
@@ -109,6 +110,7 @@
 		DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetAnimation.swift; sourceTree = "<group>"; };
 		DA4B6BCC2C5CD4070060B0AB /* HueAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueAnimation.swift; sourceTree = "<group>"; };
 		DA4B6BCE2C5CD6C40060B0AB /* OpacityAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacityAnimation.swift; sourceTree = "<group>"; };
+		DA4B6BD02C5CDF9F0060B0AB /* SystemShapeScalingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemShapeScalingAnimation.swift; sourceTree = "<group>"; };
 		DA6073162C54BEEE008D718A /* PracticeAlignmentGuide2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignmentGuide2.swift; sourceTree = "<group>"; };
 		DA6073182C54E837008D718A /* PracticeAlignmentGuide3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignmentGuide3.swift; sourceTree = "<group>"; };
 		DA60731A2C54FA67008D718A /* PracticeAlignment4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignment4.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */,
 				DA4B6BCC2C5CD4070060B0AB /* HueAnimation.swift */,
 				DA4B6BCE2C5CD6C40060B0AB /* OpacityAnimation.swift */,
+				DA4B6BD02C5CDF9F0060B0AB /* SystemShapeScalingAnimation.swift */,
 				DA26C5E42C5B8B560062FAA5 /* AnimationWithBody.swift */,
 				DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */,
 				DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */,
@@ -491,6 +494,7 @@
 				DA63A5832C3C15C0003EBB4B /* WhatIsAView.swift in Sources */,
 				DA9632732C58B7C2006069BB /* CustomComponentStyle.swift in Sources */,
 				DA0035D42C4C099600928C84 /* Padding2.swift in Sources */,
+				DA4B6BD12C5CDF9F0060B0AB /* SystemShapeScalingAnimation.swift in Sources */,
 				DA0035CF2C4BF4B900928C84 /* LearnViewModifier2.swift in Sources */,
 				DA6C35B22C513B7D00B20E9F /* ZStack_.swift in Sources */,
 				DA63A57C2C3967FC003EBB4B /* DynamicContent.swift in Sources */,
