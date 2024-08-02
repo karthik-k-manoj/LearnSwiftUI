@@ -39,6 +39,7 @@
 		DA4B6BD12C5CDF9F0060B0AB /* SystemShapeScalingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BD02C5CDF9F0060B0AB /* SystemShapeScalingAnimation.swift */; };
 		DA4B6BD32C5CE25B0060B0AB /* ScalingWithAnchorPointAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BD22C5CE25B0060B0AB /* ScalingWithAnchorPointAnimation.swift */; };
 		DA4B6BD52C5CE39D0060B0AB /* StrokeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BD42C5CE39D0060B0AB /* StrokeAnimation.swift */; };
+		DA4B6BD72C5CE6520060B0AB /* TrimModifierAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BD62C5CE6520060B0AB /* TrimModifierAnimation.swift */; };
 		DA6073172C54BEEE008D718A /* PracticeAlignmentGuide2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6073162C54BEEE008D718A /* PracticeAlignmentGuide2.swift */; };
 		DA6073192C54E837008D718A /* PracticeAlignmentGuide3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6073182C54E837008D718A /* PracticeAlignmentGuide3.swift */; };
 		DA60731B2C54FA67008D718A /* PracticeAlignment4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60731A2C54FA67008D718A /* PracticeAlignment4.swift */; };
@@ -115,6 +116,7 @@
 		DA4B6BD02C5CDF9F0060B0AB /* SystemShapeScalingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemShapeScalingAnimation.swift; sourceTree = "<group>"; };
 		DA4B6BD22C5CE25B0060B0AB /* ScalingWithAnchorPointAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalingWithAnchorPointAnimation.swift; sourceTree = "<group>"; };
 		DA4B6BD42C5CE39D0060B0AB /* StrokeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeAnimation.swift; sourceTree = "<group>"; };
+		DA4B6BD62C5CE6520060B0AB /* TrimModifierAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimModifierAnimation.swift; sourceTree = "<group>"; };
 		DA6073162C54BEEE008D718A /* PracticeAlignmentGuide2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignmentGuide2.swift; sourceTree = "<group>"; };
 		DA6073182C54E837008D718A /* PracticeAlignmentGuide3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignmentGuide3.swift; sourceTree = "<group>"; };
 		DA60731A2C54FA67008D718A /* PracticeAlignment4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignment4.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				DA4B6BCC2C5CD4070060B0AB /* HueAnimation.swift */,
 				DA4B6BCE2C5CD6C40060B0AB /* OpacityAnimation.swift */,
 				DA4B6BD02C5CDF9F0060B0AB /* SystemShapeScalingAnimation.swift */,
+				DA4B6BD62C5CE6520060B0AB /* TrimModifierAnimation.swift */,
 				DA4B6BD22C5CE25B0060B0AB /* ScalingWithAnchorPointAnimation.swift */,
 				DA4B6BD42C5CE39D0060B0AB /* StrokeAnimation.swift */,
 				DA26C5E42C5B8B560062FAA5 /* AnimationWithBody.swift */,
@@ -449,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA4B6BCD2C5CD4070060B0AB /* HueAnimation.swift in Sources */,
+				DA4B6BD72C5CE6520060B0AB /* TrimModifierAnimation.swift in Sources */,
 				DA8536EF2C414B020043DDD4 /* TrapeziumShape.swift in Sources */,
 				DA29FE212C4E1C3400428576 /* FixedSize.swift in Sources */,
 				DA0035DC2C4CCFC900928C84 /* FlexibleFrameWithIdealSize.swift in Sources */,
