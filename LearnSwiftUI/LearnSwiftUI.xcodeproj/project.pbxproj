@@ -33,6 +33,8 @@
 		DA31C4EE2C429A90009EBB36 /* WhatIsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4ED2C429A90009EBB36 /* WhatIsImage.swift */; };
 		DA31C4F12C44F673009EBB36 /* LearnViewModifier1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31C4F02C44F673009EBB36 /* LearnViewModifier1.swift */; };
 		DA4B6BC92C5CCD150060B0AB /* AnimationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */; };
+		DA4B6BCB2C5CD1930060B0AB /* OffsetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */; };
+		DA4B6BCD2C5CD4070060B0AB /* HueAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BCC2C5CD4070060B0AB /* HueAnimation.swift */; };
 		DA6073172C54BEEE008D718A /* PracticeAlignmentGuide2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6073162C54BEEE008D718A /* PracticeAlignmentGuide2.swift */; };
 		DA6073192C54E837008D718A /* PracticeAlignmentGuide3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6073182C54E837008D718A /* PracticeAlignmentGuide3.swift */; };
 		DA60731B2C54FA67008D718A /* PracticeAlignment4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60731A2C54FA67008D718A /* PracticeAlignment4.swift */; };
@@ -103,6 +105,8 @@
 		DA31C4ED2C429A90009EBB36 /* WhatIsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsImage.swift; sourceTree = "<group>"; };
 		DA31C4F02C44F673009EBB36 /* LearnViewModifier1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewModifier1.swift; sourceTree = "<group>"; };
 		DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationExample.swift; sourceTree = "<group>"; };
+		DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetAnimation.swift; sourceTree = "<group>"; };
+		DA4B6BCC2C5CD4070060B0AB /* HueAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueAnimation.swift; sourceTree = "<group>"; };
 		DA6073162C54BEEE008D718A /* PracticeAlignmentGuide2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignmentGuide2.swift; sourceTree = "<group>"; };
 		DA6073182C54E837008D718A /* PracticeAlignmentGuide3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignmentGuide3.swift; sourceTree = "<group>"; };
 		DA60731A2C54FA67008D718A /* PracticeAlignment4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignment4.swift; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 			children = (
 				DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */,
 				DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */,
+				DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */,
+				DA4B6BCC2C5CD4070060B0AB /* HueAnimation.swift */,
 				DA26C5E42C5B8B560062FAA5 /* AnimationWithBody.swift */,
 				DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */,
 				DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */,
@@ -430,6 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4B6BCD2C5CD4070060B0AB /* HueAnimation.swift in Sources */,
 				DA8536EF2C414B020043DDD4 /* TrapeziumShape.swift in Sources */,
 				DA29FE212C4E1C3400428576 /* FixedSize.swift in Sources */,
 				DA0035DC2C4CCFC900928C84 /* FlexibleFrameWithIdealSize.swift in Sources */,
@@ -461,6 +468,7 @@
 				DA63A5782C390D7D003EBB4B /* LearnViewBuilder2.swift in Sources */,
 				DA9D4E902BE3878A0058E063 /* StateObject_.swift in Sources */,
 				DA6C35AE2C5112EA00B20E9F /* HStackWithFlexibleFrame.swift in Sources */,
+				DA4B6BCB2C5CD1930060B0AB /* OffsetAnimation.swift in Sources */,
 				DA8D42AD2C52488B00C955B6 /* ClearConsole.swift in Sources */,
 				DA96326F2C58A648006069BB /* ReadFromEnvironment.swift in Sources */,
 				DA0035D22C4BFA0A00928C84 /* Padding1.swift in Sources */,

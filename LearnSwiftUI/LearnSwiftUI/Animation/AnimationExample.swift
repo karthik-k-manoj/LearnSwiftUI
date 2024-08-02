@@ -13,13 +13,14 @@ struct AnimationExample: View {
     var body: some View {
         Button {
             // this reutrns result of recomputing a view's body with the provided animation
-            withAnimation(.interpolatingSpring(stiffness: 60, damping: 2)) {
+            withAnimation(.interpolatingSpring(stiffness: 60, damping: 2).repeatForever(autoreverses: true)) {
                 scaleUp *= 1.4
             }
         } label: {
             Text("Scale up")
                 .scaleEffect(scaleUp)
         }
+        
 
     }
 }
