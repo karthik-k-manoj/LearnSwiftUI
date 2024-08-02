@@ -30,6 +30,8 @@ struct OpacityAnimation: View {
             
             Spacer()
             VStack {
+                // Multiple opacity modifier can multiplting effect.
+                // We can the intersection part is orange in color
                 Text("Overlapping Opacity")
                     .bold()
                 Circle()
