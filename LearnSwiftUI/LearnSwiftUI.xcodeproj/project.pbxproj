@@ -35,6 +35,7 @@
 		DA4B6BC92C5CCD150060B0AB /* AnimationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */; };
 		DA4B6BCB2C5CD1930060B0AB /* OffsetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */; };
 		DA4B6BCD2C5CD4070060B0AB /* HueAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BCC2C5CD4070060B0AB /* HueAnimation.swift */; };
+		DA4B6BCF2C5CD6C40060B0AB /* OpacityAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BCE2C5CD6C40060B0AB /* OpacityAnimation.swift */; };
 		DA6073172C54BEEE008D718A /* PracticeAlignmentGuide2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6073162C54BEEE008D718A /* PracticeAlignmentGuide2.swift */; };
 		DA6073192C54E837008D718A /* PracticeAlignmentGuide3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6073182C54E837008D718A /* PracticeAlignmentGuide3.swift */; };
 		DA60731B2C54FA67008D718A /* PracticeAlignment4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60731A2C54FA67008D718A /* PracticeAlignment4.swift */; };
@@ -107,6 +108,7 @@
 		DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationExample.swift; sourceTree = "<group>"; };
 		DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetAnimation.swift; sourceTree = "<group>"; };
 		DA4B6BCC2C5CD4070060B0AB /* HueAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueAnimation.swift; sourceTree = "<group>"; };
+		DA4B6BCE2C5CD6C40060B0AB /* OpacityAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacityAnimation.swift; sourceTree = "<group>"; };
 		DA6073162C54BEEE008D718A /* PracticeAlignmentGuide2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignmentGuide2.swift; sourceTree = "<group>"; };
 		DA6073182C54E837008D718A /* PracticeAlignmentGuide3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignmentGuide3.swift; sourceTree = "<group>"; };
 		DA60731A2C54FA67008D718A /* PracticeAlignment4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignment4.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */,
 				DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */,
 				DA4B6BCC2C5CD4070060B0AB /* HueAnimation.swift */,
+				DA4B6BCE2C5CD6C40060B0AB /* OpacityAnimation.swift */,
 				DA26C5E42C5B8B560062FAA5 /* AnimationWithBody.swift */,
 				DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */,
 				DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */,
@@ -446,6 +449,7 @@
 				DA8536ED2C40F7080043DDD4 /* DebugLayout.swift in Sources */,
 				DAE652792C5662E40056EBD2 /* AlignmentInWindow.swift in Sources */,
 				DA0035CD2C4AA8A500928C84 /* AspectRatio.swift in Sources */,
+				DA4B6BCF2C5CD6C40060B0AB /* OpacityAnimation.swift in Sources */,
 				DA60731B2C54FA67008D718A /* PracticeAlignment4.swift in Sources */,
 				DA8D42A92C52429000C955B6 /* Console.swift in Sources */,
 				DA8D42B22C52844200C955B6 /* PracticeView.swift in Sources */,
