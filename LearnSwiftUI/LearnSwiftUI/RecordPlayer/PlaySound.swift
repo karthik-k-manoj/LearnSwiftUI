@@ -8,6 +8,8 @@
 import AVFoundation
 
 final class AudioPlayer {
+    static let shared = AudioPlayer()
+    
     private var audioPlayer: AVAudioPlayer?
 
     func playSound(sound: String, type: String) {
@@ -19,6 +21,10 @@ final class AudioPlayer {
                 print("Could not find and play the sound file")
             }
         }
+    }
+    
+    func stop() {
+        audioPlayer?.stop()
     }
 }
 

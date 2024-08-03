@@ -13,6 +13,8 @@ struct RecordButtonArmView: View {
     @State private var moveArm = false
     @State private var duration = 0.0
     
+    let audioPlayer: AudioPlayer
+    
     var animationForever: Animation {
         Animation.linear(duration: duration)
             .repeatForever(autoreverses: false)
@@ -42,13 +44,16 @@ struct RecordButtonArmView: View {
     
     var button: some View {
         Button {
+           
             rotateRecord.toggle()
             if rotateRecord {
+                audioPlayer.playSound(sound: "music", type: "m4a")
                 duration = 0.8
                 moveArm = true
             } else {
                 duration = 0.0
                 moveArm = false
+                audioPlayer.stop()
             }
         } label: {
             HStack {
@@ -68,14 +73,14 @@ struct RecordButtonArmView: View {
             .padding(.horizontal, 10)
             .padding(.vertical, 5)
             .background(Capsule().strokeBorder(Color.black, lineWidth: 2.00))
-            .offset(x: -105, y: 135)
+            //.offset(x: -105, y: 135)
         }
     }
 }
 
 struct RecordButtonArmView_Previews: PreviewProvider {
     static var previews: some View {
-        RecordButtonArmView()
+        RecordButtonArmView(audioPlayer: AudioPlayer())
             .previewLayout(.sizeThatFits).padding()
     }
 }
