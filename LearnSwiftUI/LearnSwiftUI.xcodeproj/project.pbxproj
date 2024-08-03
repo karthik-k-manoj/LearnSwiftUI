@@ -78,6 +78,7 @@
 		DAD2B7512C5E2CED00C0F84E /* BreathingAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2B7502C5E2CED00C0F84E /* BreathingAppView.swift */; };
 		DAD2B7542C5E7DC500C0F84E /* RecordPlayerBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2B7532C5E7DC500C0F84E /* RecordPlayerBox.swift */; };
 		DAD2B7562C5E80EB00C0F84E /* RecordButtonArmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2B7552C5E80EB00C0F84E /* RecordButtonArmView.swift */; };
+		DAD2B7582C5E8BCB00C0F84E /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2B7572C5E8BCB00C0F84E /* PlaySound.swift */; };
 		DAD7588B2C5A87260033AA49 /* ContainerRelativeShaped.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7588A2C5A87260033AA49 /* ContainerRelativeShaped.swift */; };
 		DAE652772C562DC50056EBD2 /* PracticeAlignment5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE652762C562DC50056EBD2 /* PracticeAlignment5.swift */; };
 		DAE652792C5662E40056EBD2 /* AlignmentInWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE652782C5662E40056EBD2 /* AlignmentInWindow.swift */; };
@@ -160,6 +161,7 @@
 		DAD2B7502C5E2CED00C0F84E /* BreathingAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingAppView.swift; sourceTree = "<group>"; };
 		DAD2B7532C5E7DC500C0F84E /* RecordPlayerBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayerBox.swift; sourceTree = "<group>"; };
 		DAD2B7552C5E80EB00C0F84E /* RecordButtonArmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButtonArmView.swift; sourceTree = "<group>"; };
+		DAD2B7572C5E8BCB00C0F84E /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		DAD7588A2C5A87260033AA49 /* ContainerRelativeShaped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerRelativeShaped.swift; sourceTree = "<group>"; };
 		DAE652762C562DC50056EBD2 /* PracticeAlignment5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignment5.swift; sourceTree = "<group>"; };
 		DAE652782C5662E40056EBD2 /* AlignmentInWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentInWindow.swift; sourceTree = "<group>"; };
@@ -381,6 +383,7 @@
 			isa = PBXGroup;
 			children = (
 				DAD2B7532C5E7DC500C0F84E /* RecordPlayerBox.swift */,
+				DAD2B7572C5E8BCB00C0F84E /* PlaySound.swift */,
 				DAD2B7552C5E80EB00C0F84E /* RecordButtonArmView.swift */,
 			);
 			path = RecordPlayer;
@@ -494,6 +497,7 @@
 				DA0035CD2C4AA8A500928C84 /* AspectRatio.swift in Sources */,
 				DA4B6BCF2C5CD6C40060B0AB /* OpacityAnimation.swift in Sources */,
 				DA60731B2C54FA67008D718A /* PracticeAlignment4.swift in Sources */,
+				DAD2B7582C5E8BCB00C0F84E /* PlaySound.swift in Sources */,
 				DA8D42A92C52429000C955B6 /* Console.swift in Sources */,
 				DA8D42B22C52844200C955B6 /* PracticeView.swift in Sources */,
 				DAB46FB52C400A5C00024348 /* ShapeLeaf.swift in Sources */,
