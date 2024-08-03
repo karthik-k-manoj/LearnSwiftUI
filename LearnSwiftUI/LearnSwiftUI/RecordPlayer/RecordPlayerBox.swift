@@ -21,8 +21,10 @@ struct RecordPlayerBox: View {
     }
 }
 
-struct RecordPlayerBoxV_Previews: PreviewProvider {
+struct RecordPlayerBox_Previews: PreviewProvider {
     static var previews: some View {
         RecordPlayerBox()
+            // will give the size of the view as the size for the preview
+            .previewLayout(.sizeThatFits).padding()
     }
 }
