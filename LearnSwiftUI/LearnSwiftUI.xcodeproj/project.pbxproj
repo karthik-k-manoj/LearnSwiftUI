@@ -320,6 +320,7 @@
 		DA9D4E8C2BE3878A0058E063 /* LearnSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DAD2B7522C5E7C8400C0F84E /* RecordPlayer */,
 				DAD2B74F2C5E2CDF00C0F84E /* BreathingApp */,
 				DA26C5DD2C5B5B860062FAA5 /* Animation */,
 				DA96326D2C58A637006069BB /* Environment */,
@@ -370,6 +371,13 @@
 				DAD2B7502C5E2CED00C0F84E /* BreathingAppView.swift */,
 			);
 			path = BreathingApp;
+			sourceTree = "<group>";
+		};
+		DAD2B7522C5E7C8400C0F84E /* RecordPlayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RecordPlayer;
 			sourceTree = "<group>";
 		};
 		DAF9060C2C54082500BA8B5A /* Alignment */ = {
