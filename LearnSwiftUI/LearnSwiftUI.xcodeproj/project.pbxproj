@@ -76,6 +76,7 @@
 		DAB46FB32C40058300024348 /* TextLeaf+fixedSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */; };
 		DAB46FB52C400A5C00024348 /* ShapeLeaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */; };
 		DAD2B7512C5E2CED00C0F84E /* BreathingAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2B7502C5E2CED00C0F84E /* BreathingAppView.swift */; };
+		DAD2B7542C5E7DC500C0F84E /* RecordPlayerBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2B7532C5E7DC500C0F84E /* RecordPlayerBox.swift */; };
 		DAD7588B2C5A87260033AA49 /* ContainerRelativeShaped.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7588A2C5A87260033AA49 /* ContainerRelativeShaped.swift */; };
 		DAE652772C562DC50056EBD2 /* PracticeAlignment5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE652762C562DC50056EBD2 /* PracticeAlignment5.swift */; };
 		DAE652792C5662E40056EBD2 /* AlignmentInWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE652782C5662E40056EBD2 /* AlignmentInWindow.swift */; };
@@ -156,6 +157,7 @@
 		DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextLeaf+fixedSize.swift"; sourceTree = "<group>"; };
 		DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeLeaf.swift; sourceTree = "<group>"; };
 		DAD2B7502C5E2CED00C0F84E /* BreathingAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingAppView.swift; sourceTree = "<group>"; };
+		DAD2B7532C5E7DC500C0F84E /* RecordPlayerBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayerBox.swift; sourceTree = "<group>"; };
 		DAD7588A2C5A87260033AA49 /* ContainerRelativeShaped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerRelativeShaped.swift; sourceTree = "<group>"; };
 		DAE652762C562DC50056EBD2 /* PracticeAlignment5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignment5.swift; sourceTree = "<group>"; };
 		DAE652782C5662E40056EBD2 /* AlignmentInWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentInWindow.swift; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 		DAD2B7522C5E7C8400C0F84E /* RecordPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				DAD2B7532C5E7DC500C0F84E /* RecordPlayerBox.swift */,
 			);
 			path = RecordPlayer;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 				DA9D4E8E2BE3878A0058E063 /* LearnSwiftUIApp.swift in Sources */,
 				DA9B2ECD2C3EA2B8003BDF58 /* HowLayoutWorks.swift in Sources */,
 				DA63A57A2C393EDA003EBB4B /* LearnGroup.swift in Sources */,
+				DAD2B7542C5E7DC500C0F84E /* RecordPlayerBox.swift in Sources */,
 				DA63A5762C38F9CC003EBB4B /* LearnViewBuilder.swift in Sources */,
 				DA29FE232C4E214E00428576 /* FixedSizeWithOverlayBadge.swift in Sources */,
 				DA8D42AB2C5243F700C955B6 /* ConsoleView.swift in Sources */,
