@@ -39,6 +39,7 @@ struct RecordButtonArmView: View {
                 .offset(x: 75, y: -30)
             
             button
+                .offset(x: -105, y: 135)
         }
     }
     
@@ -73,7 +74,6 @@ struct RecordButtonArmView: View {
             .padding(.horizontal, 10)
             .padding(.vertical, 5)
             .background(Capsule().strokeBorder(Color.black, lineWidth: 2.00))
-            //.offset(x: -105, y: 135)
         }
     }
 }
