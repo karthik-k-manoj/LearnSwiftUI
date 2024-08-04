@@ -16,6 +16,8 @@ struct AnimationWithNewModifieriOS17: View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
             .opacity(flag ? 1 : 0)
             .animation(.default) {
+         // here flag is the value (implicit) so when flag changes
+         // only rotation will animate not the opacity.
                 $0.rotationEffect(flag ? .zero : .degree(90))
             }
          */
