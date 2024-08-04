@@ -51,7 +51,17 @@ struct AnimationWithBody_Previews: PreviewProvider {
  
  
  2) need to understand it better
- 
- 
 
+ */
+
+/*
+ Understanding it better the animation with body has 2 pitfalls
+ 
+ 1) contrary to the animation (value) the new animation modifier with closure doesn't take a value parameter to control when the animation will take effect, This means that the animatable modifiers within body closure will always animate when their parameter when their parameter changes, regadrless of where this changed originated.
+ 
+ 
+ 2) As mentioned some modifiers like .frame .offset .foregroundColor might have unexpected behaviour in conjuction with animations. These modifiers take effect at the leaf view and not at the position in the view tree where we insert them. Therefore these modifiers might still animate although there was no animation present at the pointin the view tree where used then. If we specify one of these "out-of-place" modifiers inside the body closure of `.animation(_:body:), no animation will take because animttion is present at the leaf view) ??
+ 
+ Instead of defining an animation for a certain view subtree and particular value changing we can also scope an animation to a particular state changes which we call with explict animation
+ 
  */
