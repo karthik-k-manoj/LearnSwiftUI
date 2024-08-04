@@ -60,6 +60,7 @@
 		DA8536ED2C40F7080043DDD4 /* DebugLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8536EC2C40F7080043DDD4 /* DebugLayout.swift */; };
 		DA8536EF2C414B020043DDD4 /* TrapeziumShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8536EE2C414B020043DDD4 /* TrapeziumShape.swift */; };
 		DA8799502C5FBDF200D31A97 /* AnimationWithNewModifieriOS17.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87994F2C5FBDF200D31A97 /* AnimationWithNewModifieriOS17.swift */; };
+		DA8799522C5FC02900D31A97 /* NonViewSubtreeAnimatingCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8799512C5FC02900D31A97 /* NonViewSubtreeAnimatingCheck.swift */; };
 		DA8D42A92C52429000C955B6 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D42A82C52429000C955B6 /* Console.swift */; };
 		DA8D42AB2C5243F700C955B6 /* ConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D42AA2C5243F700C955B6 /* ConsoleView.swift */; };
 		DA8D42AD2C52488B00C955B6 /* ClearConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D42AC2C52488B00C955B6 /* ClearConsole.swift */; };
@@ -144,6 +145,7 @@
 		DA8536EC2C40F7080043DDD4 /* DebugLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLayout.swift; sourceTree = "<group>"; };
 		DA8536EE2C414B020043DDD4 /* TrapeziumShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrapeziumShape.swift; sourceTree = "<group>"; };
 		DA87994F2C5FBDF200D31A97 /* AnimationWithNewModifieriOS17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationWithNewModifieriOS17.swift; sourceTree = "<group>"; };
+		DA8799512C5FC02900D31A97 /* NonViewSubtreeAnimatingCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonViewSubtreeAnimatingCheck.swift; sourceTree = "<group>"; };
 		DA8D42A82C52429000C955B6 /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
 		DA8D42AA2C5243F700C955B6 /* ConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleView.swift; sourceTree = "<group>"; };
 		DA8D42AC2C52488B00C955B6 /* ClearConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearConsole.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				DA4B6BD02C5CDF9F0060B0AB /* SystemShapeScalingAnimation.swift */,
 				DA4B6BD62C5CE6520060B0AB /* TrimModifierAnimation.swift */,
 				DA4B6BD22C5CE25B0060B0AB /* ScalingWithAnchorPointAnimation.swift */,
+				DA8799512C5FC02900D31A97 /* NonViewSubtreeAnimatingCheck.swift */,
 				DA4B6BD42C5CE39D0060B0AB /* StrokeAnimation.swift */,
 				DA26C5E42C5B8B560062FAA5 /* AnimationWithBody.swift */,
 				DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */,
@@ -569,6 +572,7 @@
 				DA0035E22C4CD44000928C84 /* FlexibleFrameWithMinAndMaxWidth.swift in Sources */,
 				DA0035E42C4CD81100928C84 /* FlexibleFrameExample.swift in Sources */,
 				DAE6527D2C5680640056EBD2 /* PracticeCustomAlignment2.swift in Sources */,
+				DA8799522C5FC02900D31A97 /* NonViewSubtreeAnimatingCheck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
