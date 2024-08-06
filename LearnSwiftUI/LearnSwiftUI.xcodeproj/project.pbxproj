@@ -221,6 +221,7 @@
 		DA26C5DD2C5B5B860062FAA5 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				DA4A6AD92C612ED500AA1491 /* ShakeView.swift */,
 				DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */,
 				DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */,
 				DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */,
@@ -402,7 +403,6 @@
 				DAD2B7532C5E7DC500C0F84E /* RecordPlayerBox.swift */,
 				DAD2B7592C5E8D2D00C0F84E /* music.m4a */,
 				DAD2B7572C5E8BCB00C0F84E /* PlaySound.swift */,
-				DA4A6AD92C612ED500AA1491 /* ShakeView.swift */,
 				DAD2B7552C5E80EB00C0F84E /* RecordButtonArmView.swift */,
 				DAD2B75A2C5E8D5300C0F84E /* RecordPlayerMainView.swift */,
 			);
