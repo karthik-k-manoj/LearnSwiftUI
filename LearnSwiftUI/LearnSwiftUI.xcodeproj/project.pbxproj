@@ -86,6 +86,7 @@
 		DAD2B7582C5E8BCB00C0F84E /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2B7572C5E8BCB00C0F84E /* PlaySound.swift */; };
 		DAD2B75B2C5E8D5300C0F84E /* RecordPlayerMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2B75A2C5E8D5300C0F84E /* RecordPlayerMainView.swift */; };
 		DAD7588B2C5A87260033AA49 /* ContainerRelativeShaped.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7588A2C5A87260033AA49 /* ContainerRelativeShaped.swift */; };
+		DAE486EC2C61F55A001CAE7C /* OpacitiyAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE486EB2C61F55A001CAE7C /* OpacitiyAnimatable.swift */; };
 		DAE652772C562DC50056EBD2 /* PracticeAlignment5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE652762C562DC50056EBD2 /* PracticeAlignment5.swift */; };
 		DAE652792C5662E40056EBD2 /* AlignmentInWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE652782C5662E40056EBD2 /* AlignmentInWindow.swift */; };
 		DAE6527B2C567D470056EBD2 /* PracticeCustomAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6527A2C567D470056EBD2 /* PracticeCustomAlignment.swift */; };
@@ -176,6 +177,7 @@
 		DAD2B7592C5E8D2D00C0F84E /* music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = music.m4a; sourceTree = "<group>"; };
 		DAD2B75A2C5E8D5300C0F84E /* RecordPlayerMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayerMainView.swift; sourceTree = "<group>"; };
 		DAD7588A2C5A87260033AA49 /* ContainerRelativeShaped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerRelativeShaped.swift; sourceTree = "<group>"; };
+		DAE486EB2C61F55A001CAE7C /* OpacitiyAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacitiyAnimatable.swift; sourceTree = "<group>"; };
 		DAE652762C562DC50056EBD2 /* PracticeAlignment5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignment5.swift; sourceTree = "<group>"; };
 		DAE652782C5662E40056EBD2 /* AlignmentInWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentInWindow.swift; sourceTree = "<group>"; };
 		DAE6527A2C567D470056EBD2 /* PracticeCustomAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeCustomAlignment.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */,
 				DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */,
 				DA87994F2C5FBDF200D31A97 /* AnimationWithNewModifieriOS17.swift */,
+				DAE486EB2C61F55A001CAE7C /* OpacitiyAnimatable.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				DA4B6BCD2C5CD4070060B0AB /* HueAnimation.swift in Sources */,
 				DA4B6BD72C5CE6520060B0AB /* TrimModifierAnimation.swift in Sources */,
 				DA8799562C5FC86200D31A97 /* BindingAnimation.swift in Sources */,
+				DAE486EC2C61F55A001CAE7C /* OpacitiyAnimatable.swift in Sources */,
 				DAD2B7562C5E80EB00C0F84E /* RecordButtonArmView.swift in Sources */,
 				DA8536EF2C414B020043DDD4 /* TrapeziumShape.swift in Sources */,
 				DA29FE212C4E1C3400428576 /* FixedSize.swift in Sources */,
