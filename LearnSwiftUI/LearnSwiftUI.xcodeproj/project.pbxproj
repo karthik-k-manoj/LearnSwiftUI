@@ -36,6 +36,7 @@
 		DA34F31E2C71E69100171BFA /* WithAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34F31D2C71E69100171BFA /* WithAnimation.swift */; };
 		DA34F3202C71E7F800171BFA /* WithAnimatableSpecficDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34F31F2C71E7F800171BFA /* WithAnimatableSpecficDependency.swift */; };
 		DA34F3222C71E8CC00171BFA /* AnimatableWithSpecificDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34F3212C71E8CC00171BFA /* AnimatableWithSpecificDependency.swift */; };
+		DA34F3242C7240BA00171BFA /* WithAnimationDependencyMustBeExplicit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34F3232C7240BA00171BFA /* WithAnimationDependencyMustBeExplicit.swift */; };
 		DA4A6ADA2C612ED500AA1491 /* ShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6AD92C612ED500AA1491 /* ShakeView.swift */; };
 		DA4B6BC92C5CCD150060B0AB /* AnimationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */; };
 		DA4B6BCB2C5CD1930060B0AB /* OffsetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */; };
@@ -132,6 +133,7 @@
 		DA34F31D2C71E69100171BFA /* WithAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithAnimation.swift; sourceTree = "<group>"; };
 		DA34F31F2C71E7F800171BFA /* WithAnimatableSpecficDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithAnimatableSpecficDependency.swift; sourceTree = "<group>"; };
 		DA34F3212C71E8CC00171BFA /* AnimatableWithSpecificDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableWithSpecificDependency.swift; sourceTree = "<group>"; };
+		DA34F3232C7240BA00171BFA /* WithAnimationDependencyMustBeExplicit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithAnimationDependencyMustBeExplicit.swift; sourceTree = "<group>"; };
 		DA4A6AD92C612ED500AA1491 /* ShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeView.swift; sourceTree = "<group>"; };
 		DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationExample.swift; sourceTree = "<group>"; };
 		DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetAnimation.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				DA34F31B2C71E40B00171BFA /* AnimationWithoutValue.swift */,
+				DA34F3232C7240BA00171BFA /* WithAnimationDependencyMustBeExplicit.swift */,
 				DA34F31D2C71E69100171BFA /* WithAnimation.swift */,
 				DA34F3212C71E8CC00171BFA /* AnimatableWithSpecificDependency.swift */,
 				DA34F31F2C71E7F800171BFA /* WithAnimatableSpecficDependency.swift */,
@@ -625,6 +628,7 @@
 				DA6C35B02C512C1600B20E9F /* ZStackBadgeView.swift in Sources */,
 				DA34F3202C71E7F800171BFA /* WithAnimatableSpecficDependency.swift in Sources */,
 				DA34F31C2C71E40B00171BFA /* AnimationWithoutValue.swift in Sources */,
+				DA34F3242C7240BA00171BFA /* WithAnimationDependencyMustBeExplicit.swift in Sources */,
 				DAD2B75B2C5E8D5300C0F84E /* RecordPlayerMainView.swift in Sources */,
 				DA6073172C54BEEE008D718A /* PracticeAlignmentGuide2.swift in Sources */,
 				DA9B2ECF2C3EBC2D003BDF58 /* TextLeaf.swift in Sources */,
