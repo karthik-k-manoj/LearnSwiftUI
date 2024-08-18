@@ -35,6 +35,7 @@
 		DA34F31C2C71E40B00171BFA /* AnimationWithoutValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34F31B2C71E40B00171BFA /* AnimationWithoutValue.swift */; };
 		DA34F31E2C71E69100171BFA /* WithAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34F31D2C71E69100171BFA /* WithAnimation.swift */; };
 		DA34F3202C71E7F800171BFA /* WithAnimatableSpecficDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34F31F2C71E7F800171BFA /* WithAnimatableSpecficDependency.swift */; };
+		DA34F3222C71E8CC00171BFA /* AnimatableWithSpecificDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34F3212C71E8CC00171BFA /* AnimatableWithSpecificDependency.swift */; };
 		DA4A6ADA2C612ED500AA1491 /* ShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6AD92C612ED500AA1491 /* ShakeView.swift */; };
 		DA4B6BC92C5CCD150060B0AB /* AnimationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */; };
 		DA4B6BCB2C5CD1930060B0AB /* OffsetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */; };
@@ -130,6 +131,7 @@
 		DA34F31B2C71E40B00171BFA /* AnimationWithoutValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationWithoutValue.swift; sourceTree = "<group>"; };
 		DA34F31D2C71E69100171BFA /* WithAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithAnimation.swift; sourceTree = "<group>"; };
 		DA34F31F2C71E7F800171BFA /* WithAnimatableSpecficDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithAnimatableSpecficDependency.swift; sourceTree = "<group>"; };
+		DA34F3212C71E8CC00171BFA /* AnimatableWithSpecificDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableWithSpecificDependency.swift; sourceTree = "<group>"; };
 		DA4A6AD92C612ED500AA1491 /* ShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeView.swift; sourceTree = "<group>"; };
 		DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationExample.swift; sourceTree = "<group>"; };
 		DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetAnimation.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 			children = (
 				DA34F31B2C71E40B00171BFA /* AnimationWithoutValue.swift */,
 				DA34F31D2C71E69100171BFA /* WithAnimation.swift */,
+				DA34F3212C71E8CC00171BFA /* AnimatableWithSpecificDependency.swift */,
 				DA34F31F2C71E7F800171BFA /* WithAnimatableSpecficDependency.swift */,
 			);
 			path = AnimationDemo;
@@ -608,6 +611,7 @@
 				DA9632732C58B7C2006069BB /* CustomComponentStyle.swift in Sources */,
 				DA0035D42C4C099600928C84 /* Padding2.swift in Sources */,
 				DA4B6BD12C5CDF9F0060B0AB /* SystemShapeScalingAnimation.swift in Sources */,
+				DA34F3222C71E8CC00171BFA /* AnimatableWithSpecificDependency.swift in Sources */,
 				DA0035CF2C4BF4B900928C84 /* LearnViewModifier2.swift in Sources */,
 				DA6C35B22C513B7D00B20E9F /* ZStack_.swift in Sources */,
 				DA63A57C2C3967FC003EBB4B /* DynamicContent.swift in Sources */,
