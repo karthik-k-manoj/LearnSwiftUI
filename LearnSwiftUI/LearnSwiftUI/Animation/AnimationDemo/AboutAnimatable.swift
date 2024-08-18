@@ -53,8 +53,18 @@ struct AnimationDataMonitorView: View, Animatable {
 }
 
 struct AboutAnimatable: View {
+    @State var startAnimation = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            AnimationDataMonitorView(number: startAnimation ? 1 : 0) // declare two states
+                .animation(.linear(duration: 0.3), value: startAnimation) // associated dep and timing curve function
+            
+            Button("show data") {
+                AnimationDataMonitorView.timeStamp = Date()
+                startAnimation.toggle() // change dependency
+            }
+        }
+        .frame(width: 300, height: 300)
     }
 }
 
