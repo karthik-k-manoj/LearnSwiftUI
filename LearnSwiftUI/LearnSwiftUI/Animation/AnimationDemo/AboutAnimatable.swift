@@ -29,6 +29,28 @@ protocol Animatable {
  when the dep associated with an animatable component change, SU calculates the interpolation using the specified timing curve function and continues to call animatableData property of the animatable component associated with the dependency.
  */
 
+struct AnimationDataMonitorView: View, Animatable {
+    static var timeStamp = Date()
+    
+    var number: Double
+    
+    // when rendering SU detects that this view is `Animatable` and continues to call animatableData based on
+    // values provided by the timing curve function after the state has changed
+    var animatableData: Double {
+        get { number }
+        set {
+            number = newValue
+        }
+    }
+    
+    var body: some View {
+        let duration = Date().timeIntervalSince(Self.timeStamp).formatted(.number.precision(.fractionLength(2)))
+        let currentNumber = number.formatted(.number.precision(.fractionLength(2)))
+        let _ = print(duration, currentNumber, separator: ", ")
+        
+        Text(number, format: .number.precision(.fractionLength(3)))
+    }
+}
 
 struct AboutAnimatable: View {
     var body: some View {
