@@ -229,6 +229,7 @@
 		DA26C5DD2C5B5B860062FAA5 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				DA34F31A2C71E39E00171BFA /* AnimationDemo */,
 				DA4A6AD92C612ED500AA1491 /* ShakeView.swift */,
 				DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */,
 				DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */,
@@ -290,6 +291,13 @@
 				DA0035CE2C4BF4B900928C84 /* LearnViewModifier2.swift */,
 			);
 			path = Practice;
+			sourceTree = "<group>";
+		};
+		DA34F31A2C71E39E00171BFA /* AnimationDemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AnimationDemo;
 			sourceTree = "<group>";
 		};
 		DA63A5812C3C1583003EBB4B /* View */ = {
