@@ -39,6 +39,10 @@ struct WithAnimatableSpecficDependency: View {
     }
 }
 
+/*
+ In addition to associating different types of timing curve function, SwiftUI also allow associating timing curve functions with different durations.
+ When different dependencies of the same animatable ocmponents are associated with functions of different duration (or repeatFOrever eneabled) the interpolation calculation logic will become more complex and different combination will have different result. Use with caution
+ */
 #Preview {
     WithAnimatableSpecficDependency()
 }
