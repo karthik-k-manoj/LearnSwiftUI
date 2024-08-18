@@ -39,6 +39,7 @@
 		DA34F3242C7240BA00171BFA /* WithAnimationDependencyMustBeExplicit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34F3232C7240BA00171BFA /* WithAnimationDependencyMustBeExplicit.swift */; };
 		DA34F3262C7243B100171BFA /* AboutAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34F3252C7243B100171BFA /* AboutAnimatable.swift */; };
 		DA34F3282C725BDB00171BFA /* AnimatablePair.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34F3272C725BDB00171BFA /* AnimatablePair.swift */; };
+		DA34F32A2C72621600171BFA /* DisableAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34F3292C72621600171BFA /* DisableAnimation.swift */; };
 		DA4A6ADA2C612ED500AA1491 /* ShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6AD92C612ED500AA1491 /* ShakeView.swift */; };
 		DA4B6BC92C5CCD150060B0AB /* AnimationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */; };
 		DA4B6BCB2C5CD1930060B0AB /* OffsetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */; };
@@ -138,6 +139,7 @@
 		DA34F3232C7240BA00171BFA /* WithAnimationDependencyMustBeExplicit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithAnimationDependencyMustBeExplicit.swift; sourceTree = "<group>"; };
 		DA34F3252C7243B100171BFA /* AboutAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAnimatable.swift; sourceTree = "<group>"; };
 		DA34F3272C725BDB00171BFA /* AnimatablePair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatablePair.swift; sourceTree = "<group>"; };
+		DA34F3292C72621600171BFA /* DisableAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableAnimation.swift; sourceTree = "<group>"; };
 		DA4A6AD92C612ED500AA1491 /* ShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeView.swift; sourceTree = "<group>"; };
 		DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationExample.swift; sourceTree = "<group>"; };
 		DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetAnimation.swift; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 				DA34F31F2C71E7F800171BFA /* WithAnimatableSpecficDependency.swift */,
 				DA34F3252C7243B100171BFA /* AboutAnimatable.swift */,
 				DA34F3272C725BDB00171BFA /* AnimatablePair.swift */,
+				DA34F3292C72621600171BFA /* DisableAnimation.swift */,
 			);
 			path = AnimationDemo;
 			sourceTree = "<group>";
@@ -591,6 +594,7 @@
 				DAE652772C562DC50056EBD2 /* PracticeAlignment5.swift in Sources */,
 				DA63A57E2C39726A003EBB4B /* OnAppear.swift in Sources */,
 				DA0035DA2C4CBAB400928C84 /* FlexibleFrame2.swift in Sources */,
+				DA34F32A2C72621600171BFA /* DisableAnimation.swift in Sources */,
 				DA8799502C5FBDF200D31A97 /* AnimationWithNewModifieriOS17.swift in Sources */,
 				DA6073192C54E837008D718A /* PracticeAlignmentGuide3.swift in Sources */,
 				DA63A5782C390D7D003EBB4B /* LearnViewBuilder2.swift in Sources */,
