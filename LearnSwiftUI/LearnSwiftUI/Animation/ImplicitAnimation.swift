@@ -15,7 +15,9 @@ struct ImplicitAnimation: View {
             .foregroundColor(.red)
             .opacity(flag ? 1 : 0.5)
             // this override the animation 
-            .animation(nil)
+            .transaction { transaction in
+                transaction.animation = nil
+            }
             .frame(width: flag ? 100 : 50, height: flag ?  100 : 50)
             // imp to apply it as close as possible to the view modifier it needst to animate
             .animation(.linear, value: flag)

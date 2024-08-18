@@ -13,7 +13,7 @@ struct AnimationWithBody: View {
     var body: some View {
         Text("Hello World")
             .rotationEffect(flag ? .zero : .degrees(90))
-            .animation(.default)
+            .animation(.default, value: flag)
             .onTapGesture {
                 flag.toggle()
             }

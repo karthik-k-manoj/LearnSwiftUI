@@ -20,8 +20,9 @@ struct ImplicitTransaction: View {
     var body: some View {
         Rectangle()
             .frame(width: mutateWidth ? 100 : 50, height: 50)
+            .animation(.default, value: mutateWidth)
             .transaction { t in
-                t.animation = .default
+                t.disablesAnimations = false
             }
             .onTapGesture {
                 mutateWidth.toggle()
