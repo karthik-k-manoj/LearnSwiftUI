@@ -88,6 +88,7 @@
 		DA9D4E952BE3878B0058E063 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9D4E942BE3878B0058E063 /* Preview Assets.xcassets */; };
 		DAB46FB32C40058300024348 /* TextLeaf+fixedSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */; };
 		DAB46FB52C400A5C00024348 /* ShapeLeaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */; };
+		DAB665E92C75C45C00AFCC21 /* isContinuous.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB665E82C75C45C00AFCC21 /* isContinuous.swift */; };
 		DACF83E82C706A7D006C941C /* TransitionExample1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF83E72C706A7D006C941C /* TransitionExample1.swift */; };
 		DACF83EA2C707E7E006C941C /* WithTransitionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF83E92C707E7E006C941C /* WithTransitionExample.swift */; };
 		DAD2B7512C5E2CED00C0F84E /* BreathingAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2B7502C5E2CED00C0F84E /* BreathingAppView.swift */; };
@@ -189,6 +190,7 @@
 		DA9D4E942BE3878B0058E063 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextLeaf+fixedSize.swift"; sourceTree = "<group>"; };
 		DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeLeaf.swift; sourceTree = "<group>"; };
+		DAB665E82C75C45C00AFCC21 /* isContinuous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isContinuous.swift; sourceTree = "<group>"; };
 		DACF83E72C706A7D006C941C /* TransitionExample1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionExample1.swift; sourceTree = "<group>"; };
 		DACF83E92C707E7E006C941C /* WithTransitionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithTransitionExample.swift; sourceTree = "<group>"; };
 		DAD2B7502C5E2CED00C0F84E /* BreathingAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingAppView.swift; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 				DA34F3252C7243B100171BFA /* AboutAnimatable.swift */,
 				DA34F3272C725BDB00171BFA /* AnimatablePair.swift */,
 				DA34F3292C72621600171BFA /* DisableAnimation.swift */,
+				DAB665E82C75C45C00AFCC21 /* isContinuous.swift */,
 			);
 			path = AnimationDemo;
 			sourceTree = "<group>";
@@ -586,6 +589,7 @@
 				DA0035E82C4D267500928C84 /* Overlay.swift in Sources */,
 				DAE6527B2C567D470056EBD2 /* PracticeCustomAlignment.swift in Sources */,
 				DA29FE262C4E519800428576 /* HStack.swift in Sources */,
+				DAB665E92C75C45C00AFCC21 /* isContinuous.swift in Sources */,
 				DA4B6BD92C5CEC0C0060B0AB /* AnimateCornerRadius.swift in Sources */,
 				DA63A5802C399A67003EBB4B /* UnderstandViewBuilder.swift in Sources */,
 				DA0035D62C4C135400928C84 /* FixedFrame.swift in Sources */,
