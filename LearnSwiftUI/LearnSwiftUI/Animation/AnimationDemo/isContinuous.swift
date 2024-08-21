@@ -38,6 +38,11 @@ struct isContinuous: View {
     }
 }
 
+/*
+ According to offical doc, some controls like Slider will auto set isContinous during dragging bu
+ buti doesn't match the description in reality. However we can use it to set temp states in our code
+ */
+
 #Preview {
     isContinuous()
 }
