@@ -24,6 +24,7 @@
 		DA1AD0CF2C771B35005AB822 /* CustomTransitionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AD0CE2C771B35005AB822 /* CustomTransitionDemo.swift */; };
 		DA1AD0D12C772824005AB822 /* DIfferentTransitionBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AD0D02C772824005AB822 /* DIfferentTransitionBranch.swift */; };
 		DA1AD0D32C7741CB005AB822 /* ExplicitIdentifierAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AD0D22C7741CB005AB822 /* ExplicitIdentifierAnimation.swift */; };
+		DA1AD0D52C77460C005AB822 /* TransactionWithIdModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AD0D42C77460C005AB822 /* TransactionWithIdModifier.swift */; };
 		DA26C5DF2C5B5B960062FAA5 /* FrameWidthAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */; };
 		DA26C5E12C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */; };
 		DA26C5E32C5B63570062FAA5 /* ImplicitAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */; };
@@ -132,6 +133,7 @@
 		DA1AD0CE2C771B35005AB822 /* CustomTransitionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransitionDemo.swift; sourceTree = "<group>"; };
 		DA1AD0D02C772824005AB822 /* DIfferentTransitionBranch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIfferentTransitionBranch.swift; sourceTree = "<group>"; };
 		DA1AD0D22C7741CB005AB822 /* ExplicitIdentifierAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplicitIdentifierAnimation.swift; sourceTree = "<group>"; };
+		DA1AD0D42C77460C005AB822 /* TransactionWithIdModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionWithIdModifier.swift; sourceTree = "<group>"; };
 		DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWidthAnimation.swift; sourceTree = "<group>"; };
 		DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimationWithFrame.swift; sourceTree = "<group>"; };
 		DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitAnimation.swift; sourceTree = "<group>"; };
@@ -460,6 +462,7 @@
 				DAB665F52C75EB1C00AFCC21 /* WhatIsTransition.swift */,
 				DA1AD0CE2C771B35005AB822 /* CustomTransitionDemo.swift */,
 				DA1AD0D22C7741CB005AB822 /* ExplicitIdentifierAnimation.swift */,
+				DA1AD0D42C77460C005AB822 /* TransactionWithIdModifier.swift */,
 				DA1AD0D02C772824005AB822 /* DIfferentTransitionBranch.swift */,
 			);
 			path = Transition;
@@ -642,6 +645,7 @@
 				DA6C35AE2C5112EA00B20E9F /* HStackWithFlexibleFrame.swift in Sources */,
 				DA4A6ADA2C612ED500AA1491 /* ShakeView.swift in Sources */,
 				DA4B6BCB2C5CD1930060B0AB /* OffsetAnimation.swift in Sources */,
+				DA1AD0D52C77460C005AB822 /* TransactionWithIdModifier.swift in Sources */,
 				DA34F3262C7243B100171BFA /* AboutAnimatable.swift in Sources */,
 				DA4B6BD52C5CE39D0060B0AB /* StrokeAnimation.swift in Sources */,
 				DA8D42AD2C52488B00C955B6 /* ClearConsole.swift in Sources */,
