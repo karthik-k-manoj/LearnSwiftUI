@@ -39,3 +39,15 @@ struct WithAnimation: View {
 #Preview {
     WithAnimation()
 }
+
+extension View {
+    @ViewBuilder
+    func transactionMonitor(_ title: String, _ showAnimation: Bool = true) -> some View {
+        transaction { transaction in
+            print(title, terminator: showAnimation ? ": " : "\n")
+            if showAnimation {
+                print(transaction.animation ?? "nil")
+            }
+        }
+    }
+}

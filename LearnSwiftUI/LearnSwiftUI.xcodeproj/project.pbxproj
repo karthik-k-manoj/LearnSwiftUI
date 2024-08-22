@@ -25,6 +25,7 @@
 		DA1AD0D12C772824005AB822 /* DIfferentTransitionBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AD0D02C772824005AB822 /* DIfferentTransitionBranch.swift */; };
 		DA1AD0D32C7741CB005AB822 /* ExplicitIdentifierAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AD0D22C7741CB005AB822 /* ExplicitIdentifierAnimation.swift */; };
 		DA1AD0D52C77460C005AB822 /* TransactionWithIdModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AD0D42C77460C005AB822 /* TransactionWithIdModifier.swift */; };
+		DA1AD0D72C776D8F005AB822 /* TransactionUnderstanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AD0D62C776D8F005AB822 /* TransactionUnderstanding.swift */; };
 		DA26C5DF2C5B5B960062FAA5 /* FrameWidthAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */; };
 		DA26C5E12C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */; };
 		DA26C5E32C5B63570062FAA5 /* ImplicitAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */; };
@@ -134,6 +135,7 @@
 		DA1AD0D02C772824005AB822 /* DIfferentTransitionBranch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIfferentTransitionBranch.swift; sourceTree = "<group>"; };
 		DA1AD0D22C7741CB005AB822 /* ExplicitIdentifierAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplicitIdentifierAnimation.swift; sourceTree = "<group>"; };
 		DA1AD0D42C77460C005AB822 /* TransactionWithIdModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionWithIdModifier.swift; sourceTree = "<group>"; };
+		DA1AD0D62C776D8F005AB822 /* TransactionUnderstanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionUnderstanding.swift; sourceTree = "<group>"; };
 		DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWidthAnimation.swift; sourceTree = "<group>"; };
 		DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimationWithFrame.swift; sourceTree = "<group>"; };
 		DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitAnimation.swift; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 				DAB665EA2C75C88500AFCC21 /* TransactionWithBinding.swift */,
 				DAB665EC2C75CD1300AFCC21 /* SetTimingCurveFunction1.swift */,
 				DAB665EE2C75CDDD00AFCC21 /* SetTimingCurveFunction2.swift */,
+				DA1AD0D62C776D8F005AB822 /* TransactionUnderstanding.swift */,
 			);
 			path = AnimationDemo;
 			sourceTree = "<group>";
@@ -638,6 +641,7 @@
 				DAB665ED2C75CD1300AFCC21 /* SetTimingCurveFunction1.swift in Sources */,
 				DA34F32A2C72621600171BFA /* DisableAnimation.swift in Sources */,
 				DA8799502C5FBDF200D31A97 /* AnimationWithNewModifieriOS17.swift in Sources */,
+				DA1AD0D72C776D8F005AB822 /* TransactionUnderstanding.swift in Sources */,
 				DA6073192C54E837008D718A /* PracticeAlignmentGuide3.swift in Sources */,
 				DA63A5782C390D7D003EBB4B /* LearnViewBuilder2.swift in Sources */,
 				DAB665F62C75EB1C00AFCC21 /* WhatIsTransition.swift in Sources */,
