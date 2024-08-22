@@ -16,6 +16,10 @@ struct MyTransition: ViewModifier {
     }
 }
 
+/*
+ AnyTransition.modifier both active and identity should be of
+ the same type.
+ */
 extension AnyTransition {
     static var rotation: AnyTransition {
         AnyTransition.modifier(active: MyTransition(rotation: .degrees(360)), identity: MyTransition(rotation: .zero))
