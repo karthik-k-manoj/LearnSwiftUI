@@ -21,6 +21,7 @@
 		DA0035E42C4CD81100928C84 /* FlexibleFrameExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0035E32C4CD81100928C84 /* FlexibleFrameExample.swift */; };
 		DA0035E62C4D157E00928C84 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0035E52C4D157E00928C84 /* Background.swift */; };
 		DA0035E82C4D267500928C84 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0035E72C4D267500928C84 /* Overlay.swift */; };
+		DA1AD0CF2C771B35005AB822 /* CustomTransitionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AD0CE2C771B35005AB822 /* CustomTransitionDemo.swift */; };
 		DA26C5DF2C5B5B960062FAA5 /* FrameWidthAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */; };
 		DA26C5E12C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */; };
 		DA26C5E32C5B63570062FAA5 /* ImplicitAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */; };
@@ -126,6 +127,7 @@
 		DA0035E32C4CD81100928C84 /* FlexibleFrameExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleFrameExample.swift; sourceTree = "<group>"; };
 		DA0035E52C4D157E00928C84 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		DA0035E72C4D267500928C84 /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
+		DA1AD0CE2C771B35005AB822 /* CustomTransitionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransitionDemo.swift; sourceTree = "<group>"; };
 		DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWidthAnimation.swift; sourceTree = "<group>"; };
 		DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimationWithFrame.swift; sourceTree = "<group>"; };
 		DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitAnimation.swift; sourceTree = "<group>"; };
@@ -452,6 +454,7 @@
 			isa = PBXGroup;
 			children = (
 				DAB665F52C75EB1C00AFCC21 /* WhatIsTransition.swift */,
+				DA1AD0CE2C771B35005AB822 /* CustomTransitionDemo.swift */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -620,6 +623,7 @@
 				DAB665EB2C75C88500AFCC21 /* TransactionWithBinding.swift in Sources */,
 				DA63A57E2C39726A003EBB4B /* OnAppear.swift in Sources */,
 				DA0035DA2C4CBAB400928C84 /* FlexibleFrame2.swift in Sources */,
+				DA1AD0CF2C771B35005AB822 /* CustomTransitionDemo.swift in Sources */,
 				DAB665ED2C75CD1300AFCC21 /* SetTimingCurveFunction1.swift in Sources */,
 				DA34F32A2C72621600171BFA /* DisableAnimation.swift in Sources */,
 				DA8799502C5FBDF200D31A97 /* AnimationWithNewModifieriOS17.swift in Sources */,
