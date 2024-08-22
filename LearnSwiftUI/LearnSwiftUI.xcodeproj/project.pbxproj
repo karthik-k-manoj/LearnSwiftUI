@@ -23,6 +23,7 @@
 		DA0035E82C4D267500928C84 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0035E72C4D267500928C84 /* Overlay.swift */; };
 		DA1AD0CF2C771B35005AB822 /* CustomTransitionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AD0CE2C771B35005AB822 /* CustomTransitionDemo.swift */; };
 		DA1AD0D12C772824005AB822 /* DIfferentTransitionBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AD0D02C772824005AB822 /* DIfferentTransitionBranch.swift */; };
+		DA1AD0D32C7741CB005AB822 /* ExplicitIdentifierAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AD0D22C7741CB005AB822 /* ExplicitIdentifierAnimation.swift */; };
 		DA26C5DF2C5B5B960062FAA5 /* FrameWidthAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */; };
 		DA26C5E12C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */; };
 		DA26C5E32C5B63570062FAA5 /* ImplicitAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */; };
@@ -130,6 +131,7 @@
 		DA0035E72C4D267500928C84 /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
 		DA1AD0CE2C771B35005AB822 /* CustomTransitionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransitionDemo.swift; sourceTree = "<group>"; };
 		DA1AD0D02C772824005AB822 /* DIfferentTransitionBranch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIfferentTransitionBranch.swift; sourceTree = "<group>"; };
+		DA1AD0D22C7741CB005AB822 /* ExplicitIdentifierAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplicitIdentifierAnimation.swift; sourceTree = "<group>"; };
 		DA26C5DE2C5B5B960062FAA5 /* FrameWidthAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWidthAnimation.swift; sourceTree = "<group>"; };
 		DA26C5E02C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimationWithFrame.swift; sourceTree = "<group>"; };
 		DA26C5E22C5B63570062FAA5 /* ImplicitAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitAnimation.swift; sourceTree = "<group>"; };
@@ -457,6 +459,7 @@
 			children = (
 				DAB665F52C75EB1C00AFCC21 /* WhatIsTransition.swift */,
 				DA1AD0CE2C771B35005AB822 /* CustomTransitionDemo.swift */,
+				DA1AD0D22C7741CB005AB822 /* ExplicitIdentifierAnimation.swift */,
 				DA1AD0D02C772824005AB822 /* DIfferentTransitionBranch.swift */,
 			);
 			path = Transition;
@@ -615,6 +618,7 @@
 				DA0035E02C4CD37C00928C84 /* FrameWithMinWidth.swift in Sources */,
 				DA8D42B02C524C1200C955B6 /* CGFloat+extension.swift in Sources */,
 				DA0035E82C4D267500928C84 /* Overlay.swift in Sources */,
+				DA1AD0D32C7741CB005AB822 /* ExplicitIdentifierAnimation.swift in Sources */,
 				DAE6527B2C567D470056EBD2 /* PracticeCustomAlignment.swift in Sources */,
 				DA29FE262C4E519800428576 /* HStack.swift in Sources */,
 				DAB665E92C75C45C00AFCC21 /* isContinuous.swift in Sources */,

@@ -1,0 +1,36 @@
+//
+//  ExplicitIdentifierAnimation.swift
+//  LearnSwiftUI
+//
+//  Created by Karthik K Manoj on 22/08/24.
+//
+
+import SwiftUI
+
+struct ExplicitIdentifierAnimation: View {
+    @State private var items = (0...100).map { $0 }
+    
+    var body: some View {
+        VStack {
+            List {
+                ForEach(items, id: \.self) { item in
+                    Text("\(item)")
+                }
+            }
+        }
+        .animation(.easeIn(duration: 2), value: items)
+        Button("Remove second") {
+            items.remove(at: 1)
+        }
+        
+        // if duplicate elements are added to list then it causes issues so we need to identify them
+        
+        Button("Add second") {
+            items.insert(Int.random(in: 0...100), at: 1)
+        }
+    }
+}
+
+#Preview {
+    ExplicitIdentifierAnimation()
+}
