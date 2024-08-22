@@ -16,9 +16,38 @@ struct MyTransition: ViewModifier {
     }
 }
 
+extension AnyTransition {
+    static var rotation: AnyTransition {
+        AnyTransition.modifier(active: MyTransition(rotation: .degrees(360)), identity: MyTransition(rotation: .zero))
+    }
+}
+
 struct CustomTransitionDemo: View {
+    @State var show = false
+    
+    // here MyTransition deos not appear to conform to the Animatable protocol, the rotation effect within it (which is an animatable ViewModifier)
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            VStack {
+                Spacer()
+                Text("Hello")
+                if show {
+                    Text("World")
+                        .transition(.rotation.combined(with: .opacity))
+                }
+                Spacer()
+            }
+            .animation(.easeInOut(duration: 2), value: show)
+            
+            Button(show ? "Hide" : "Show") {
+                show.toggle()
+            }
+            .border(.red)
+        }
+        .frame(width: 300, height: 300)
+        .onChange(of: show) {
+            print($0)
+        }
     }
 }
 
