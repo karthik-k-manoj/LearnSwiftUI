@@ -92,6 +92,7 @@
 		DAB665EB2C75C88500AFCC21 /* TransactionWithBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB665EA2C75C88500AFCC21 /* TransactionWithBinding.swift */; };
 		DAB665ED2C75CD1300AFCC21 /* SetTimingCurveFunction1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB665EC2C75CD1300AFCC21 /* SetTimingCurveFunction1.swift */; };
 		DAB665EF2C75CDDD00AFCC21 /* SetTimingCurveFunction2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB665EE2C75CDDD00AFCC21 /* SetTimingCurveFunction2.swift */; };
+		DAB665F62C75EB1C00AFCC21 /* WhatIsTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB665F52C75EB1C00AFCC21 /* WhatIsTransition.swift */; };
 		DACF83E82C706A7D006C941C /* TransitionExample1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF83E72C706A7D006C941C /* TransitionExample1.swift */; };
 		DACF83EA2C707E7E006C941C /* WithTransitionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF83E92C707E7E006C941C /* WithTransitionExample.swift */; };
 		DAD2B7512C5E2CED00C0F84E /* BreathingAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2B7502C5E2CED00C0F84E /* BreathingAppView.swift */; };
@@ -197,6 +198,7 @@
 		DAB665EA2C75C88500AFCC21 /* TransactionWithBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionWithBinding.swift; sourceTree = "<group>"; };
 		DAB665EC2C75CD1300AFCC21 /* SetTimingCurveFunction1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimingCurveFunction1.swift; sourceTree = "<group>"; };
 		DAB665EE2C75CDDD00AFCC21 /* SetTimingCurveFunction2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimingCurveFunction2.swift; sourceTree = "<group>"; };
+		DAB665F52C75EB1C00AFCC21 /* WhatIsTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsTransition.swift; sourceTree = "<group>"; };
 		DACF83E72C706A7D006C941C /* TransitionExample1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionExample1.swift; sourceTree = "<group>"; };
 		DACF83E92C707E7E006C941C /* WithTransitionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithTransitionExample.swift; sourceTree = "<group>"; };
 		DAD2B7502C5E2CED00C0F84E /* BreathingAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingAppView.swift; sourceTree = "<group>"; };
@@ -449,6 +451,7 @@
 		DAB665F32C75EAB800AFCC21 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				DAB665F52C75EB1C00AFCC21 /* WhatIsTransition.swift */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -622,6 +625,7 @@
 				DA8799502C5FBDF200D31A97 /* AnimationWithNewModifieriOS17.swift in Sources */,
 				DA6073192C54E837008D718A /* PracticeAlignmentGuide3.swift in Sources */,
 				DA63A5782C390D7D003EBB4B /* LearnViewBuilder2.swift in Sources */,
+				DAB665F62C75EB1C00AFCC21 /* WhatIsTransition.swift in Sources */,
 				DA9D4E902BE3878A0058E063 /* StateObject_.swift in Sources */,
 				DA6C35AE2C5112EA00B20E9F /* HStackWithFlexibleFrame.swift in Sources */,
 				DA4A6ADA2C612ED500AA1491 /* ShakeView.swift in Sources */,
