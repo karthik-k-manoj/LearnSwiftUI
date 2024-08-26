@@ -265,6 +265,7 @@
 		DA26C5DD2C5B5B860062FAA5 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				DA47C4F32C7C5707007B15D2 /* Phase Animator */,
 				DAB665F32C75EAB800AFCC21 /* Transition */,
 				DA34F31A2C71E39E00171BFA /* AnimationDemo */,
 				DA4A6AD92C612ED500AA1491 /* ShakeView.swift */,
@@ -348,6 +349,13 @@
 				DA1AD0D62C776D8F005AB822 /* TransactionUnderstanding.swift */,
 			);
 			path = AnimationDemo;
+			sourceTree = "<group>";
+		};
+		DA47C4F32C7C5707007B15D2 /* Phase Animator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Phase Animator";
 			sourceTree = "<group>";
 		};
 		DA63A5812C3C1583003EBB4B /* View */ = {
