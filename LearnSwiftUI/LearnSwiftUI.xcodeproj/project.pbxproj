@@ -46,6 +46,7 @@
 		DA34F3282C725BDB00171BFA /* AnimatablePair.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34F3272C725BDB00171BFA /* AnimatablePair.swift */; };
 		DA34F32A2C72621600171BFA /* DisableAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34F3292C72621600171BFA /* DisableAnimation.swift */; };
 		DA47C4F52C7C574A007B15D2 /* PhaseBasedAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47C4F42C7C574A007B15D2 /* PhaseBasedAnimation.swift */; };
+		DA47C4F82C7C6D2B007B15D2 /* GeoReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47C4F72C7C6D2B007B15D2 /* GeoReader.swift */; };
 		DA4A6ADA2C612ED500AA1491 /* ShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6AD92C612ED500AA1491 /* ShakeView.swift */; };
 		DA4B6BC92C5CCD150060B0AB /* AnimationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */; };
 		DA4B6BCB2C5CD1930060B0AB /* OffsetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */; };
@@ -157,6 +158,7 @@
 		DA34F3272C725BDB00171BFA /* AnimatablePair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatablePair.swift; sourceTree = "<group>"; };
 		DA34F3292C72621600171BFA /* DisableAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableAnimation.swift; sourceTree = "<group>"; };
 		DA47C4F42C7C574A007B15D2 /* PhaseBasedAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseBasedAnimation.swift; sourceTree = "<group>"; };
+		DA47C4F72C7C6D2B007B15D2 /* GeoReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoReader.swift; sourceTree = "<group>"; };
 		DA4A6AD92C612ED500AA1491 /* ShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeView.swift; sourceTree = "<group>"; };
 		DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationExample.swift; sourceTree = "<group>"; };
 		DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetAnimation.swift; sourceTree = "<group>"; };
@@ -361,6 +363,14 @@
 			path = "Phase Animator";
 			sourceTree = "<group>";
 		};
+		DA47C4F62C7C6D15007B15D2 /* GeometeryReader */ = {
+			isa = PBXGroup;
+			children = (
+				DA47C4F72C7C6D2B007B15D2 /* GeoReader.swift */,
+			);
+			path = GeometeryReader;
+			sourceTree = "<group>";
+		};
 		DA63A5812C3C1583003EBB4B /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,6 +434,7 @@
 		DA9D4E8C2BE3878A0058E063 /* LearnSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DA47C4F62C7C6D15007B15D2 /* GeometeryReader */,
 				DACF83E62C706A6F006C941C /* Transition */,
 				DAD2B7522C5E7C8400C0F84E /* RecordPlayer */,
 				DAD2B74F2C5E2CDF00C0F84E /* BreathingApp */,
@@ -666,6 +677,7 @@
 				DA8D42AD2C52488B00C955B6 /* ClearConsole.swift in Sources */,
 				DA96326F2C58A648006069BB /* ReadFromEnvironment.swift in Sources */,
 				DA0035D22C4BFA0A00928C84 /* Padding1.swift in Sources */,
+				DA47C4F82C7C6D2B007B15D2 /* GeoReader.swift in Sources */,
 				DA0035DE2C4CD23B00928C84 /* FlexibleFrameMaxWidth.swift in Sources */,
 				DA34F31E2C71E69100171BFA /* WithAnimation.swift in Sources */,
 				DA9632712C58AC4D006069BB /* BadgeWithEnvironment.swift in Sources */,
