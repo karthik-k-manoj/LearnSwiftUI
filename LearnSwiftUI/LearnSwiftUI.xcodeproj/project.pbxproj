@@ -45,6 +45,7 @@
 		DA34F3262C7243B100171BFA /* AboutAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34F3252C7243B100171BFA /* AboutAnimatable.swift */; };
 		DA34F3282C725BDB00171BFA /* AnimatablePair.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34F3272C725BDB00171BFA /* AnimatablePair.swift */; };
 		DA34F32A2C72621600171BFA /* DisableAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34F3292C72621600171BFA /* DisableAnimation.swift */; };
+		DA47C4F52C7C574A007B15D2 /* PhaseBasedAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47C4F42C7C574A007B15D2 /* PhaseBasedAnimation.swift */; };
 		DA4A6ADA2C612ED500AA1491 /* ShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6AD92C612ED500AA1491 /* ShakeView.swift */; };
 		DA4B6BC92C5CCD150060B0AB /* AnimationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */; };
 		DA4B6BCB2C5CD1930060B0AB /* OffsetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */; };
@@ -155,6 +156,7 @@
 		DA34F3252C7243B100171BFA /* AboutAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAnimatable.swift; sourceTree = "<group>"; };
 		DA34F3272C725BDB00171BFA /* AnimatablePair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatablePair.swift; sourceTree = "<group>"; };
 		DA34F3292C72621600171BFA /* DisableAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableAnimation.swift; sourceTree = "<group>"; };
+		DA47C4F42C7C574A007B15D2 /* PhaseBasedAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseBasedAnimation.swift; sourceTree = "<group>"; };
 		DA4A6AD92C612ED500AA1491 /* ShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeView.swift; sourceTree = "<group>"; };
 		DA4B6BC82C5CCD150060B0AB /* AnimationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationExample.swift; sourceTree = "<group>"; };
 		DA4B6BCA2C5CD1930060B0AB /* OffsetAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetAnimation.swift; sourceTree = "<group>"; };
@@ -354,6 +356,7 @@
 		DA47C4F32C7C5707007B15D2 /* Phase Animator */ = {
 			isa = PBXGroup;
 			children = (
+				DA47C4F42C7C574A007B15D2 /* PhaseBasedAnimation.swift */,
 			);
 			path = "Phase Animator";
 			sourceTree = "<group>";
@@ -698,6 +701,7 @@
 				DA34F31C2C71E40B00171BFA /* AnimationWithoutValue.swift in Sources */,
 				DA34F3242C7240BA00171BFA /* WithAnimationDependencyMustBeExplicit.swift in Sources */,
 				DAD2B75B2C5E8D5300C0F84E /* RecordPlayerMainView.swift in Sources */,
+				DA47C4F52C7C574A007B15D2 /* PhaseBasedAnimation.swift in Sources */,
 				DA6073172C54BEEE008D718A /* PracticeAlignmentGuide2.swift in Sources */,
 				DA9B2ECF2C3EBC2D003BDF58 /* TextLeaf.swift in Sources */,
 				DA26C5E52C5B8B560062FAA5 /* AnimationWithBody.swift in Sources */,
