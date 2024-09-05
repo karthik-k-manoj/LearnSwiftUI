@@ -95,6 +95,7 @@
 		DA9D4E952BE3878B0058E063 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9D4E942BE3878B0058E063 /* Preview Assets.xcassets */; };
 		DAA875302C89658900F06BAE /* PreferenceBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA8752F2C89658900F06BAE /* PreferenceBasic.swift */; };
 		DAA875322C896B7D00F06BAE /* PreferenceBasic2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA875312C896B7D00F06BAE /* PreferenceBasic2.swift */; };
+		DAA875342C89735100F06BAE /* PreferenceBasic3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA875332C89735100F06BAE /* PreferenceBasic3.swift */; };
 		DAB46FB32C40058300024348 /* TextLeaf+fixedSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */; };
 		DAB46FB52C400A5C00024348 /* ShapeLeaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */; };
 		DAB665E92C75C45C00AFCC21 /* isContinuous.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB665E82C75C45C00AFCC21 /* isContinuous.swift */; };
@@ -210,6 +211,7 @@
 		DA9D4E942BE3878B0058E063 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DAA8752F2C89658900F06BAE /* PreferenceBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceBasic.swift; sourceTree = "<group>"; };
 		DAA875312C896B7D00F06BAE /* PreferenceBasic2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceBasic2.swift; sourceTree = "<group>"; };
+		DAA875332C89735100F06BAE /* PreferenceBasic3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceBasic3.swift; sourceTree = "<group>"; };
 		DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextLeaf+fixedSize.swift"; sourceTree = "<group>"; };
 		DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeLeaf.swift; sourceTree = "<group>"; };
 		DAB665E82C75C45C00AFCC21 /* isContinuous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isContinuous.swift; sourceTree = "<group>"; };
@@ -481,6 +483,7 @@
 			children = (
 				DAA8752F2C89658900F06BAE /* PreferenceBasic.swift */,
 				DAA875312C896B7D00F06BAE /* PreferenceBasic2.swift */,
+				DAA875332C89735100F06BAE /* PreferenceBasic3.swift */,
 			);
 			path = Preference;
 			sourceTree = "<group>";
@@ -671,6 +674,7 @@
 				DA0035E62C4D157E00928C84 /* Background.swift in Sources */,
 				DAE652772C562DC50056EBD2 /* PracticeAlignment5.swift in Sources */,
 				DAB665EB2C75C88500AFCC21 /* TransactionWithBinding.swift in Sources */,
+				DAA875342C89735100F06BAE /* PreferenceBasic3.swift in Sources */,
 				DA63A57E2C39726A003EBB4B /* OnAppear.swift in Sources */,
 				DA0035DA2C4CBAB400928C84 /* FlexibleFrame2.swift in Sources */,
 				DA1AD0CF2C771B35005AB822 /* CustomTransitionDemo.swift in Sources */,
