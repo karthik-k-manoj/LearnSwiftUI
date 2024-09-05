@@ -52,6 +52,10 @@ extension View {
  If we target iOS 17/macOS 14, there’s a new variant of onChange that takes an initial parameter, which indicates whether the perform closure should be called initially in addition to when the value changes:
  */
 
+/*
+ In many cases, this is the simplest solution to measure the size of a single view and propagate the measurement to an ancestor. However, when we need to measure multiple related views, using onAppear and onChange(of:) doesn’t scale very well. Instead, we can use preferences.
+ */
+
 #Preview {
     GeoReader(text: "Hello World!!")
 }
