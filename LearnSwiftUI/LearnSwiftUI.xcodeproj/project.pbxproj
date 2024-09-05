@@ -96,6 +96,7 @@
 		DAA875302C89658900F06BAE /* PreferenceBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA8752F2C89658900F06BAE /* PreferenceBasic.swift */; };
 		DAA875322C896B7D00F06BAE /* PreferenceBasic2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA875312C896B7D00F06BAE /* PreferenceBasic2.swift */; };
 		DAA875342C89735100F06BAE /* PreferenceBasic3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA875332C89735100F06BAE /* PreferenceBasic3.swift */; };
+		DAA875362C89B5D400F06BAE /* ReadSizeUsingGeometeryReaderAndPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA875352C89B5D400F06BAE /* ReadSizeUsingGeometeryReaderAndPreference.swift */; };
 		DAB46FB32C40058300024348 /* TextLeaf+fixedSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */; };
 		DAB46FB52C400A5C00024348 /* ShapeLeaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */; };
 		DAB665E92C75C45C00AFCC21 /* isContinuous.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB665E82C75C45C00AFCC21 /* isContinuous.swift */; };
@@ -212,6 +213,7 @@
 		DAA8752F2C89658900F06BAE /* PreferenceBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceBasic.swift; sourceTree = "<group>"; };
 		DAA875312C896B7D00F06BAE /* PreferenceBasic2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceBasic2.swift; sourceTree = "<group>"; };
 		DAA875332C89735100F06BAE /* PreferenceBasic3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceBasic3.swift; sourceTree = "<group>"; };
+		DAA875352C89B5D400F06BAE /* ReadSizeUsingGeometeryReaderAndPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadSizeUsingGeometeryReaderAndPreference.swift; sourceTree = "<group>"; };
 		DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextLeaf+fixedSize.swift"; sourceTree = "<group>"; };
 		DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeLeaf.swift; sourceTree = "<group>"; };
 		DAB665E82C75C45C00AFCC21 /* isContinuous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isContinuous.swift; sourceTree = "<group>"; };
@@ -483,6 +485,7 @@
 			children = (
 				DAA8752F2C89658900F06BAE /* PreferenceBasic.swift */,
 				DAA875312C896B7D00F06BAE /* PreferenceBasic2.swift */,
+				DAA875352C89B5D400F06BAE /* ReadSizeUsingGeometeryReaderAndPreference.swift */,
 				DAA875332C89735100F06BAE /* PreferenceBasic3.swift */,
 			);
 			path = Preference;
@@ -717,6 +720,7 @@
 				DA4B6BD12C5CDF9F0060B0AB /* SystemShapeScalingAnimation.swift in Sources */,
 				DA34F3222C71E8CC00171BFA /* AnimatableWithSpecificDependency.swift in Sources */,
 				DA0035CF2C4BF4B900928C84 /* LearnViewModifier2.swift in Sources */,
+				DAA875362C89B5D400F06BAE /* ReadSizeUsingGeometeryReaderAndPreference.swift in Sources */,
 				DA6C35B22C513B7D00B20E9F /* ZStack_.swift in Sources */,
 				DA63A57C2C3967FC003EBB4B /* DynamicContent.swift in Sources */,
 				DA26C5E32C5B63570062FAA5 /* ImplicitAnimation.swift in Sources */,
