@@ -93,6 +93,7 @@
 		DA9D4E902BE3878A0058E063 /* StateObject_.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D4E8F2BE3878A0058E063 /* StateObject_.swift */; };
 		DA9D4E922BE3878B0058E063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9D4E912BE3878B0058E063 /* Assets.xcassets */; };
 		DA9D4E952BE3878B0058E063 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9D4E942BE3878B0058E063 /* Preview Assets.xcassets */; };
+		DAA875302C89658900F06BAE /* PreferenceBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA8752F2C89658900F06BAE /* PreferenceBasic.swift */; };
 		DAB46FB32C40058300024348 /* TextLeaf+fixedSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */; };
 		DAB46FB52C400A5C00024348 /* ShapeLeaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */; };
 		DAB665E92C75C45C00AFCC21 /* isContinuous.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB665E82C75C45C00AFCC21 /* isContinuous.swift */; };
@@ -206,6 +207,7 @@
 		DA9D4E8F2BE3878A0058E063 /* StateObject_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObject_.swift; sourceTree = "<group>"; };
 		DA9D4E912BE3878B0058E063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA9D4E942BE3878B0058E063 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DAA8752F2C89658900F06BAE /* PreferenceBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceBasic.swift; sourceTree = "<group>"; };
 		DAB46FB22C40058300024348 /* TextLeaf+fixedSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextLeaf+fixedSize.swift"; sourceTree = "<group>"; };
 		DAB46FB42C400A5C00024348 /* ShapeLeaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeLeaf.swift; sourceTree = "<group>"; };
 		DAB665E82C75C45C00AFCC21 /* isContinuous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isContinuous.swift; sourceTree = "<group>"; };
@@ -434,6 +436,7 @@
 		DA9D4E8C2BE3878A0058E063 /* LearnSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DAA8752E2C89657900F06BAE /* Preference */,
 				DA47C4F62C7C6D15007B15D2 /* GeometeryReader */,
 				DACF83E62C706A6F006C941C /* Transition */,
 				DAD2B7522C5E7C8400C0F84E /* RecordPlayer */,
@@ -469,6 +472,14 @@
 				DA9D4E942BE3878B0058E063 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DAA8752E2C89657900F06BAE /* Preference */ = {
+			isa = PBXGroup;
+			children = (
+				DAA8752F2C89658900F06BAE /* PreferenceBasic.swift */,
+			);
+			path = Preference;
 			sourceTree = "<group>";
 		};
 		DAB46FB62C40197400024348 /* Shape */ = {
@@ -691,6 +702,7 @@
 				DA29FE232C4E214E00428576 /* FixedSizeWithOverlayBadge.swift in Sources */,
 				DA8D42AB2C5243F700C955B6 /* ConsoleView.swift in Sources */,
 				DA26C5E12C5B5ED10062FAA5 /* TransitionAnimationWithFrame.swift in Sources */,
+				DAA875302C89658900F06BAE /* PreferenceBasic.swift in Sources */,
 				DA31C4E82C425792009EBB36 /* BorderShape.swift in Sources */,
 				DA63A5832C3C15C0003EBB4B /* WhatIsAView.swift in Sources */,
 				DA9632732C58B7C2006069BB /* CustomComponentStyle.swift in Sources */,
