@@ -60,6 +60,7 @@
 		DA4B6BD92C5CEC0C0060B0AB /* AnimateCornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BD82C5CEC0C0060B0AB /* AnimateCornerRadius.swift */; };
 		DA5BE41D2C8C270700B6EA59 /* ViewThatFits2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5BE41C2C8C270700B6EA59 /* ViewThatFits2.swift */; };
 		DA5BE41F2C8C3D5000B6EA59 /* ViewThatFits3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5BE41E2C8C3D5000B6EA59 /* ViewThatFits3.swift */; };
+		DA5BE4212C8C3FAF00B6EA59 /* AdapativeScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5BE4202C8C3FAF00B6EA59 /* AdapativeScrolling.swift */; };
 		DA6073172C54BEEE008D718A /* PracticeAlignmentGuide2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6073162C54BEEE008D718A /* PracticeAlignmentGuide2.swift */; };
 		DA6073192C54E837008D718A /* PracticeAlignmentGuide3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6073182C54E837008D718A /* PracticeAlignmentGuide3.swift */; };
 		DA60731B2C54FA67008D718A /* PracticeAlignment4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60731A2C54FA67008D718A /* PracticeAlignment4.swift */; };
@@ -179,6 +180,7 @@
 		DA4B6BD82C5CEC0C0060B0AB /* AnimateCornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateCornerRadius.swift; sourceTree = "<group>"; };
 		DA5BE41C2C8C270700B6EA59 /* ViewThatFits2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFits2.swift; sourceTree = "<group>"; };
 		DA5BE41E2C8C3D5000B6EA59 /* ViewThatFits3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFits3.swift; sourceTree = "<group>"; };
+		DA5BE4202C8C3FAF00B6EA59 /* AdapativeScrolling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapativeScrolling.swift; sourceTree = "<group>"; };
 		DA6073162C54BEEE008D718A /* PracticeAlignmentGuide2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignmentGuide2.swift; sourceTree = "<group>"; };
 		DA6073182C54E837008D718A /* PracticeAlignmentGuide3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignmentGuide3.swift; sourceTree = "<group>"; };
 		DA60731A2C54FA67008D718A /* PracticeAlignment4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignment4.swift; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 				DA17657F2C8B594F0075271B /* ViewThatFits1.swift */,
 				DA5BE41C2C8C270700B6EA59 /* ViewThatFits2.swift */,
 				DA5BE41E2C8C3D5000B6EA59 /* ViewThatFits3.swift */,
+				DA5BE4202C8C3FAF00B6EA59 /* AdapativeScrolling.swift */,
 			);
 			path = ViewThatFits;
 			sourceTree = "<group>";
@@ -725,6 +728,7 @@
 				DA4B6BC92C5CCD150060B0AB /* AnimationExample.swift in Sources */,
 				DA9D4E8E2BE3878A0058E063 /* LearnSwiftUIApp.swift in Sources */,
 				DA9B2ECD2C3EA2B8003BDF58 /* HowLayoutWorks.swift in Sources */,
+				DA5BE4212C8C3FAF00B6EA59 /* AdapativeScrolling.swift in Sources */,
 				DA63A57A2C393EDA003EBB4B /* LearnGroup.swift in Sources */,
 				DAD2B7542C5E7DC500C0F84E /* RecordPlayerBox.swift in Sources */,
 				DA63A5762C38F9CC003EBB4B /* LearnViewBuilder.swift in Sources */,
