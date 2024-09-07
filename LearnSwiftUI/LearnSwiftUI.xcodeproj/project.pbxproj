@@ -59,6 +59,7 @@
 		DA4B6BD72C5CE6520060B0AB /* TrimModifierAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BD62C5CE6520060B0AB /* TrimModifierAnimation.swift */; };
 		DA4B6BD92C5CEC0C0060B0AB /* AnimateCornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B6BD82C5CEC0C0060B0AB /* AnimateCornerRadius.swift */; };
 		DA5BE41D2C8C270700B6EA59 /* ViewThatFits2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5BE41C2C8C270700B6EA59 /* ViewThatFits2.swift */; };
+		DA5BE41F2C8C3D5000B6EA59 /* ViewThatFits3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5BE41E2C8C3D5000B6EA59 /* ViewThatFits3.swift */; };
 		DA6073172C54BEEE008D718A /* PracticeAlignmentGuide2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6073162C54BEEE008D718A /* PracticeAlignmentGuide2.swift */; };
 		DA6073192C54E837008D718A /* PracticeAlignmentGuide3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6073182C54E837008D718A /* PracticeAlignmentGuide3.swift */; };
 		DA60731B2C54FA67008D718A /* PracticeAlignment4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60731A2C54FA67008D718A /* PracticeAlignment4.swift */; };
@@ -177,6 +178,7 @@
 		DA4B6BD62C5CE6520060B0AB /* TrimModifierAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimModifierAnimation.swift; sourceTree = "<group>"; };
 		DA4B6BD82C5CEC0C0060B0AB /* AnimateCornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateCornerRadius.swift; sourceTree = "<group>"; };
 		DA5BE41C2C8C270700B6EA59 /* ViewThatFits2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFits2.swift; sourceTree = "<group>"; };
+		DA5BE41E2C8C3D5000B6EA59 /* ViewThatFits3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFits3.swift; sourceTree = "<group>"; };
 		DA6073162C54BEEE008D718A /* PracticeAlignmentGuide2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignmentGuide2.swift; sourceTree = "<group>"; };
 		DA6073182C54E837008D718A /* PracticeAlignmentGuide3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignmentGuide3.swift; sourceTree = "<group>"; };
 		DA60731A2C54FA67008D718A /* PracticeAlignment4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignment4.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 			children = (
 				DA17657F2C8B594F0075271B /* ViewThatFits1.swift */,
 				DA5BE41C2C8C270700B6EA59 /* ViewThatFits2.swift */,
+				DA5BE41E2C8C3D5000B6EA59 /* ViewThatFits3.swift */,
 			);
 			path = ViewThatFits;
 			sourceTree = "<group>";
@@ -655,6 +658,7 @@
 				DAE486EC2C61F55A001CAE7C /* OpacitiyAnimatable.swift in Sources */,
 				DAD2B7562C5E80EB00C0F84E /* RecordButtonArmView.swift in Sources */,
 				DA8536EF2C414B020043DDD4 /* TrapeziumShape.swift in Sources */,
+				DA5BE41F2C8C3D5000B6EA59 /* ViewThatFits3.swift in Sources */,
 				DAB665EF2C75CDDD00AFCC21 /* SetTimingCurveFunction2.swift in Sources */,
 				DA29FE212C4E1C3400428576 /* FixedSize.swift in Sources */,
 				DA0035DC2C4CCFC900928C84 /* FlexibleFrameWithIdealSize.swift in Sources */,
