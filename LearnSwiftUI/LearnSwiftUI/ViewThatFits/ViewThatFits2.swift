@@ -48,6 +48,24 @@ struct ViewThatFits2_1: View {
     }
 }
 
+struct IdealSizeText: View {
+    var body: some View {
+        Text("GeometryReader has been present since the birth of SwiftUI, playing a crucial role in many scenarios.")
+            .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+            .border(Color.blue)
+            .frame(width: 100, height: 100)
+            .border(.red)
+    }
+}
+
+// This constraint of ideal size on a single axis
+// corresponds exactly to the restricted axes setting in
+// VFT initializer. Through config we can make VFT only
+// evaluate child view's ideals izes on certain axes
+
+
+
+
 #Preview {
-    ViewThatFits2_1()
+    IdealSizeText()
 }
