@@ -85,7 +85,31 @@ struct ViewThatFits2: View {
     }
 }
 
+/*
+ let's add a frame with width of 10 as available proposed size by parent.
+ 
+ VFT compares each subview and find none of the ideal
+ width of are less than or equal to 10 so it selects
+ the last subview Then it proposed 10 and by deault
+ Text tries to fit within the proposed size by wrapping if it does not fit
+ 
+ VFT itseld does not impose ideal size constrains on subview when it's finally presented. It only uses the ideal size of subview for evaluation during inspection ohase and during final presentation phase it submits a value proposed size to the subview and uses the subviews required size as it;s own required size.
+ */
+
+struct ViewThatFits3: View {
+    var body: some View {
+        ViewThatFits(in: .horizontal) {
+            Text("Hello Beautiful World")
+            Text("Hello World")
+            Text("Hi")
+                //.fixedSize()
+        }
+        .border(.blue)
+        .frame(width: 10)
+        .border(.red)
+    }
+}
 
 #Preview {
-    ViewThatFits2()
+    ViewThatFits3()
 }
