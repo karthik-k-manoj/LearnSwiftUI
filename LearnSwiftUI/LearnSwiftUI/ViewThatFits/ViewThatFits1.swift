@@ -102,7 +102,7 @@ struct ViewThatFits3: View {
             Text("Hello Beautiful World")
             Text("Hello World")
             Text("Hi")
-                //.fixedSize()
+                //.fixedSize() or // .lineLimit(1) (not sure text will be completly visible)
         }
         .border(.blue)
         .frame(width: 10)
