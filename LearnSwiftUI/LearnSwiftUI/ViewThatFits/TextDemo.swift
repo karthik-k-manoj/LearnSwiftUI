@@ -10,14 +10,31 @@ import SwiftUI
 struct TextDemo: View {
     @State var width: CGFloat = 100
     
+//    var body: some View {
+//        VStack {
+//            Slider(value: $width, in: 30...300)
+//            ViewThatFits {
+//                Text("Fatbobman's Swift Weekly")
+//                Text("Fatbobman's Weekly")
+//                Text("Fat's Weekly")
+//                Text("Weekly")
+//                    .fixedSize()
+//            }
+//            .frame(width: width)
+//            .border(.red)
+//        }
+//    }
+    
     var body: some View {
         VStack {
             Slider(value: $width, in: 30...300)
             ViewThatFits {
                 Text("Fatbobman's Swift Weekly")
-                Text("Fatbobman's Weekly")
-                Text("Fat's Weekly")
-                Text("Weekly")
+                    .font(.body)
+                Text("Fatbobman's Swift Weekly")
+                    .font(.subheadline)
+                Text("Fatbobman's Swift Weekly")
+                    .font(.footnote)
                     .fixedSize()
             }
             .frame(width: width)
