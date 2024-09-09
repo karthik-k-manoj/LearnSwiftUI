@@ -25,22 +25,38 @@ struct TextDemo: View {
 //        }
 //    }
     
-    var body: some View {
+//    var body: some View {
+//        VStack {
+//            Slider(value: $width, in: 30...300)
+//            ViewThatFits {
+//                Text("Fatbobman's Swift Weekly")
+//                    .font(.body)
+//                Text("Fatbobman's Swift Weekly")
+//                    .font(.subheadline)
+//                Text("Fatbobman's Swift Weekly")
+//                    .font(.footnote)
+//                    .fixedSize()
+//            }
+//            .frame(width: width)
+//            .border(.red)
+//        }
+//    }
+    
+   // And for requirements where the content is the same but the size may vary, ViewThatFits may //not be the optimal solution. The following code can provide better results:
+    
+    var body: some View  {
         VStack {
             Slider(value: $width, in: 30...300)
-            ViewThatFits {
-                Text("Fatbobman's Swift Weekly")
-                    .font(.body)
-                Text("Fatbobman's Swift Weekly")
-                    .font(.subheadline)
-                Text("Fatbobman's Swift Weekly")
-                    .font(.footnote)
-                    .fixedSize()
-            }
-            .frame(width: width)
-            .border(.red)
+            Text("Fatbobman's Swift Weekly")
+                .lineLimit(1)
+                .font(.body)
+                .minimumScaleFactor(0.3)
+                .frame(width: width)
+                .border(.red)
         }
     }
+    
+    // ViewThatFits is better at providing different alternative content for different spaces.
 }
 
 #Preview {
