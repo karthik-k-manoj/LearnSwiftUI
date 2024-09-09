@@ -55,7 +55,7 @@ struct TextDemo: View {
                 .border(.red)
         }
     }
-    
+     
     // ViewThatFits is better at providing different alternative content for different spaces.
 }
 
