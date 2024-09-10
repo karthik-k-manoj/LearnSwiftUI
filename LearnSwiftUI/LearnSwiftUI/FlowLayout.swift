@@ -29,6 +29,23 @@ func layout(sizes: [CGSize], spacing: CGSize = .init(width: 10, height: 10), con
     return result
 }
 
+struct FlowLayout: Layout {
+    func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
+        let subviewsSizes = subviews.map { $0.sizeThatFits(.unspecified) }
+        let frames = layout(sizes: subviewsSizes, containerWidth: bounds.width)
+        for (f, subview) in zip(frames, subviews) {
+            let offset = CGPoint(x: f.origin.x + bounds.minX, y: f.origin.y + bounds.minY)
+            subview.place(at: offset, proposal: .unspecified)
+        }
+    }
+    
+    func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
+        let containeWidth = proposal.replacingUnspecifiedDimensions().width
+        let sizes = subviews.map { $0.sizeThatFits(.unspecified) }
+        return layout(sizes: sizes, containerWidth: containeWidth).union().size
+    }
+}
+
 extension Array where Element == CGRect {
     func maxY() -> Double {
         var initialValue: Double = 0.0
@@ -37,5 +54,9 @@ extension Array where Element == CGRect {
         }
         
         return initialValue
+    }
+    
+    func union() -> CGRect {
+        .zero
     }
 }
