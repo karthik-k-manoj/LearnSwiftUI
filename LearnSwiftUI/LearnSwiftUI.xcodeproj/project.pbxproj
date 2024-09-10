@@ -93,6 +93,7 @@
 		DA9632732C58B7C2006069BB /* CustomComponentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9632722C58B7C2006069BB /* CustomComponentStyle.swift */; };
 		DA964EC72C8EB7DE00676742 /* TextDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA964EC62C8EB7DE00676742 /* TextDemo.swift */; };
 		DA964EC92C8EBFA400676742 /* AdaptiveHorizontalAndVerticalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA964EC82C8EBFA400676742 /* AdaptiveHorizontalAndVerticalLayout.swift */; };
+		DA964ECC2C8FFD9100676742 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA964ECB2C8FFD9100676742 /* FlowLayout.swift */; };
 		DA9B2ECD2C3EA2B8003BDF58 /* HowLayoutWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B2ECC2C3EA2B8003BDF58 /* HowLayoutWorks.swift */; };
 		DA9B2ECF2C3EBC2D003BDF58 /* TextLeaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B2ECE2C3EBC2D003BDF58 /* TextLeaf.swift */; };
 		DA9D4E8E2BE3878A0058E063 /* LearnSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D4E8D2BE3878A0058E063 /* LearnSwiftUIApp.swift */; };
@@ -215,6 +216,7 @@
 		DA9632722C58B7C2006069BB /* CustomComponentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComponentStyle.swift; sourceTree = "<group>"; };
 		DA964EC62C8EB7DE00676742 /* TextDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDemo.swift; sourceTree = "<group>"; };
 		DA964EC82C8EBFA400676742 /* AdaptiveHorizontalAndVerticalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveHorizontalAndVerticalLayout.swift; sourceTree = "<group>"; };
+		DA964ECB2C8FFD9100676742 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 		DA9B2ECC2C3EA2B8003BDF58 /* HowLayoutWorks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowLayoutWorks.swift; sourceTree = "<group>"; };
 		DA9B2ECE2C3EBC2D003BDF58 /* TextLeaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLeaf.swift; sourceTree = "<group>"; };
 		DA9D4E8A2BE3878A0058E063 /* LearnSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -448,6 +450,14 @@
 			path = Environment;
 			sourceTree = "<group>";
 		};
+		DA964ECA2C8FFD7300676742 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				DA964ECB2C8FFD9100676742 /* FlowLayout.swift */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
 		DA9D4E812BE3878A0058E063 = {
 			isa = PBXGroup;
 			children = (
@@ -467,6 +477,7 @@
 		DA9D4E8C2BE3878A0058E063 /* LearnSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DA964ECA2C8FFD7300676742 /* Layout */,
 				DA17657E2C8B593C0075271B /* ViewThatFits */,
 				DAA8752E2C89657900F06BAE /* Preference */,
 				DA47C4F62C7C6D15007B15D2 /* GeometeryReader */,
@@ -753,6 +764,7 @@
 				DA0035CF2C4BF4B900928C84 /* LearnViewModifier2.swift in Sources */,
 				DAA875362C89B5D400F06BAE /* ReadSizeUsingGeometeryReaderAndPreference.swift in Sources */,
 				DA6C35B22C513B7D00B20E9F /* ZStack_.swift in Sources */,
+				DA964ECC2C8FFD9100676742 /* FlowLayout.swift in Sources */,
 				DA63A57C2C3967FC003EBB4B /* DynamicContent.swift in Sources */,
 				DA26C5E32C5B63570062FAA5 /* ImplicitAnimation.swift in Sources */,
 				DA31C4F12C44F673009EBB36 /* LearnViewModifier1.swift in Sources */,
