@@ -126,6 +126,7 @@
 		DAE652792C5662E40056EBD2 /* AlignmentInWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE652782C5662E40056EBD2 /* AlignmentInWindow.swift */; };
 		DAE6527B2C567D470056EBD2 /* PracticeCustomAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6527A2C567D470056EBD2 /* PracticeCustomAlignment.swift */; };
 		DAE6527D2C5680640056EBD2 /* PracticeCustomAlignment2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6527C2C5680640056EBD2 /* PracticeCustomAlignment2.swift */; };
+		DAE69E772CA3CFE700ABEEBA /* AnimatingAlongPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE69E762CA3CFE700ABEEBA /* AnimatingAlongPath.swift */; };
 		DAF9060E2C54083900BA8B5A /* PracticeAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9060D2C54083900BA8B5A /* PracticeAlignment.swift */; };
 		DAFB7CA12C57D9FD008C311C /* ZStackAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB7CA02C57D9FD008C311C /* ZStackAlignment.swift */; };
 /* End PBXBuildFile section */
@@ -252,6 +253,7 @@
 		DAE652782C5662E40056EBD2 /* AlignmentInWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentInWindow.swift; sourceTree = "<group>"; };
 		DAE6527A2C567D470056EBD2 /* PracticeCustomAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeCustomAlignment.swift; sourceTree = "<group>"; };
 		DAE6527C2C5680640056EBD2 /* PracticeCustomAlignment2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeCustomAlignment2.swift; sourceTree = "<group>"; };
+		DAE69E762CA3CFE700ABEEBA /* AnimatingAlongPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingAlongPath.swift; sourceTree = "<group>"; };
 		DAF9060D2C54083900BA8B5A /* PracticeAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignment.swift; sourceTree = "<group>"; };
 		DAFB7CA02C57D9FD008C311C /* ZStackAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackAlignment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -537,6 +539,7 @@
 				DA8536EE2C414B020043DDD4 /* TrapeziumShape.swift */,
 				DA31C4E72C425792009EBB36 /* BorderShape.swift */,
 				DAD7588A2C5A87260033AA49 /* ContainerRelativeShaped.swift */,
+				DAE69E762CA3CFE700ABEEBA /* AnimatingAlongPath.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -715,6 +718,7 @@
 				DA4B6BD92C5CEC0C0060B0AB /* AnimateCornerRadius.swift in Sources */,
 				DA63A5802C399A67003EBB4B /* UnderstandViewBuilder.swift in Sources */,
 				DA0035D62C4C135400928C84 /* FixedFrame.swift in Sources */,
+				DAE69E772CA3CFE700ABEEBA /* AnimatingAlongPath.swift in Sources */,
 				DA0035D82C4CA53E00928C84 /* FlexibleFrame1.swift in Sources */,
 				DA0035E62C4D157E00928C84 /* Background.swift in Sources */,
 				DAE652772C562DC50056EBD2 /* PracticeAlignment5.swift in Sources */,
