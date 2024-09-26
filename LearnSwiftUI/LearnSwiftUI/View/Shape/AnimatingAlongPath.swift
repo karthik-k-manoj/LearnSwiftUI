@@ -56,11 +56,13 @@ struct OnPathShape<P: Shape, S: Shape>: Shape {
         var result = Path()
         let trailingLength: CGFloat = 0.2
         let trimFrom = offset - trailingLength
+        let strokeStyle = StrokeStyle(lineWidth: 3)
         if trimFrom < 0 {
             result.addPath(path.trimmedPath(from: trimFrom + 1, to: 1).strokedPath(.init()))
         }
         
         result.addPath(path.trimmedPath(from: max(0, trimFrom), to: offset).strokedPath(.init()))
+        result = result.strokedPath(strokeStyle)
         result.addPath(head)
         return result
     }
@@ -86,8 +88,6 @@ struct AnimatingAlongPath: View {
             })
             .aspectRatio(16/9, contentMode: .fit)
             .padding()
-            
-          //  Slider(value: $position, in: 0...1)
         }
     }
 }
