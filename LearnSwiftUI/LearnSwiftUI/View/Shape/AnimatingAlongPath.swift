@@ -31,10 +31,22 @@ extension Path {
 }
 
 struct OnPathShape<P: Shape, S: Shape>: Shape {
-    let shape: S
+    var shape: S
     let pathShape: P
-    let offset: CGFloat // 0...1
+    var offset: CGFloat // 0...1
     
+    var animatableData: CGFloat {
+        get {
+            offset
+            // AnimatablePair(offset, shape.animatableData)
+        }
+        
+        set {
+            offset = newValue
+           // shape.animatableData = newValue.second
+        }
+    }
+                                            
     func path(in rect: CGRect) -> Path {
         let path = pathShape.path(in: rect)
         let point = path.point(at: offset)
@@ -57,12 +69,16 @@ struct AnimatingAlongPath: View {
                     .border(.blue)
                    
                 OnPathShape(shape: rect, pathShape: Eight(), offset: position)
-                    .border(.red)
+                    .foregroundStyle(.black)
+                    .animation(Animation.linear(duration: 5).repeatForever(autoreverses: false), value: position)
             }
+            .onAppear(perform: {
+                self.position = 1
+            })
             .aspectRatio(16/9, contentMode: .fit)
             .padding()
             
-            Slider(value: $position, in: 0...1)
+          //  Slider(value: $position, in: 0...1)
         }
     }
 }
