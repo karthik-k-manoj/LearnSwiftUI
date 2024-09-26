@@ -52,7 +52,17 @@ struct OnPathShape<P: Shape, S: Shape>: Shape {
         let point = path.point(at: offset)
         let shapePath = shape.path(in: rect)
         let size = shapePath.boundingRect.size
-        return shapePath.offsetBy(dx: point.x - size.width / 2, dy: point.y - size.height / 2)
+        let head = shapePath.offsetBy(dx: point.x - size.width / 2, dy: point.y - size.height / 2)
+        var result = Path()
+        let trailingLength: CGFloat = 0.2
+        let trimFrom = offset - trailingLength
+        if trimFrom < 0 {
+            result.addPath(path.trimmedPath(from: trimFrom + 1, to: 1).strokedPath(.init()))
+        }
+        
+        result.addPath(path.trimmedPath(from: max(0, trimFrom), to: offset).strokedPath(.init()))
+        result.addPath(head)
+        return result
     }
 }
 
@@ -66,8 +76,7 @@ struct AnimatingAlongPath: View {
             ZStack {
                 Eight()
                     .stroke(.gray)
-                    .border(.blue)
-                   
+
                 OnPathShape(shape: rect, pathShape: Eight(), offset: position)
                     .foregroundStyle(.black)
                     .animation(Animation.linear(duration: 5).repeatForever(autoreverses: false), value: position)
