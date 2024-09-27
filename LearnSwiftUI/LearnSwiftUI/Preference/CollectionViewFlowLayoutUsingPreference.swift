@@ -20,8 +20,29 @@ struct CollectionView<Elements, Content>: View where Elements: RandomAccessColle
     }
 }
 
+struct PropagateView<V: View>: View {
+    var content: V
+    
+    var body: some View {
+        GeometryReader { proxy in
+            self.content
+        }
+    }
+}
+
 extension String: @retroactive Identifiable {
     public var id: String { self }
+}
+
+struct CollectionViewSizeKey: PreferenceKey {
+    typealias Value = [CGSize]
+    
+    static var defaultValue: [CGSize] = []
+    
+    static func reduce(value: inout [CGSize], nextValue: () -> [CGSize]) {
+        value.append(contentsOf: nextValue())
+    }
+    
 }
 
 struct CollectionViewFlowLayoutUsingPreference: View {
