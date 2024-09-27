@@ -10,16 +10,23 @@ import SwiftUI
 struct CollectionView<Elements, Content>: View where Elements: RandomAccessCollection, Content: View, Elements.Element: Identifiable {
     var data: Elements
     var content: (Elements.Element) -> Content
+    // what is returned by SwiftUI is stored in dictonary as we do not know if it is going to return in the order of the elements added
     @State private var sizes: [Elements.Element.ID: CGSize] = [:]
-    
+       
+    // result is basically a offsets (we care only about x since it is simplerowlayout)
+    // this is for the id we get the offset in the form of CGSize only width is updated,height is not updated
     func layout() -> [Elements.Element.ID: CGSize] {
         var result: [Elements.Element.ID: CGSize] = [:]
+        // running offset
         var offset = CGSize.zero
+        // here we are looping with our own data so order is correct
+        // but we are taking sizes from dictionary
         for element in data {
             result[element.id] = offset
             let size = sizes[element.id] ?? CGSize.zero
             offset.width += size.width + 10
         }
+        
         return result
     }
     
@@ -31,6 +38,9 @@ struct CollectionView<Elements, Content>: View where Elements: RandomAccessColle
             }
         }.onPreferenceChange(CollectionViewSizeKey.self) { sizes in
             self.sizes = sizes
+        }
+        .background {
+            Color.blue
         }
     }
 }
@@ -62,7 +72,6 @@ struct CollectionViewSizeKey<ID: Hashable>: PreferenceKey {
     static func reduce(value: inout [ID: CGSize], nextValue: () -> [ID: CGSize]) {
         value.merge(nextValue()) { $1 }
     }
-    
 }
 
 struct CollectionViewFlowLayoutUsingPreference: View {
