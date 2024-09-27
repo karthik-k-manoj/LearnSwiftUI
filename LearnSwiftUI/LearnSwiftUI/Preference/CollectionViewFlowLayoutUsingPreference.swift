@@ -31,16 +31,19 @@ struct CollectionView<Elements, Content>: View where Elements: RandomAccessColle
     }
     
     var body: some View {
-        ZStack {
-            ForEach(data) { string in
-                PropagateView(content: self.content(string), id: string.id)
-                    .offset(self.layout()[string.id] ?? .zero)
+        GeometryReader { proxy in
+            ZStack(alignment: .topLeading) {
+                ForEach( data) { string in
+                    PropagateView(content: self.content(string), id: string.id)
+                        .offset(self.layout()[string.id] ?? .zero)
+                }
+                Color.clear
+                    .frame(width: proxy.size.width, height: proxy.size.height)
+                    .fixedSize()
+            }.onPreferenceChange(CollectionViewSizeKey.self) { sizes in
+                self.sizes = sizes
             }
-        }.onPreferenceChange(CollectionViewSizeKey.self) { sizes in
-            self.sizes = sizes
-        }
-        .background {
-            Color.blue
+            .background(Color.red)
         }
     }
 }
@@ -84,7 +87,7 @@ struct CollectionViewFlowLayoutUsingPreference: View {
             Text(string)
                 .padding(10)
                 .background {
-                    Color.red
+                    Color.gray
                 }
         }
     }
