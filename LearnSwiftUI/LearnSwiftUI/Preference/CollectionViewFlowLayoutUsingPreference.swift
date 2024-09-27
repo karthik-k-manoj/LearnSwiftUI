@@ -10,26 +10,40 @@ import SwiftUI
 struct CollectionView<Elements, Content>: View where Elements: RandomAccessCollection, Content: View, Elements.Element: Identifiable {
     var data: Elements
     var content: (Elements.Element) -> Content
+    @State private var sizes: [Elements.Element.ID: CGSize] = [:]
+    
+    func layout() -> [Elements.Element.ID: CGSize] {
+        var result: [Elements.Element.ID: CGSize] = [:]
+        var offset = CGSize.zero
+        for element in data {
+            result[element.id] = offset
+            let size = sizes[element.id] ?? CGSize.zero
+            offset.width += size.width + 10
+        }
+        return result
+    }
     
     var body: some View {
-        HStack {
+        ZStack {
             ForEach(data) { string in
-                PropagateView(content: self.content(string))
+                PropagateView(content: self.content(string), id: string.id)
+                    .offset(self.layout()[string.id] ?? .zero)
             }
         }.onPreferenceChange(CollectionViewSizeKey.self) { sizes in
-            print(sizes)
+            self.sizes = sizes
         }
     }
 }
 
-struct PropagateView<V: View>: View {
+struct PropagateView<V: View, ID: Hashable>: View {
     var content: V
+    var id: ID
     
     var body: some View {
         self.content.background {
             GeometryReader { proxy in
                 Color.clear
-                    .preference(key: CollectionViewSizeKey.self, value: [proxy.size])
+                    .preference(key: CollectionViewSizeKey.self, value: [id: proxy.size])
             }
         }
         .border(.black)
@@ -40,13 +54,13 @@ extension String: @retroactive Identifiable {
     public var id: String { self }
 }
 
-struct CollectionViewSizeKey: PreferenceKey {
-    typealias Value = [CGSize]
+struct CollectionViewSizeKey<ID: Hashable>: PreferenceKey {
+    typealias Value = [ID: CGSize]
     
-    static var defaultValue: [CGSize] = []
+    static var defaultValue: [ID: CGSize] { [:] }
     
-    static func reduce(value: inout [CGSize], nextValue: () -> [CGSize]) {
-        value.append(contentsOf: nextValue())
+    static func reduce(value: inout [ID: CGSize], nextValue: () -> [ID: CGSize]) {
+        value.merge(nextValue()) { $1 }
     }
     
 }
