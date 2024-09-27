@@ -14,8 +14,10 @@ struct CollectionView<Elements, Content>: View where Elements: RandomAccessColle
     var body: some View {
         HStack {
             ForEach(data) { string in
-                self.content(string)
+                PropagateView(content: self.content(string))
             }
+        }.onPreferenceChange(CollectionViewSizeKey.self) { sizes in
+            print(sizes)
         }
     }
 }
@@ -26,7 +28,9 @@ struct PropagateView<V: View>: View {
     var body: some View {
         GeometryReader { proxy in
             self.content
+                .preference(key: CollectionViewSizeKey.self, value: [proxy.size])
         }
+        .border(.black)
     }
 }
 
