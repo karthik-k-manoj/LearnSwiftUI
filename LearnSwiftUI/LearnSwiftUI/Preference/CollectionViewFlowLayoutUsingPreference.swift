@@ -26,9 +26,11 @@ struct PropagateView<V: View>: View {
     var content: V
     
     var body: some View {
-        GeometryReader { proxy in
-            self.content
-                .preference(key: CollectionViewSizeKey.self, value: [proxy.size])
+        self.content.background {
+            GeometryReader { proxy in
+                Color.clear
+                    .preference(key: CollectionViewSizeKey.self, value: [proxy.size])
+            }
         }
         .border(.black)
     }
