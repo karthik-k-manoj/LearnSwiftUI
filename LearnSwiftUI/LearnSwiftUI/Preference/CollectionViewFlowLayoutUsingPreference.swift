@@ -7,35 +7,39 @@
 
 import SwiftUI
 
+// result is basically a offsets (we care only about x since it is simplerowlayout)
+// this is for the id we get the offset in the form of CGSize only width is updated,height is not updated
+func singleLineLayout<Elements>(for elements: Elements, sizes: [Elements.Element.ID: CGSize]) -> [Elements.Element.ID: CGSize] where Elements: RandomAccessCollection, Elements.Element: Identifiable {
+    var result: [Elements.Element.ID: CGSize] = [:]
+    // running offset
+    var offset = CGSize.zero
+    // here we are looping with our own data so order is correct
+    // but we are taking sizes from dictionary
+    for element in elements {
+        result[element.id] = offset
+        let size = sizes[element.id] ?? CGSize.zero
+        offset.width += size.width + 10
+    }
+    
+    return result
+}
+
+
 struct CollectionView<Elements, Content>: View where Elements: RandomAccessCollection, Content: View, Elements.Element: Identifiable {
     var data: Elements
-    var content: (Elements.Element) -> Content
     // what is returned by SwiftUI is stored in dictonary as we do not know if it is going to return in the order of the elements added
+    var layout: (Elements, [Elements.Element.ID: CGSize]) -> [Elements.Element.ID: CGSize]
+    var content: (Elements.Element) -> Content
     @State private var sizes: [Elements.Element.ID: CGSize] = [:]
        
-    // result is basically a offsets (we care only about x since it is simplerowlayout)
-    // this is for the id we get the offset in the form of CGSize only width is updated,height is not updated
-    func layout() -> [Elements.Element.ID: CGSize] {
-        var result: [Elements.Element.ID: CGSize] = [:]
-        // running offset
-        var offset = CGSize.zero
-        // here we are looping with our own data so order is correct
-        // but we are taking sizes from dictionary
-        for element in data {
-            result[element.id] = offset
-            let size = sizes[element.id] ?? CGSize.zero
-            offset.width += size.width + 10
-        }
-        
-        return result
-    }
+    
     
     var body: some View {
         GeometryReader { proxy in
             ZStack(alignment: .topLeading) {
                 ForEach( data) { string in
                     PropagateView(content: self.content(string), id: string.id)
-                        .offset(self.layout()[string.id] ?? .zero)
+                        .offset(self.layout(self.data, self.sizes)[string.id] ?? .zero)
                 }
                 Color.clear
                     .frame(width: proxy.size.width, height: proxy.size.height)
@@ -83,7 +87,7 @@ struct CollectionViewFlowLayoutUsingPreference: View {
     }
     
     var body: some View {
-        CollectionView(data: strings) { string in
+        CollectionView(data: strings, layout: singleLineLayout) { string in
             Text(string)
                 .padding(10)
                 .background {
