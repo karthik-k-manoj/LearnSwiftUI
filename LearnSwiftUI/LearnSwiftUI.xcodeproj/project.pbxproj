@@ -127,6 +127,7 @@
 		DAE6527B2C567D470056EBD2 /* PracticeCustomAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6527A2C567D470056EBD2 /* PracticeCustomAlignment.swift */; };
 		DAE6527D2C5680640056EBD2 /* PracticeCustomAlignment2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE6527C2C5680640056EBD2 /* PracticeCustomAlignment2.swift */; };
 		DAE69E772CA3CFE700ABEEBA /* AnimatingAlongPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE69E762CA3CFE700ABEEBA /* AnimatingAlongPath.swift */; };
+		DAE897922CA6740200CCD6D6 /* CollectionViewFlowLayoutUsingPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE897912CA6740200CCD6D6 /* CollectionViewFlowLayoutUsingPreference.swift */; };
 		DAF9060E2C54083900BA8B5A /* PracticeAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9060D2C54083900BA8B5A /* PracticeAlignment.swift */; };
 		DAFB7CA12C57D9FD008C311C /* ZStackAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB7CA02C57D9FD008C311C /* ZStackAlignment.swift */; };
 /* End PBXBuildFile section */
@@ -254,6 +255,7 @@
 		DAE6527A2C567D470056EBD2 /* PracticeCustomAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeCustomAlignment.swift; sourceTree = "<group>"; };
 		DAE6527C2C5680640056EBD2 /* PracticeCustomAlignment2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeCustomAlignment2.swift; sourceTree = "<group>"; };
 		DAE69E762CA3CFE700ABEEBA /* AnimatingAlongPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingAlongPath.swift; sourceTree = "<group>"; };
+		DAE897912CA6740200CCD6D6 /* CollectionViewFlowLayoutUsingPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewFlowLayoutUsingPreference.swift; sourceTree = "<group>"; };
 		DAF9060D2C54083900BA8B5A /* PracticeAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAlignment.swift; sourceTree = "<group>"; };
 		DAFB7CA02C57D9FD008C311C /* ZStackAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackAlignment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -529,6 +531,7 @@
 				DAA875312C896B7D00F06BAE /* PreferenceBasic2.swift */,
 				DAA875352C89B5D400F06BAE /* ReadSizeUsingGeometeryReaderAndPreference.swift */,
 				DAA875332C89735100F06BAE /* PreferenceBasic3.swift */,
+				DAE897912CA6740200CCD6D6 /* CollectionViewFlowLayoutUsingPreference.swift */,
 			);
 			path = Preference;
 			sourceTree = "<group>";
@@ -780,6 +783,7 @@
 				DAD2B7512C5E2CED00C0F84E /* BreathingAppView.swift in Sources */,
 				DAFB7CA12C57D9FD008C311C /* ZStackAlignment.swift in Sources */,
 				DA34F3282C725BDB00171BFA /* AnimatablePair.swift in Sources */,
+				DAE897922CA6740200CCD6D6 /* CollectionViewFlowLayoutUsingPreference.swift in Sources */,
 				DA31C4EB2C4294FC009EBB36 /* WhatIsColor.swift in Sources */,
 				DAB46FB32C40058300024348 /* TextLeaf+fixedSize.swift in Sources */,
 				DA6C35B02C512C1600B20E9F /* ZStackBadgeView.swift in Sources */,
