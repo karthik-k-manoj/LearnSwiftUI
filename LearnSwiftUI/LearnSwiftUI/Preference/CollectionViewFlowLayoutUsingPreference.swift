@@ -31,24 +31,26 @@ struct CollectionView<Elements, Content>: View where Elements: RandomAccessColle
     var layout: (Elements, [Elements.Element.ID: CGSize]) -> [Elements.Element.ID: CGSize]
     var content: (Elements.Element) -> Content
     @State private var sizes: [Elements.Element.ID: CGSize] = [:]
-       
-    
     
     var body: some View {
         GeometryReader { proxy in
-            ZStack(alignment: .topLeading) {
-                ForEach( data) { string in
-                    PropagateView(content: self.content(string), id: string.id)
-                        .offset(self.layout(self.data, self.sizes)[string.id] ?? .zero)
-                }
-                Color.clear
-                    .frame(width: proxy.size.width, height: proxy.size.height)
-                    .fixedSize()
-            }.onPreferenceChange(CollectionViewSizeKey.self) { sizes in
-                self.sizes = sizes
-            }
-            .background(Color.red)
+            self.bodyHelper(containerSize: proxy.size, offsets: self.layout(self.data, self.sizes))
         }
+    }
+    
+    private func bodyHelper(containerSize: CGSize, offsets: [Elements.Element.ID: CGSize]) -> some View {
+        ZStack(alignment: .topLeading) {
+            ForEach( data) { string in
+                PropagateView(content: self.content(string), id: string.id)
+                    .offset(self.layout(self.data, self.sizes)[string.id] ?? .zero)
+            }
+            Color.clear
+                .frame(width: containerSize.width, height: containerSize.height)
+                .fixedSize()
+        }.onPreferenceChange(CollectionViewSizeKey.self) { sizes in
+            self.sizes = sizes
+        }
+        .background(Color.red)
     }
 }
 
