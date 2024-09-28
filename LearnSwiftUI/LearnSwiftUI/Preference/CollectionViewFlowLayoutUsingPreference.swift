@@ -9,7 +9,7 @@ import SwiftUI
 
 // result is basically a offsets (we care only about x since it is simplerowlayout)
 // this is for the id we get the offset in the form of CGSize only width is updated,height is not updated
-func singleLineLayout<Elements>(for elements: Elements, sizes: [Elements.Element.ID: CGSize]) -> [Elements.Element.ID: CGSize] where Elements: RandomAccessCollection, Elements.Element: Identifiable {
+func singleLineLayout<Elements>(for elements: Elements, containerSize: CGSize, sizes: [Elements.Element.ID: CGSize]) -> [Elements.Element.ID: CGSize] where Elements: RandomAccessCollection, Elements.Element: Identifiable {
     var result: [Elements.Element.ID: CGSize] = [:]
     // running offset
     var offset = CGSize.zero
@@ -24,17 +24,40 @@ func singleLineLayout<Elements>(for elements: Elements, sizes: [Elements.Element
     return result
 }
 
+func flowLayout<Elements>(for elements: Elements, containerSize: CGSize, sizes: [Elements.Element.ID: CGSize]) -> [Elements.Element.ID: CGSize] where Elements: RandomAccessCollection, Elements.Element: Identifiable  { // offset
+    var current: CGPoint = .zero
+    var lineheight: CGFloat = 0
+    let offset: UIOffset = UIOffset(horizontal: 10, vertical: 10)
+    
+    var result: [Elements.Element.ID: CGSize] = [:]
+    
+    for element in elements {
+        if (current.x + (sizes[element.id] ?? .zero).width) > containerSize.width {
+            current.x = 0
+            current.y += lineheight + offset.vertical
+            lineheight = 0
+        }
+        
+        lineheight = max(lineheight, (sizes[element.id] ?? .zero).height)
+        result[element.id] = CGSize(width: current.x, height: current.y)
+        
+        current.x += (sizes[element.id] ?? .zero).width + offset.horizontal
+    }
+    
+    return result
+}
+
 
 struct CollectionView<Elements, Content>: View where Elements: RandomAccessCollection, Content: View, Elements.Element: Identifiable {
     var data: Elements
     // what is returned by SwiftUI is stored in dictonary as we do not know if it is going to return in the order of the elements added
-    var layout: (Elements, [Elements.Element.ID: CGSize]) -> [Elements.Element.ID: CGSize]
+    var layout: (Elements, CGSize, [Elements.Element.ID: CGSize]) -> [Elements.Element.ID: CGSize]
     var content: (Elements.Element) -> Content
     @State private var sizes: [Elements.Element.ID: CGSize] = [:]
     
     var body: some View {
         GeometryReader { proxy in
-            self.bodyHelper(containerSize: proxy.size, offsets: self.layout(self.data, self.sizes))
+            self.bodyHelper(containerSize: proxy.size, offsets: self.layout(self.data, proxy.size, self.sizes))
         }
     }
     
@@ -42,7 +65,7 @@ struct CollectionView<Elements, Content>: View where Elements: RandomAccessColle
         ZStack(alignment: .topLeading) {
             ForEach( data) { string in
                 PropagateView(content: self.content(string), id: string.id)
-                    .offset(self.layout(self.data, self.sizes)[string.id] ?? .zero)
+                    .offset(offsets[string.id] ?? .zero)
             }
             Color.clear
                 .frame(width: containerSize.width, height: containerSize.height)
@@ -89,7 +112,7 @@ struct CollectionViewFlowLayoutUsingPreference: View {
     }
     
     var body: some View {
-        CollectionView(data: strings, layout: singleLineLayout) { string in
+        CollectionView(data: strings, layout: flowLayout) { string in
             Text(string)
                 .padding(10)
                 .background {
