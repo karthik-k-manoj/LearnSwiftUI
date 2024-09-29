@@ -24,12 +24,12 @@ func singleLineLayout<Elements>(for elements: Elements, containerSize: CGSize, s
     return result
 }
 
-func flowLayout<Elements>(for elements: Elements, containerSize: CGSize, sizes: [Elements.Element.ID: CGSize]) -> [Elements.Element.ID: CGSize] where Elements: RandomAccessCollection, Elements.Element: Identifiable  { // offset
+func flowLayout<Elements>(for elements: Elements, containerSize: CGSize, sizes: [Elements.Element.ID: CGSize]) -> [(Elements.Element.ID, CGSize)] where Elements: RandomAccessCollection, Elements.Element: Identifiable  { // offset
     var current: CGPoint = .zero
     var lineheight: CGFloat = 0
     let offset: UIOffset = UIOffset(horizontal: 10, vertical: 10)
     
-    var result: [Elements.Element.ID: CGSize] = [:]
+    var result: [(Elements.Element.ID, CGSize)] = []
     
     for element in elements {
         if (current.x + (sizes[element.id] ?? .zero).width) > containerSize.width {
@@ -39,7 +39,7 @@ func flowLayout<Elements>(for elements: Elements, containerSize: CGSize, sizes: 
         }
         
         lineheight = max(lineheight, (sizes[element.id] ?? .zero).height)
-        result[element.id] = CGSize(width: current.x, height: current.y)
+        result.append((element.id,  CGSize(width: current.x, height: current.y)))
         
         current.x += (sizes[element.id] ?? .zero).width + offset.horizontal
     }
@@ -51,14 +51,13 @@ func flowLayout<Elements>(for elements: Elements, containerSize: CGSize, sizes: 
 struct CollectionView<Elements, Content>: View where Elements: RandomAccessCollection, Content: View, Elements.Element: Identifiable {
     var data: Elements
     // what is returned by SwiftUI  is stored in dictonary as we do not know if it is going to return in the order of the elements added
-    var layout: (Elements, CGSize, [Elements.Element.ID: CGSize]) -> [Elements.Element.ID: CGSize]
     var content: (Elements.Element) -> Content
     @State private var sizes: [Elements.Element.ID: CGSize] = [:]
     // translation is relative to start point and location is relative to super view (in super view)
     @State private var dragState: ((id:Elements.Element.ID, translation: CGSize, location: CGPoint))?
     var body: some View {
         GeometryReader { proxy in
-            self.bodyHelper(containerSize: proxy.size, offsets: self.layout(self.data, proxy.size, self.sizes))
+            self.bodyHelper(containerSize: proxy.size, offsets: flowLayout(for: self.data, containerSize: proxy.size, sizes: sizes))
         }
     }
      
@@ -67,11 +66,24 @@ struct CollectionView<Elements, Content>: View where Elements: RandomAccessColle
         return state.translation
     }
     
-    private func bodyHelper(containerSize: CGSize, offsets: [Elements.Element.ID: CGSize]) -> some View {
-        ZStack(alignment: .topLeading) {
+    private func bodyHelper(containerSize: CGSize, offsets: [(Elements.Element.ID, CGSize)]) -> some View {
+        
+        var insertionPoint: (id: Elements.Element.ID, offset: CGSize)? {
+           guard let dragState = dragState else { return nil }
+            for offset in offsets.reversed() {
+                if offset.1.width < dragState.location.x  &&  offset.1.height < dragState.location.y {
+                    return (id: offset.0, offset: offset.1)
+                }
+            }
+            
+            return nil
+            
+       }
+        
+        return ZStack(alignment: .topLeading) {
             ForEach( data) { string in
                 PropagateView(content: self.content(string), id: string.id)
-                    .offset(offsets[string.id] ?? .zero)
+                    .offset(offsets.first { string.id ==  $0.0 }?.1 ?? CGSize.zero)
                     .offset(dragOffset(for: string.id) ?? .zero)
                     .gesture(DragGesture().onChanged({ value in
                         dragState = (string.id, value.translation, value.location)
@@ -81,11 +93,11 @@ struct CollectionView<Elements, Content>: View where Elements: RandomAccessColle
                         }
                     }))
             }
-            if dragState != nil {
+            if insertionPoint != nil {
                 Rectangle()
                     .fill(.red)
                     .frame(width: 10, height: 40)
-                    .offset(dragState!.location)
+                    .offset(insertionPoint!.offset)
             }
             Color.clear
                 .frame(width: containerSize.width, height: containerSize.height)
@@ -140,7 +152,7 @@ struct CollectionViewFlowLayoutUsingPreference: View {
     }
     
     var body: some View {
-        CollectionView(data: strings, layout: flowLayout) { string in
+        CollectionView(data: strings) { string in
             Text(string)
                 .padding(10)
                 .background {
