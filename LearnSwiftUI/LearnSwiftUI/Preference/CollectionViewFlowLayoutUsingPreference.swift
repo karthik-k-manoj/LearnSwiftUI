@@ -62,12 +62,17 @@ struct CollectionView<Elements, Content>: View where Elements: RandomAccessColle
         }
     }
      
+    private func dragOffset(for id: Elements.Element.ID) -> CGSize? {
+        guard let state = dragState, state.id == id else { return nil }
+        return state.translation
+    }
+    
     private func bodyHelper(containerSize: CGSize, offsets: [Elements.Element.ID: CGSize]) -> some View {
         ZStack(alignment: .topLeading) {
             ForEach( data) { string in
                 PropagateView(content: self.content(string), id: string.id)
                     .offset(offsets[string.id] ?? .zero)
-                    .offset(self.dragState?.id == string.id ? self.dragState!.translation : .zero)
+                    .offset(dragOffset(for: string.id) ?? .zero)
                     .gesture(DragGesture().onChanged({ value in
                         dragState = (string.id, value.translation)
                     }).onEnded({ _ in
