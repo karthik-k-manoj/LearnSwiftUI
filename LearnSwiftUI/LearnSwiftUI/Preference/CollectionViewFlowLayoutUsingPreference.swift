@@ -50,29 +50,39 @@ func flowLayout<Elements>(for elements: Elements, containerSize: CGSize, sizes: 
 
 struct CollectionView<Elements, Content>: View where Elements: RandomAccessCollection, Content: View, Elements.Element: Identifiable {
     var data: Elements
-    // what is returned by SwiftUI is stored in dictonary as we do not know if it is going to return in the order of the elements added
+    // what is returned by SwiftUI  is stored in dictonary as we do not know if it is going to return in the order of the elements added
     var layout: (Elements, CGSize, [Elements.Element.ID: CGSize]) -> [Elements.Element.ID: CGSize]
     var content: (Elements.Element) -> Content
     @State private var sizes: [Elements.Element.ID: CGSize] = [:]
-    
+    // translation is relative to start point and location is relative to super view (in super view)
+    @State private var dragState: ((id:Elements.Element.ID, translation: CGSize))?
     var body: some View {
         GeometryReader { proxy in
             self.bodyHelper(containerSize: proxy.size, offsets: self.layout(self.data, proxy.size, self.sizes))
         }
     }
-    
+     
     private func bodyHelper(containerSize: CGSize, offsets: [Elements.Element.ID: CGSize]) -> some View {
         ZStack(alignment: .topLeading) {
             ForEach( data) { string in
                 PropagateView(content: self.content(string), id: string.id)
                     .offset(offsets[string.id] ?? .zero)
-                    .animation(.default)
+                    .offset(self.dragState?.id == string.id ? self.dragState!.translation : .zero)
+                    .gesture(DragGesture().onChanged({ value in
+                        dragState = (string.id, value.translation)
+                    }).onEnded({ _ in
+                        withAnimation {
+                            dragState = nil
+                        }
+                    }))
             }
             Color.clear
                 .frame(width: containerSize.width, height: containerSize.height)
                 .fixedSize()
         }.onPreferenceChange(CollectionViewSizeKey.self) { sizes in
-            self.sizes = sizes
+            withAnimation {
+                self.sizes = sizes
+            }
         }
         .background(Color.red)
     }
