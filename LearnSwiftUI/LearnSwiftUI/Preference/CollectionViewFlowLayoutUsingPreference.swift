@@ -91,8 +91,10 @@ struct CollectionView<Elements, Content>: View where Elements: RandomAccessColle
                     .gesture(DragGesture().onChanged({ value in
                         dragState = (string.id, value.translation, value.location)
                     }).onEnded({ _ in
-                        if let oldInx = data.firstIndex(where: { $0.id == dragState!.id }),
-                           let newIdx = data.firstIndex(where: { $0.id == insertionPoint!.id }) {
+                        if let ds = dragState,
+                           let ip = insertionPoint,
+                            let oldInx = data.firstIndex(where: { $0.id == dragState.id }),
+                           let newIdx = data.firstIndex(where: { $0.id == insertionPoint.id }) {
                             didMove(oldInx, newIdx)
                         }
                        
@@ -161,7 +163,10 @@ struct CollectionViewFlowLayoutUsingPreference: View {
     
     var body: some View {
         CollectionView(data: strings, didMove: { old, new in
-            strings.move(fromOffsets: IndexSet(integer: old), toOffset: new)
+            withAnimation {
+                strings.move(fromOffsets: IndexSet(integer: old), toOffset: new)
+            }
+            
         }) { string in
             Text(string)
                 .padding(10)
