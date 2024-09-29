@@ -122,24 +122,13 @@ struct CollectionViewFlowLayoutUsingPreference: View {
         "Item \($0)" + String(repeatElement("x", count: Int.random(in: 0...10)))
     }
     
-    @State var dividerWidth: CGFloat = 100
-    
     var body: some View {
-        VStack {
-            HStack {
-                Rectangle()
-                    .fill(.white)
-                    .frame(width: dividerWidth)
-                CollectionView(data: strings, layout: flowLayout) { string in
-                    Text(string)
-                        .padding(10)
-                        .background {
-                            Color.gray
-                        }
+        CollectionView(data: strings, layout: flowLayout) { string in
+            Text(string)
+                .padding(10)
+                .background {
+                    Color.gray
                 }
-            }
-            
-            Slider(value: $dividerWidth, in: 0...500)
         }
     }
 }
