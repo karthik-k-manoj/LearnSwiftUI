@@ -55,7 +55,7 @@ struct CollectionView<Elements, Content>: View where Elements: RandomAccessColle
     var content: (Elements.Element) -> Content
     @State private var sizes: [Elements.Element.ID: CGSize] = [:]
     // translation is relative to start point and location is relative to super view (in super view)
-    @State private var dragState: ((id:Elements.Element.ID, translation: CGSize))?
+    @State private var dragState: ((id:Elements.Element.ID, translation: CGSize, location: CGPoint))?
     var body: some View {
         GeometryReader { proxy in
             self.bodyHelper(containerSize: proxy.size, offsets: self.layout(self.data, proxy.size, self.sizes))
@@ -74,12 +74,18 @@ struct CollectionView<Elements, Content>: View where Elements: RandomAccessColle
                     .offset(offsets[string.id] ?? .zero)
                     .offset(dragOffset(for: string.id) ?? .zero)
                     .gesture(DragGesture().onChanged({ value in
-                        dragState = (string.id, value.translation)
+                        dragState = (string.id, value.translation, value.location)
                     }).onEnded({ _ in
                         withAnimation {
                             dragState = nil
                         }
                     }))
+            }
+            if dragState != nil {
+                Rectangle()
+                    .fill(.red)
+                    .frame(width: 10, height: 40)
+                    .offset(dragState!.location)
             }
             Color.clear
                 .frame(width: containerSize.width, height: containerSize.height)
@@ -89,7 +95,13 @@ struct CollectionView<Elements, Content>: View where Elements: RandomAccessColle
                 self.sizes = sizes
             }
         }
-        .background(Color.red)
+        .background(Color.white)
+    }
+}
+
+extension View {
+    func offset(_ point: CGPoint) -> some View {
+        offset(x: point.x, y: point.y)
     }
 }
 
