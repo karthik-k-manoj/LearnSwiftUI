@@ -51,10 +51,13 @@ func flowLayout<Elements>(for elements: Elements, containerSize: CGSize, sizes: 
 struct CollectionView<Elements, Content>: View where Elements: RandomAccessCollection, Content: View, Elements.Element: Identifiable {
     var data: Elements
     // what is returned by SwiftUI  is stored in dictonary as we do not know if it is going to return in the order of the elements added
+    var didMove: (Elements.Index, Elements.Index) -> ()
     var content: (Elements.Element) -> Content
     @State private var sizes: [Elements.Element.ID: CGSize] = [:]
     // translation is relative to start point and location is relative to super view (in super view)
     @State private var dragState: ((id:Elements.Element.ID, translation: CGSize, location: CGPoint))?
+    
+    
     var body: some View {
         GeometryReader { proxy in
             self.bodyHelper(containerSize: proxy.size, offsets: flowLayout(for: self.data, containerSize: proxy.size, sizes: sizes))
@@ -88,6 +91,11 @@ struct CollectionView<Elements, Content>: View where Elements: RandomAccessColle
                     .gesture(DragGesture().onChanged({ value in
                         dragState = (string.id, value.translation, value.location)
                     }).onEnded({ _ in
+                        if let oldInx = data.firstIndex(where: { $0.id == dragState!.id }),
+                           let newIdx = data.firstIndex(where: { $0.id == insertionPoint!.id }) {
+                            didMove(oldInx, newIdx)
+                        }
+                       
                         withAnimation {
                             dragState = nil
                         }
@@ -147,12 +155,14 @@ struct CollectionViewSizeKey<ID: Hashable>: PreferenceKey {
 }
 
 struct CollectionViewFlowLayoutUsingPreference: View {
-    var strings = (1...10).map {
+    @State var strings = (1...10).map {
         "Item \($0)" + String(repeatElement("x", count: Int.random(in: 0...10)))
     }
     
     var body: some View {
-        CollectionView(data: strings) { string in
+        CollectionView(data: strings, didMove: { old, new in
+            strings.move(fromOffsets: IndexSet(integer: old), toOffset: new)
+        }) { string in
             Text(string)
                 .padding(10)
                 .background {
